@@ -1,0 +1,19 @@
+# spring
+spring:
+  application:
+    name: praxis-leetcode
+  banner:
+    location: classpath:banner/banner.txt
+  main:
+    banner-mode: log
+  output:
+    ansi:
+      enabled: always
+# logging
+logging:
+  config: classpath:logging/log4j2.yml
+# task
+task:
+  type: leetcode
+  code: 0
+  mode: B

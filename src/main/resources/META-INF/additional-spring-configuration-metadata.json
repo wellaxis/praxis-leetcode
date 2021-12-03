@@ -1,0 +1,49 @@
+{
+  "groups": [
+  ],
+  "properties": [
+    {
+      "name": "task",
+      "type": "java.lang.String",
+      "description": "The task environment."
+    },
+    {
+      "name": "task.type",
+      "type": "java.lang.String",
+      "description": "The type of task (package)."
+    },
+    {
+      "name": "task.code",
+      "type": "java.lang.Integer",
+      "description": "The identifier of task (class)."
+    },
+    {
+      "name": "task.mode",
+      "type": "java.lang.String",
+      "description": "The mode of task (revision)."
+    }
+  ],
+  "hints": [
+    {
+      "name": "task.mode",
+      "values": [
+        {
+          "value": "O",
+          "description": "Emulate a real test (code writing)."
+        },
+        {
+          "value": "P",
+          "description": "Try to find the better variant (internal)."
+        },
+        {
+          "value": "S",
+          "description": "The best solution (external)."
+        },
+        {
+          "value": "B",
+          "description": "The benchmark mode (comparison)."
+        }
+      ]
+    }
+  ]
+}

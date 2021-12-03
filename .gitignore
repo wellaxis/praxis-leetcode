@@ -1,0 +1,45 @@
+#----------------------# global
+
+*.class
+*.log
+*.ctxt
+*.bak
+*.tmp
+*~
+
+#----------------------# archive
+*.jar
+*.war
+*.nar
+*.ear
+*.rar
+*.zip
+*.tar
+*.gz
+
+#----------------------# crash
+hs_err_pid*
+
+#----------------------# local
+
+# gradle
+.gradle
+# docker
+.docker
+# idea
+.idea
+
+# build
+**/build/*
+# cvs
+**/CVS/*
+
+#----------------------# except
+!gradle/wrapper/gradle-wrapper.jar
+
+#----------------------# generated
+/invoke/log
+/output
+/lib
+/log
+/res
