@@ -1,7 +1,7 @@
-package com.witalis.praxis.leetcode.task.p35;
+package com.witalis.praxis.leetcode.task.p34;
 
 import com.witalis.praxis.leetcode.task.LeetCodeTask;
-import com.witalis.praxis.leetcode.task.p35.option.*;
+import com.witalis.praxis.leetcode.task.p34.option.*;
 import com.witalis.praxis.leetcode.utils.LeetCode;
 import com.witalis.praxis.leetcode.utils.TaskRevision;
 
@@ -9,35 +9,38 @@ import lombok.extern.slf4j.Slf4j;
 import java.util.concurrent.ThreadLocalRandom;
 
 @Slf4j
-@LeetCode(id = 35, description = "Search Insert Position")
-public class SearchInsertPosition extends LeetCodeTask<Integer> {
-    public static final int LEN = 10_000;
-    public static final int VALUE = 10_000;
+@LeetCode(id = 34, description = "Find First and Last Position of Element in Sorted Array")
+public class FindFirstAndLastPositionOfElementInSortedArray extends LeetCodeTask<int[]> {
+    public static final int LEN = (int) Math.pow(10, 5);
+    public static final int VALUE = (int) Math.pow(10, 3);
     private int[] numbers;
     private int target;
 
     public static final String INFORMATION = """
 
-        Given a sorted array of distinct integers and a target value,
-            return the index if the target is found.
-            If not, return the index where it would be if it were inserted in order.
+        Given an array of integers nums sorted in non-decreasing order,
+            find the starting and ending position of a given target value.
+
+        If target is not found in the array, return [-1, -1].
 
         You must write an algorithm with O(log n) runtime complexity.
 
         Example:
-            Input: nums = [1,3,5,6], target = 5
-            Output: 2""";
+            Input: nums = [5,7,7,8,8,10], target = 8
+            Output: [3,4]""";
 
-    public SearchInsertPosition(int id, String description, TaskRevision revision) {
+    public FindFirstAndLastPositionOfElementInSortedArray(int id, String description, TaskRevision revision) {
         super(id, description, revision);
         initialization();
     }
 
     private void initialization() {
         var random = ThreadLocalRandom.current();
-        this.numbers = random.ints(-VALUE, VALUE + 1)
-            .distinct()
-            .limit(LEN)
+        this.numbers = random.ints(
+                random.nextInt(0, LEN + 1),
+                -VALUE,
+                VALUE + 1
+            )
             .sorted()
             .toArray();
 
@@ -52,23 +55,23 @@ public class SearchInsertPosition extends LeetCodeTask<Integer> {
         return INFORMATION;
     }
 
-    // time = 889 ms
+    // time = 618 ms
     @Override
-    protected Integer original() {
+    protected int[] original() {
         var original = new Original(numbers.clone(), target);
         return original.process();
     }
 
-    // time = 691 ms
+    // time = 517 ms
     @Override
-    protected Integer practice() {
+    protected int[] practice() {
         var practice = new Practice(numbers.clone(), target);
         return practice.process();
     }
 
-    // time = 791 ms
+    // time = 560 ms
     @Override
-    protected Integer solution() {
+    protected int[] solution() {
         var solution = new Solution(numbers.clone(), target);
         return solution.process();
     }

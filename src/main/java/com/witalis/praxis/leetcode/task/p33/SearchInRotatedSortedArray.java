@@ -64,21 +64,21 @@ public class SearchInRotatedSortedArray extends LeetCodeTask<Integer> {
     // time = 529 ms
     @Override
     protected Integer original() {
-        var original = new Original(numbers, target);
+        var original = new Original(numbers.clone(), target);
         return original.process();
     }
 
     // time = 436 ms
     @Override
     protected Integer practice() {
-        var practice = new Practice(numbers, target);
+        var practice = new Practice(numbers.clone(), target);
         return practice.process();
     }
 
     // time = 409 ms
     @Override
     protected Integer solution() {
-        var solution = new Solution(numbers, target);
+        var solution = new Solution(numbers.clone(), target);
         return solution.process();
     }
 }
