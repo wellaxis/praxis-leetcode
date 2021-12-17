@@ -11,6 +11,7 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 @Qualifier
 public @interface LeetCode {
-    int id();
+    int id() default 0;
     String description() default "The leetCode task";
+    TaskTag[] tags() default {};
 }

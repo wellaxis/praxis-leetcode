@@ -1,6 +1,6 @@
-package com.witalis.praxis.leetcode.task.p94.option;
+package com.witalis.praxis.leetcode.task.p144.option;
 
-import com.witalis.praxis.leetcode.task.p94.content.TreeNode;
+import com.witalis.praxis.leetcode.task.p144.content.TreeNode;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -10,9 +10,9 @@ import lombok.extern.slf4j.Slf4j;
 import java.util.*;
 
 /**
- * ID: 94
- * Name: Binary Tree Inorder Traversal
- * URL: https://leetcode.com/problems/binary-tree-inorder-traversal/
+ * ID: 144
+ * Name: Binary Tree Preorder Traversal
+ * URL: https://leetcode.com/problems/binary-tree-preorder-traversal/
  * Note: try to find the better solution (without timing)
  */
 @Slf4j
@@ -24,57 +24,55 @@ public class Practice {
     private TreeNode root;
 
     public List<Integer> process() {
-        return inorderTraversal(root);
+        return preorderTraversal(root);
     }
 
-    // inorder: left -> root -> right
-    public List<Integer> inorderTraversal(TreeNode root) {
+    // preorder: root -> left -> right
+    public List<Integer> preorderTraversal(TreeNode root) {
         return recursiveMode
-            ? inorderRecursive(root)
-            : inorderIterative(root);
+            ? preorderRecursive(root)
+            : preorderIterative(root);
     }
 
     /**
-     * Traversal: depth-first inorder
+     * Traversal: depth-first preorder
      * Algorithm: recursive
      * Complexity: time -> O(N), space -> O(logN) when balanced, O(N) worst
      */
-    private List<Integer> inorderRecursive(TreeNode root) {
+    private List<Integer> preorderRecursive(TreeNode root) {
         if (root == null) return Collections.emptyList();
 
-        var inorder = new ArrayList<Integer>();
-        recursiveTraversal(root, inorder);
-        return inorder;
+        List<Integer> preorder = new ArrayList<>();
+        recursiveTraversal(root, preorder);
+        return preorder;
     }
 
     private void recursiveTraversal(TreeNode node, List<Integer> traversal) {
         if (node == null) return;
 
-        recursiveTraversal(node.left, traversal);
         traversal.add(node.val);
+        recursiveTraversal(node.left, traversal);
         recursiveTraversal(node.right, traversal);
     }
 
     /**
-     * Traversal: depth-first inorder
+     * Traversal: depth-first preorder
      * Algorithm: iterative
      * Complexity: time -> O(N), space -> O(logN) when balanced, O(N) worst
      */
-    private List<Integer> inorderIterative(TreeNode root) {
+    private List<Integer> preorderIterative(TreeNode root) {
         if (root == null) return Collections.emptyList();
 
         List<Integer> traversal = new ArrayList<>();
         Deque<TreeNode> stack = new ArrayDeque<>();
 
-        TreeNode node = root;
-        while (node != null || !stack.isEmpty()) {
-            while (node != null) {
-                stack.push(node);
-                node = node.left;
-            }
-            node = stack.pop();
+        stack.push(root);
+        while (!stack.isEmpty()) {
+            TreeNode node = stack.pop();
             traversal.add(node.val);
-            node = node.right;
+
+            if (node.right != null) stack.push(node.right);
+            if (node.left != null) stack.push(node.left);
         }
 
         return traversal;

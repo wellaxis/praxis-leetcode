@@ -1,8 +1,8 @@
-package com.witalis.praxis.leetcode.task.p94;
+package com.witalis.praxis.leetcode.task.p144;
 
 import com.witalis.praxis.leetcode.task.LeetCodeTask;
-import com.witalis.praxis.leetcode.task.p94.content.*;
-import com.witalis.praxis.leetcode.task.p94.option.*;
+import com.witalis.praxis.leetcode.task.p144.option.*;
+import com.witalis.praxis.leetcode.task.p144.content.TreeNode;
 import com.witalis.praxis.leetcode.utils.LeetCode;
 import com.witalis.praxis.leetcode.utils.TaskRevision;
 
@@ -14,11 +14,11 @@ import static com.witalis.praxis.leetcode.utils.TaskTag.*;
 
 @Slf4j
 @LeetCode(
-    id = 94,
-    description = "Binary Tree Inorder Traversal",
+    id = 144,
+    description = "Binary Tree Preorder Traversal",
     tags = {TREE, BINARY_TREE, DEPTH_FIRST_SEARCH}
 )
-public class BinaryTreeInorderTraversal extends LeetCodeTask<List<Integer>> {
+public class BinaryTreePreorderTraversal extends LeetCodeTask<List<Integer>> {
     public static final int LEN = 100;
     public static final int VALUE = 100;
     private TreeNode root;
@@ -26,13 +26,13 @@ public class BinaryTreeInorderTraversal extends LeetCodeTask<List<Integer>> {
     public static final String INFORMATION = """
 
         Given the root of a binary tree,
-            return the inorder traversal of its nodes' values.
-            
+            return the preorder traversal of its nodes' values.
+
         Example:
             Input: root = [1,null,2,3]
-            Output: [1,3,2]""";
+            Output: [1,2,3]""";
 
-    public BinaryTreeInorderTraversal(int id, String description, TaskRevision revision) {
+    public BinaryTreePreorderTraversal(int id, String description, TaskRevision revision) {
         super(id, description, revision);
         initialization();
     }
@@ -50,21 +50,21 @@ public class BinaryTreeInorderTraversal extends LeetCodeTask<List<Integer>> {
         return INFORMATION;
     }
 
-    // time = 472 ms
+    // time = 482 ms
     @Override
     protected List<Integer> original() {
         var original = new Original(root);
         return original.process();
     }
 
-    // time = 466 ms
+    // time = 473 ms
     @Override
     protected List<Integer> practice() {
         var practice = new Practice(root);
         return practice.process();
     }
 
-    // time = 453 ms
+    // time = 466 ms
     @Override
     protected List<Integer> solution() {
         var solution = new Solution(root);

@@ -1,6 +1,6 @@
-package com.witalis.praxis.leetcode.task.p94.option;
+package com.witalis.praxis.leetcode.task.p144.option;
 
-import com.witalis.praxis.leetcode.task.p94.content.TreeNode;
+import com.witalis.praxis.leetcode.task.p144.content.TreeNode;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -10,9 +10,9 @@ import lombok.extern.slf4j.Slf4j;
 import java.util.*;
 
 /**
- * ID: 94
- * Name: Binary Tree Inorder Traversal
- * URL: https://leetcode.com/problems/binary-tree-inorder-traversal/
+ * ID: 144
+ * Name: Binary Tree Preorder Traversal
+ * URL: https://leetcode.com/problems/binary-tree-preorder-traversal/
  * Note: the best found solution (external programming)
  */
 @Slf4j
@@ -23,20 +23,20 @@ public class Solution {
     private TreeNode root;
 
     public List<Integer> process() {
-        return inorderTraversal(root);
+        return preorderTraversal(root);
     }
 
-    // inorder: left -> root -> right
-    public List<Integer> inorderTraversal(TreeNode root) {
-        return inorderMorris(root);
+    // preorder: root -> left -> right
+    public List<Integer> preorderTraversal(TreeNode root) {
+        return preorderMorris(root);
     }
 
     /**
-     * Traversal: depth-first inorder
+     * Traversal: depth-first preorder
      * Algorithm: Morris (without recursion & stack)
      * Complexity: time -> O(N), space -> O(1)
      */
-    public List<Integer> inorderMorris(TreeNode root) {
+    public List<Integer> preorderMorris(TreeNode root) {
         List<Integer> result = new ArrayList<>();
 
         if (root == null) return result;
@@ -59,11 +59,11 @@ public class Solution {
 
                 // make current as right child of its inorder predecessor
                 if (predecessor.right == null) {
+                    // the only difference from inorder traversal
+                    result.add(current.val);
                     predecessor.right = current;
                     current = current.left;
                 } else {
-                    // the only difference from preorder traversal
-                    result.add(current.val);
                     // revert the changes & restore the original tree
                     // i.e., fix the right child of predecessor
                     predecessor.right = null;

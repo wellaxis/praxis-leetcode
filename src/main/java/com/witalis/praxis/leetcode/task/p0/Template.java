@@ -8,7 +8,11 @@ import com.witalis.praxis.leetcode.utils.TaskRevision;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
-@LeetCode(id = 0, description = "Template Task")
+@LeetCode(
+    id = 0,
+    description = "Template Task",
+    tags = {}
+)
 public class Template extends LeetCodeTask<Object> {
     private Object object;
 
