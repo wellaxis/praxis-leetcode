@@ -1,6 +1,6 @@
-package com.witalis.praxis.leetcode.task.p94.option;
+package com.witalis.praxis.leetcode.task.p145.option;
 
-import com.witalis.praxis.leetcode.task.p94.content.TreeNode;
+import com.witalis.praxis.leetcode.task.p145.content.TreeNode;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -10,9 +10,9 @@ import lombok.extern.slf4j.Slf4j;
 import java.util.*;
 
 /**
- * ID: 94
- * Name: Binary Tree Inorder Traversal
- * URL: https://leetcode.com/problems/binary-tree-inorder-traversal/
+ * ID: 145
+ * Name: Binary Tree Postorder Traversal
+ * URL: https://leetcode.com/problems/binary-tree-postorder-traversal/
  * Note: try to find the better solution (without timing)
  */
 @Slf4j
@@ -24,59 +24,65 @@ public class Practice {
     private TreeNode root;
 
     public List<Integer> process() {
-        return inorderTraversal(root);
+        return postorderTraversal(root);
     }
 
-    // inorder: left -> root -> right
-    public List<Integer> inorderTraversal(TreeNode root) {
+    // postorder: left -> right -> root
+    public List<Integer> postorderTraversal(TreeNode root) {
         return recursiveMode
-            ? inorderRecursive(root)
-            : inorderIterative(root);
+            ? postorderRecursive(root)
+            : postorderIterative(root);
     }
 
     /**
-     * Traversal: DFS, depth-first inorder
+     * Traversal: DFS, depth-first postorder
      * Algorithm: recursive
      * Complexity: time -> O(N), space -> O(logN) when balanced, O(N) worst
      */
-    private List<Integer> inorderRecursive(TreeNode root) {
+    private List<Integer> postorderRecursive(TreeNode root) {
         if (root == null) return Collections.emptyList();
 
-        var inorder = new ArrayList<Integer>();
-        recursiveTraversal(root, inorder);
-        return inorder;
+        List<Integer> postorder = new ArrayList<>();
+        recursiveTraversal(root, postorder);
+        return postorder;
     }
 
     private void recursiveTraversal(TreeNode node, List<Integer> traversal) {
         if (node == null) return;
 
         recursiveTraversal(node.left, traversal);
-        traversal.add(node.val);
         recursiveTraversal(node.right, traversal);
+        traversal.add(node.val);
     }
 
     /**
-     * Traversal: DFS, depth-first inorder
+     * Traversal: DFS, depth-first postorder
      * Algorithm: iterative
      * Complexity: time -> O(N), space -> O(logN) when balanced, O(N) worst
      */
-    private List<Integer> inorderIterative(TreeNode root) {
+    private List<Integer> postorderIterative(TreeNode root) {
         if (root == null) return Collections.emptyList();
 
         List<Integer> traversal = new ArrayList<>();
         Deque<TreeNode> stack = new ArrayDeque<>();
 
         TreeNode node = root;
-        while (node != null || !stack.isEmpty()) {
+        while (true) {
             while (node != null) {
+                stack.push(node);
                 stack.push(node);
                 node = node.left;
             }
-            node = stack.pop();
-            traversal.add(node.val);
-            node = node.right;
-        }
 
-        return traversal;
+            if (stack.isEmpty()) return traversal;
+
+            node = stack.pop();
+            if (!stack.isEmpty() && stack.peek() == node) {
+                node = node.right;
+            } else {
+                traversal.add(node.val);
+                node = null;
+            }
+        }
     }
 }

@@ -32,7 +32,7 @@ public class Solution {
     }
 
     /**
-     * Traversal: depth-first inorder
+     * Traversal: DFS, depth-first inorder
      * Algorithm: Morris (without recursion & stack)
      * Complexity: time -> O(N), space -> O(1)
      */

@@ -32,7 +32,7 @@ public class Solution {
     }
 
     /**
-     * Traversal: depth-first preorder
+     * Traversal: DFS, depth-first preorder
      * Algorithm: Morris (without recursion & stack)
      * Complexity: time -> O(N), space -> O(1)
      */
@@ -51,13 +51,13 @@ public class Solution {
                 current = current.right;
             } else {
                 // step 2
-                // find the inorder predecessor of current node
+                // find the preorder predecessor of current node
                 predecessor = current.left;
                 while (predecessor.right != null && predecessor.right != current) {
                     predecessor = predecessor.right;
                 }
 
-                // make current as right child of its inorder predecessor
+                // make current as right child of its preorder predecessor
                 if (predecessor.right == null) {
                     // the only difference from inorder traversal
                     result.add(current.val);

@@ -35,7 +35,7 @@ public class Practice {
     }
 
     /**
-     * Traversal: depth-first preorder
+     * Traversal: DFS, depth-first preorder
      * Algorithm: recursive
      * Complexity: time -> O(N), space -> O(logN) when balanced, O(N) worst
      */
@@ -56,7 +56,7 @@ public class Practice {
     }
 
     /**
-     * Traversal: depth-first preorder
+     * Traversal: DFS, depth-first preorder
      * Algorithm: iterative
      * Complexity: time -> O(N), space -> O(logN) when balanced, O(N) worst
      */

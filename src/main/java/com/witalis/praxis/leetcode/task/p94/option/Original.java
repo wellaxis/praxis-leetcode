@@ -35,7 +35,7 @@ public class Original {
     }
 
     /**
-     * Traversal: depth-first inorder
+     * Traversal: DFS, depth-first inorder
      * Algorithm: recursive
      * Complexity: time -> O(N), space -> O(logN) when balanced, O(N) worst
      */
@@ -56,7 +56,7 @@ public class Original {
     }
 
     /**
-     * Traversal: depth-first inorder
+     * Traversal: DFS, depth-first inorder
      * Algorithm: iterative
      * Complexity: time -> O(N), space -> O(logN) when balanced, O(N) worst
      */
