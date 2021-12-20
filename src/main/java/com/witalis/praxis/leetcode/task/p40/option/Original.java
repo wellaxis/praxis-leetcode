@@ -1,4 +1,4 @@
-package com.witalis.praxis.leetcode.task.p39.option;
+package com.witalis.praxis.leetcode.task.p40.option;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -8,9 +8,9 @@ import lombok.extern.slf4j.Slf4j;
 import java.util.*;
 
 /**
- * ID: 39
- * Name: Combination Sum
- * URL: https://leetcode.com/problems/combination-sum/
+ * ID: 40
+ * Name: Combination Sum II
+ * URL: https://leetcode.com/problems/combination-sum-ii/
  * Note: the real test solution (code writing with timing)
  */
 @Slf4j
@@ -22,10 +22,11 @@ public class Original {
     private int target;
 
     public List<List<Integer>> process() {
-        return combinationSum(candidates, target);
+        return combinationSum2(candidates, target);
+
     }
 
-    public List<List<Integer>> combinationSum(int[] candidates, int target) {
+    public List<List<Integer>> combinationSum2(int[] candidates, int target) {
         if (candidates == null || candidates.length == 0) return Collections.emptyList();
 
         List<Integer> options = Arrays.stream(candidates)
@@ -45,12 +46,16 @@ public class Original {
             combinations.add(new ArrayList<>(combination));
         } else {
             for (int i = j; i < options.size(); i++) {
-                int option = options.get(i);
+                Integer option = options.get(i);
+
+                if (i > j && option.equals(options.get(i - 1))) {
+                    continue;
+                }
 
                 combination.push(option);
                 target -= option;
 
-                recursiveCombination(target, options, combinations, combination, i);
+                recursiveCombination(target, options, combinations, combination, i + 1);
 
                 target += option;
                 combination.pop();
