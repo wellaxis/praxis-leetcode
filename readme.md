@@ -11,9 +11,10 @@ Goal of project
 Installation
 ------------
 
-It's required to setup application environment variable:
+It's required to set up application environment variables:
 ```sh
 $ JAVA_HOME = [path]\java\jdk{version}
+$ LEETCODE_HOME = [path]\praxis-leetcode
 ```
 ***
 
