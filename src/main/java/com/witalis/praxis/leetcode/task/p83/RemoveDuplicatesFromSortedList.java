@@ -1,8 +1,8 @@
-package com.witalis.praxis.leetcode.task.p24;
+package com.witalis.praxis.leetcode.task.p83;
 
 import com.witalis.praxis.leetcode.task.LeetCodeTask;
-import com.witalis.praxis.leetcode.task.p24.content.*;
-import com.witalis.praxis.leetcode.task.p24.option.*;
+import com.witalis.praxis.leetcode.task.p83.content.*;
+import com.witalis.praxis.leetcode.task.p83.option.*;
 import com.witalis.praxis.leetcode.utils.LeetCode;
 import com.witalis.praxis.leetcode.utils.TaskRevision;
 
@@ -12,31 +12,32 @@ import static com.witalis.praxis.leetcode.utils.TaskTag.*;
 
 @Slf4j
 @LeetCode(
-    id = 24,
-    description = "Swap Nodes in Pairs",
+    id = 83,
+    description = "Remove Duplicates from Sorted List",
     tags = {LINKED_LIST}
 )
-public class SwapNodesInPairs extends LeetCodeTask<ListNode> {
-    public static final int NUMBER = 101;
+public class RemoveDuplicatesFromSortedList extends LeetCodeTask<ListNode> {
+    public static final int LEN = 300;
+    public static final int VALUE = 100;
     private ListNode head;
 
     public static final String INFORMATION = """
 
-        Description:
-            Given a linked list, swap every two adjacent nodes and return its head.
-            You must solve the problem without modifying the values in the list's nodes
-            (i.e., only nodes themselves may be changed.)
-        Example:
-            Input: head = [1,2,3,4]
-            Output: [2,1,4,3]""";
+        Given the head of a sorted linked list,
+            delete all duplicates such that each element appears only once.
+            Return the linked list sorted as well.
 
-    public SwapNodesInPairs(int id, String description, TaskRevision revision) {
+        Example:
+            Input: head = [1,1,2,3,3]
+            Output: [1,2,3]""";
+
+    public RemoveDuplicatesFromSortedList(int id, String description, TaskRevision revision) {
         super(id, description, revision);
         initialization();
     }
 
     private void initialization() {
-        this.head = ListNode.initList(NUMBER);
+        this.head = ListNode.initList(LEN, VALUE);
 
         log.info("Head is {}", head);
     }
@@ -46,21 +47,21 @@ public class SwapNodesInPairs extends LeetCodeTask<ListNode> {
         return INFORMATION;
     }
 
-    // time = 426 ms
+    // time = 538 ms
     @Override
     protected ListNode original() {
         var original = new Original(head.clone());
         return original.process();
     }
 
-    // time = 420 ms
+    // time = 489 ms
     @Override
     protected ListNode practice() {
         var practice = new Practice(head.clone());
         return practice.process();
     }
 
-    // time = 416 ms
+    // time = 481 ms
     @Override
     protected ListNode solution() {
         var solution = new Solution(head.clone());
