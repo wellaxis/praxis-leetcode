@@ -24,14 +24,12 @@ public class SymmetricTree extends LeetCodeTask<Boolean> {
 
     public static final String INFORMATION = """
 
-        Given the roots of two binary trees p and q,
-            write a function to check if they are the same or not.
-
-        Two binary trees are considered the same if
-            they are structurally identical, and the nodes have the same value.
+        Given the root of a binary tree,
+            check whether it is a mirror of itself
+            (i.e., symmetric around its center).
 
         Example:
-            Input: p = [1,2,3], q = [1,2,3]
+            Input: root = [1,2,2,3,4,4,3]
             Output: true""";
 
     public SymmetricTree(int id, String description, TaskRevision revision) {
@@ -52,21 +50,21 @@ public class SymmetricTree extends LeetCodeTask<Boolean> {
         return INFORMATION;
     }
 
-    // time = 587 ms
+    // time = 565 ms
     @Override
     protected Boolean original() {
         var original = new Original(root);
         return original.process();
     }
 
-    // time = 549 ms
+    // time = 438 ms
     @Override
     protected Boolean practice() {
         var practice = new Practice(root);
         return practice.process();
     }
 
-    // time = 520 ms
+    // time = 512 ms
     @Override
     protected Boolean solution() {
         var solution = new Solution(root);
