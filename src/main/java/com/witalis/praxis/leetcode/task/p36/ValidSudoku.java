@@ -6,6 +6,8 @@ import com.witalis.praxis.leetcode.utils.LeetCode;
 import com.witalis.praxis.leetcode.utils.TaskRevision;
 
 import lombok.extern.slf4j.Slf4j;
+
+import java.util.Arrays;
 import java.util.concurrent.ThreadLocalRandom;
 
 @Slf4j
@@ -59,7 +61,7 @@ public class ValidSudoku extends LeetCodeTask<Boolean> {
             {'.','.','.','.','8','.','.','7','9'}
         };
 
-        log.info("Board is {}", board);
+        log.info("Board is {}", Arrays.toString(board));
     }
 
     private String generation(int origin, int bound) {
