@@ -9,8 +9,14 @@ import com.witalis.praxis.leetcode.utils.TaskRevision;
 import lombok.extern.slf4j.Slf4j;
 import java.util.concurrent.ThreadLocalRandom;
 
+import static com.witalis.praxis.leetcode.utils.TaskTag.*;
+
 @Slf4j
-@LeetCode(id = 19, description = "Remove Nth Node From End of List")
+@LeetCode(
+    id = 19,
+    description = "Remove Nth Node From End of List",
+    tags = {LINKED_LIST, TWO_POINTERS}
+)
 public class RemoveNthNodeFromEndOfList extends LeetCodeTask<ListNode> {
     public static final int NUMBER = 31;
 

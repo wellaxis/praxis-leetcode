@@ -7,6 +7,8 @@ Description
 > remove the nth node from the end of the list
 > and return its head.
 
+![list.png](image/list.png)
+
 Example
 -------
 
@@ -18,9 +20,9 @@ Output: [1,2,3,5]
 Solution
 --------
 
-| Task | Solution |
-| :------: | :------ |
-| 19 | [Remove Nth Node From End of List][solution] |
+| Task | Solution                                     |
+|:----:|:---------------------------------------------|
+|  19  | [Remove Nth Node From End of List][solution] |
 
 
 [leetcode]: <http://leetcode.com/>
