@@ -21,8 +21,8 @@ Output: 4
 Solution
 --------
 
-| Task | Solution |
-|:----:| :------ |
+| Task | Solution                  |
+|:----:|:--------------------------|
 | 136  | [Single Number][solution] |
 
 
