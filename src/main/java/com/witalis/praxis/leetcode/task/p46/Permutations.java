@@ -9,8 +9,14 @@ import lombok.extern.slf4j.Slf4j;
 import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
 
+import static com.witalis.praxis.leetcode.utils.TaskTag.*;
+
 @Slf4j
-@LeetCode(id = 46, description = "Permutations")
+@LeetCode(
+    id = 46,
+    description = "Permutations",
+    tags = {ARRAY, BACKTRACKING}
+)
 public class Permutations extends LeetCodeTask<List<List<Integer>>> {
     public static final int LEN = 6;
     private int[] numbers;

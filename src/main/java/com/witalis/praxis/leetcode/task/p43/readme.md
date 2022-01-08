@@ -20,9 +20,9 @@ Output: "56088"
 Solution
 --------
 
-| Task | Solution |
-| :------: | :------ |
-| 43 | [Multiply Strings][solution] |
+| Task | Solution                     |
+|:----:|:-----------------------------|
+|  43  | [Multiply Strings][solution] |
 
 
 [leetcode]: <http://leetcode.com/>

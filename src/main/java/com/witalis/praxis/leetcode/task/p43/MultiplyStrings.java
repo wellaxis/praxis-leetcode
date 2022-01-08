@@ -8,8 +8,14 @@ import com.witalis.praxis.leetcode.utils.TaskRevision;
 import lombok.extern.slf4j.Slf4j;
 import java.util.concurrent.ThreadLocalRandom;
 
+import static com.witalis.praxis.leetcode.utils.TaskTag.*;
+
 @Slf4j
-@LeetCode(id = 43, description = "Multiply Strings")
+@LeetCode(
+    id = 43,
+    description = "Multiply Strings",
+    tags = {MATH, STRING, SIMULATION}
+)
 public class MultiplyStrings extends LeetCodeTask<String> {
     public static final int LEN = 200;
     private String number1;

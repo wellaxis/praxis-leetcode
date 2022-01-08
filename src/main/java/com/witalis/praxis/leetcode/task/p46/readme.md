@@ -18,9 +18,9 @@ Output: [[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]
 Solution
 --------
 
-| Task | Solution |
-| :------: | :------ |
-| 46 | [Permutations][solution] |
+| Task | Solution                 |
+|:----:|:-------------------------|
+|  46  | [Permutations][solution] |
 
 
 [leetcode]: <http://leetcode.com/>
