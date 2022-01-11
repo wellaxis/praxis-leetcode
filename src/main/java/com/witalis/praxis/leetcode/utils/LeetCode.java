@@ -13,5 +13,6 @@ import java.lang.annotation.Target;
 public @interface LeetCode {
     int id() default 0;
     String description() default "The leetCode task";
+    TaskDifficulty difficulty() default TaskDifficulty.EASY;
     TaskTag[] tags() default {};
 }

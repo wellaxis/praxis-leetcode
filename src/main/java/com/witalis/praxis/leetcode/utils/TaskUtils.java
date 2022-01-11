@@ -70,7 +70,7 @@ public class TaskUtils {
 
     @SneakyThrows
     private ITask resolve() {
-        final var packageName = "com.witalis.praxis.leetcode.task.p" + code;
+        final var packageName = "com.witalis.praxis.leetcode.task.h*.p" + code;
         final var filter = new AnnotationTypeFilter(LeetCode.class);
         final var provider = new ClassPathScanningCandidateComponentProvider(
             true,
