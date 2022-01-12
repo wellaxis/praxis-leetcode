@@ -1,21 +1,22 @@
-package com.witalis.praxis.leetcode.task.p181;
+package com.witalis.praxis.leetcode.task.h2.p181;
 
 import com.witalis.praxis.leetcode.task.LeetCodeTask;
-import com.witalis.praxis.leetcode.task.p181.option.*;
+import com.witalis.praxis.leetcode.task.h2.p181.option.*;
 import com.witalis.praxis.leetcode.utils.LeetCode;
+import com.witalis.praxis.leetcode.utils.TaskDifficulty;
 import com.witalis.praxis.leetcode.utils.TaskRevision;
 
 import lombok.extern.slf4j.Slf4j;
-
 import java.util.Collections;
 import java.util.List;
 
-import static com.witalis.praxis.leetcode.utils.TaskTag.DATABASE;
+import static com.witalis.praxis.leetcode.utils.TaskTag.*;
 
 @Slf4j
 @LeetCode(
     id = 181,
     description = "Employees Earning More Than Their Managers",
+    difficulty = TaskDifficulty.EASY,
     tags = {DATABASE}
 )
 public class EmployeesEarningMoreThanTheirManagers extends LeetCodeTask<String> {

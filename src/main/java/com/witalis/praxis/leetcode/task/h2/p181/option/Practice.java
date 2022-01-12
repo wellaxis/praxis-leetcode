@@ -1,4 +1,4 @@
-package com.witalis.praxis.leetcode.task.p181.option;
+package com.witalis.praxis.leetcode.task.h2.p181.option;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -22,11 +22,13 @@ public class Practice {
     public String employeesEarning() {
         return
             """
+
             SELECT e.name AS employee
             FROM   employee e,
                    employee m
             WHERE  m.id = e.managerid
             AND    e.salary > m.salary
+
             """;
     }
 }
