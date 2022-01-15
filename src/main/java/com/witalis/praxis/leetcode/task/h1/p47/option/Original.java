@@ -1,4 +1,4 @@
-package com.witalis.praxis.leetcode.task.p46.option;
+package com.witalis.praxis.leetcode.task.h1.p47.option;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -8,9 +8,9 @@ import lombok.extern.slf4j.Slf4j;
 import java.util.*;
 
 /**
- * ID: 46
- * Name: Permutations
- * URL: https://leetcode.com/problems/permutations/
+ * ID: 47
+ * Name: Permutations II
+ * URL: https://leetcode.com/problems/permutations-ii/
  * Note: the real test solution (code writing with timing)
  */
 @Slf4j
@@ -21,11 +21,13 @@ public class Original {
     private int[] numbers;
 
     public List<List<Integer>> process() {
-        return permute(numbers);
+        return permuteUnique(numbers);
     }
 
-    public List<List<Integer>> permute(int[] nums) {
+    public List<List<Integer>> permuteUnique(int[] nums) {
         if (nums == null || nums.length == 0) return Collections.emptyList();
+
+        Arrays.sort(nums);
 
         Set<List<Integer>> permutations = new HashSet<>();
         permutation(
@@ -37,12 +39,12 @@ public class Original {
     }
 
     private void permutation(Set<List<Integer>> permutations, List<Integer> prefix, List<Integer> suffix) {
-        if (suffix.size() == 1) {
-            prefix.addAll(suffix);
+        if (suffix.isEmpty()) {
             permutations.add(prefix);
         } else {
-            for (int i = 0; i < suffix.size(); i++) {
-                Integer number = suffix.get(i);
+            Integer previous = null;
+            for (Integer number: suffix) {
+                if (previous != null && number.intValue() == previous.intValue()) continue;
 
                 List<Integer> nextPrefix = new ArrayList<>(prefix);
                 nextPrefix.add(number);
@@ -51,6 +53,8 @@ public class Original {
                 nextSuffix.remove(number);
 
                 permutation(permutations, nextPrefix, nextSuffix);
+
+                previous = number;
             }
         }
     }

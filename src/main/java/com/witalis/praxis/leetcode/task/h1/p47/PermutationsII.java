@@ -1,8 +1,9 @@
-package com.witalis.praxis.leetcode.task.p46;
+package com.witalis.praxis.leetcode.task.h1.p47;
 
 import com.witalis.praxis.leetcode.task.LeetCodeTask;
-import com.witalis.praxis.leetcode.task.p46.option.*;
+import com.witalis.praxis.leetcode.task.h1.p47.option.*;
 import com.witalis.praxis.leetcode.utils.LeetCode;
+import com.witalis.praxis.leetcode.utils.TaskDifficulty;
 import com.witalis.praxis.leetcode.utils.TaskRevision;
 
 import lombok.extern.slf4j.Slf4j;
@@ -13,25 +14,26 @@ import static com.witalis.praxis.leetcode.utils.TaskTag.*;
 
 @Slf4j
 @LeetCode(
-    id = 46,
-    description = "Permutations",
+    id = 47,
+    description = "Permutations II",
+    difficulty = TaskDifficulty.MEDIUM,
     tags = {ARRAY, BACKTRACKING}
 )
-public class Permutations extends LeetCodeTask<List<List<Integer>>> {
-    public static final int LEN = 6;
+public class PermutationsII extends LeetCodeTask<List<List<Integer>>> {
+    public static final int LEN = 8;
+    public static final int VALUE = 10;
     private int[] numbers;
 
     public static final String INFORMATION = """
 
-        Given an array nums of distinct integers,
-            return all the possible permutations.
-            You can return the answer in any order.
+        Given a collection of numbers, nums, that might contain duplicates,
+            return all possible unique permutations in any order.
 
         Example:
-            Input: nums = [1,2,3]
-            Output: [[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]""";
+            Input: nums = [1,1,2]
+            Output: [[1,1,2],[1,2,1],[2,1,1]]""";
 
-    public Permutations(int id, String description, TaskRevision revision) {
+    public PermutationsII(int id, String description, TaskRevision revision) {
         super(id, description, revision);
         initialization();
     }
@@ -43,17 +45,13 @@ public class Permutations extends LeetCodeTask<List<List<Integer>>> {
     }
 
     private int[] generate() {
-        final int origin = -10;
-        final int bound = 10;
-
         return ThreadLocalRandom.current()
             .ints(
                 ThreadLocalRandom.current()
                     .nextInt(1, LEN + 1),
-                origin,
-                bound
+                -VALUE,
+                VALUE
             )
-            .distinct()
             .toArray();
     }
 
@@ -62,21 +60,21 @@ public class Permutations extends LeetCodeTask<List<List<Integer>>> {
         return INFORMATION;
     }
 
-    // time = 3281 ms
+    // time = 781 ms
     @Override
     protected List<List<Integer>> original() {
         var original = new Original(numbers.clone());
         return original.process();
     }
 
-    // time = 4541 ms
+    // time = 433 ms
     @Override
     protected List<List<Integer>> practice() {
         var practice = new Practice(numbers.clone());
         return practice.process();
     }
 
-    // time = 1715 ms
+    // time = 424 ms
     @Override
     protected List<List<Integer>> solution() {
         var solution = new Solution(numbers.clone());
