@@ -18,6 +18,27 @@ $ LEETCODE_HOME = [path]\praxis-leetcode
 ```
 ***
 
+Invocation
+----------
+
+To invoke the required Leetcode's task it's necessary to specify
+task properties into `application.yml` configuration file:
+```yml
+task:
+  type: leetcode
+  code: 25
+  mode: B
+```
+In this case we run LeetCode's task #25 in `B` mode.
+
+> There are 4 modes:
+* O - the real test solution (code writing with timing)
+* P - try to find the better solution (without timing)
+* S - the best found solution (external programming)
+* B - the benchmark mode (to compare O,P,S results)
+
+***
+
 ## Leetcode
 |   ID | Task                                                                                                                                                                    | Status |                                       Practice                                       |                                       Solution                                       |
 |-----:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------:|:------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------:|
