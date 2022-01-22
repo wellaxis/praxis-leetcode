@@ -36,7 +36,6 @@ In this case we run LeetCode's task #25 in `B` mode.
 * P: `Practice` - try to find the better solution (without timing)
 * S: `Solution` - the best found solution (external programming)
 * B: `Benchmark` - the benchmark mode (to compare O,P,S results)
-
 ***
 
 ## Leetcode
