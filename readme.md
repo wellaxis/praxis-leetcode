@@ -4,7 +4,7 @@ Goal of project
 ---------------
 
 > It is necessary to resolve and develop
-> the different java exercises
+> the different exercises (Java, SQL, Kotlin)
 > under [LeetCode][leetcode] tasks.
 ***
 
@@ -126,7 +126,7 @@ In this case we run LeetCode's task #25 in `B` mode.
 Structure
 ---------
 
-- leetcode [root application directory]
+- praxis-leetcode [root application directory]
     - bin [folder contains batch files]
     - log [folder contains module logs]
     - res [folder contains results of run]
