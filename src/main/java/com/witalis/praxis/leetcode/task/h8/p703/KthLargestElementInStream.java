@@ -18,7 +18,7 @@ import static com.witalis.praxis.leetcode.utils.TaskTag.*;
     difficulty = TaskDifficulty.EASY,
     tags = {TREE, DESIGN, BINARY_SEARCH_TREE, HEAP, BINARY_TREE, DATA_STREAM}
 )
-public class KthLargestElementInStream extends LeetCodeTask<Integer> {
+public class KthLargestElementInStream extends LeetCodeTask<int[]> {
     public static final int VALUE = 10_000;
     public static final int LEN = 10_000;
     public static final int EXTRA_LEN = 10;
@@ -84,21 +84,21 @@ public class KthLargestElementInStream extends LeetCodeTask<Integer> {
 
     // time = 10438 ms
     @Override
-    protected Integer original() {
+    protected int[] original() {
         var original = new Original(k, numbers.clone(), extra.clone());
         return original.process();
     }
 
     // time = 3877 ms
     @Override
-    protected Integer practice() {
+    protected int[] practice() {
         var practice = new Practice(k, numbers.clone(), extra.clone());
         return practice.process();
     }
 
     // time = 3158 ms
     @Override
-    protected Integer solution() {
+    protected int[] solution() {
         var solution = new Solution(k, numbers.clone(), extra.clone());
         return solution.process();
     }

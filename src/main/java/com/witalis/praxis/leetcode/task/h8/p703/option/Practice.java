@@ -6,7 +6,6 @@ import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.*;
-import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * ID: 703
@@ -23,7 +22,7 @@ public class Practice {
     private int[] numbers;
     private int[] extra;
 
-    public Integer process() {
+    public int[] process() {
         KthLargest kthLargest = new KthLargest(k, numbers);
         return kthLargestScenario(kthLargest, extra);
     }
@@ -50,15 +49,14 @@ public class Practice {
         }
     }
 
-    public int kthLargestScenario(KthLargest kthLargest, int[] extra) {
-        if (kthLargest == null || extra == null) return 0;
+    public int[] kthLargestScenario(KthLargest kthLargest, int[] extra) {
+        if (kthLargest == null || extra == null) return new int[0];
 
-        AtomicInteger kth = new AtomicInteger();
-        for (int element : extra) {
-            var add = kthLargest.add(element);
-            kth.set(add);
+        int[] result = new int[extra.length];
+        for (int i = 0; i < extra.length; i++) {
+            result[i] = kthLargest.add(extra[i]);
         }
 
-        return kth.get();
+        return result;
     }
 }

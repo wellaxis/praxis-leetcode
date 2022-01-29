@@ -10,7 +10,6 @@ import lombok.extern.slf4j.Slf4j;
 
 import static com.witalis.praxis.leetcode.utils.TaskTag.*;
 
-
 @Slf4j
 @LeetCode(
     id = 1640,
