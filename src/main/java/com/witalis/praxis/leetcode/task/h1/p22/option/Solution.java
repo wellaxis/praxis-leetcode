@@ -31,8 +31,8 @@ public class Solution {
             ans.add("");
         } else {
             for (int c = 0; c < n; ++c)
-                for (String left: generateParenthesis(c))
-                    for (String right: generateParenthesis(n-1-c))
+                for (String left : generateParenthesis(c))
+                    for (String right : generateParenthesis(n - 1 - c))
                         ans.add("(" + left + ")" + right);
         }
         return ans;
