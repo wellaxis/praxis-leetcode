@@ -155,6 +155,12 @@ public abstract class LeetCodeTask<T> implements ITask, EnvironmentAware {
                 builder.append(Arrays.toString(array)).append(' ');
             }
             return builder.toString();
+        } else if (result instanceof char[][] matrix) {
+            var builder = new StringBuilder();
+            for (char[] array : matrix) {
+                builder.append(Arrays.toString(array)).append(' ');
+            }
+            return builder.toString();
         } else {
             return result.toString();
         }

@@ -8,7 +8,6 @@ import com.witalis.praxis.leetcode.utils.TaskRevision;
 
 import lombok.extern.slf4j.Slf4j;
 import java.util.Arrays;
-import java.util.concurrent.ThreadLocalRandom;
 
 import static com.witalis.praxis.leetcode.utils.TaskTag.*;
 
@@ -68,22 +67,10 @@ public class ValidSudoku extends LeetCodeTask<Boolean> {
             {'.','.','.','.','8','.','.','7','9'}
         };
 
-        log.info("Board is {}", Arrays.toString(board));
-    }
-
-    private String generation(int origin, int bound) {
-        int leftLimit = 97; // letter 'a'
-        int rightLimit = 122; // letter 'z'
-
-        var random = ThreadLocalRandom.current();
-        var length = random.nextInt(origin, bound);
-        StringBuilder buffer = new StringBuilder(length);
-        for (int i = 0; i < length; i++) {
-            int randomLimitedInt = leftLimit + (int)
-                (random.nextFloat() * (rightLimit - leftLimit + 1));
-            buffer.append((char) randomLimitedInt);
+        log.info("Board is:");
+        for (char[] array : board) {
+            log.info("{}", Arrays.toString(array));
         }
-        return buffer.toString();
     }
 
     @Override
