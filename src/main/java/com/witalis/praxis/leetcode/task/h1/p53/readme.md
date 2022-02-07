@@ -1,4 +1,4 @@
-# [LeetCode][leetcode] task # 35: [Maximum Subarray][task]
+# [LeetCode][leetcode] task # 53: [Maximum Subarray][task]
 
 Description
 -----------
