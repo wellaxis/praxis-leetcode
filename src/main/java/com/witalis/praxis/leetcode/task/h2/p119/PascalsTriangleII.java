@@ -1,7 +1,7 @@
-package com.witalis.praxis.leetcode.task.h2.p118;
+package com.witalis.praxis.leetcode.task.h2.p119;
 
 import com.witalis.praxis.leetcode.task.LeetCodeTask;
-import com.witalis.praxis.leetcode.task.h2.p118.option.*;
+import com.witalis.praxis.leetcode.task.h2.p119.option.*;
 import com.witalis.praxis.leetcode.utils.LeetCode;
 import com.witalis.praxis.leetcode.utils.TaskDifficulty;
 import com.witalis.praxis.leetcode.utils.TaskRevision;
@@ -14,19 +14,20 @@ import static com.witalis.praxis.leetcode.utils.TaskTag.*;
 
 @Slf4j
 @LeetCode(
-    id = 118,
+    id = 119,
     description = "Pascal's Triangle",
     difficulty = TaskDifficulty.EASY,
     tags = {ARRAY, DYNAMIC_PROGRAMMING}
 )
-public class PascalsTriangle extends LeetCodeTask<List<List<Integer>>> {
-    public static final int LEN = 30;
-    private int rows;
+public class PascalsTriangleII extends LeetCodeTask<List<Integer>> {
+    public static final int LEN = 33;
+    private int index;
 
     public static final String INFORMATION = """
 
-        Given an integer numRows,
-            return the first numRows of Pascal's triangle.
+        Given an integer rowIndex,
+            return the rowIndex th (0-indexed) row
+            of the Pascal's triangle.
 
         In Pascal's triangle, each number is the sum of
             the two numbers directly above it as shown:
@@ -42,18 +43,18 @@ public class PascalsTriangle extends LeetCodeTask<List<List<Integer>>> {
             1   4   6   4   1
 
         Example:
-            Input: numRows = 5
-            Output: [[1],[1,1],[1,2,1],[1,3,3,1],[1,4,6,4,1]]""";
+            Input: numRows = 3
+            Output: [1,3,3,1]""";
 
-    public PascalsTriangle(int id, String description, TaskRevision revision) {
+    public PascalsTriangleII(int id, String description, TaskRevision revision) {
         super(id, description, revision);
         initialization();
     }
 
     private void initialization() {
-        this.rows = ThreadLocalRandom.current().nextInt(1, LEN + 1);
+        this.index = ThreadLocalRandom.current().nextInt(1, LEN + 1);
 
-        log.info("Number of rows is '{}'", rows);
+        log.info("Index of row is '{}'", index);
     }
 
     @Override
@@ -61,24 +62,24 @@ public class PascalsTriangle extends LeetCodeTask<List<List<Integer>>> {
         return INFORMATION;
     }
 
-    // time = 566 ms
+    // time = 925 ms
     @Override
-    protected List<List<Integer>> original() {
-        var original = new Original(rows);
+    protected List<Integer> original() {
+        var original = new Original(index);
         return original.process();
     }
 
-    // time = 437 ms
+    // time = 805 ms
     @Override
-    protected List<List<Integer>> practice() {
-        var practice = new Practice(rows);
+    protected List<Integer> practice() {
+        var practice = new Practice(index);
         return practice.process();
     }
 
-    // time = 514 ms
+    // time = 710 ms
     @Override
-    protected List<List<Integer>> solution() {
-        var solution = new Solution(rows);
+    protected List<Integer> solution() {
+        var solution = new Solution(index);
         return solution.process();
     }
 }
