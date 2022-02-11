@@ -4,6 +4,7 @@ import com.witalis.praxis.leetcode.task.LeetCodeTask;
 import com.witalis.praxis.leetcode.task.h1.p83.content.*;
 import com.witalis.praxis.leetcode.task.h1.p83.option.*;
 import com.witalis.praxis.leetcode.utils.LeetCode;
+import com.witalis.praxis.leetcode.utils.TaskDifficulty;
 import com.witalis.praxis.leetcode.utils.TaskRevision;
 
 import lombok.extern.slf4j.Slf4j;
@@ -14,6 +15,7 @@ import static com.witalis.praxis.leetcode.utils.TaskTag.*;
 @LeetCode(
     id = 83,
     description = "Remove Duplicates from Sorted List",
+    difficulty = TaskDifficulty.EASY,
     tags = {LINKED_LIST}
 )
 public class RemoveDuplicatesFromSortedList extends LeetCodeTask<ListNode> {
