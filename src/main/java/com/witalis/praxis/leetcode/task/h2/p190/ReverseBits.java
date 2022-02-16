@@ -61,7 +61,7 @@ public class ReverseBits extends LeetCodeTask<Integer> {
         }
         this.bits = builder.toString();
 
-        log.info("The 32 bits unsigned integer is {}", bits);
+        log.info("The 32 bits of integer is {}", bits);
     }
 
     @Override
