@@ -1,37 +1,39 @@
-package com.witalis.praxis.leetcode.task.h1.p96;
+package com.witalis.praxis.leetcode.task.h1.p95;
 
 import com.witalis.praxis.leetcode.task.LeetCodeTask;
-import com.witalis.praxis.leetcode.task.h1.p96.option.*;
+import com.witalis.praxis.leetcode.task.h1.p95.content.*;
+import com.witalis.praxis.leetcode.task.h1.p95.option.*;
 import com.witalis.praxis.leetcode.utils.LeetCode;
 import com.witalis.praxis.leetcode.utils.TaskDifficulty;
 import com.witalis.praxis.leetcode.utils.TaskRevision;
 
 import lombok.extern.slf4j.Slf4j;
+import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
 
 import static com.witalis.praxis.leetcode.utils.TaskTag.*;
 
 @Slf4j
 @LeetCode(
-    id = 96,
-    description = "Unique Binary Search Trees",
+    id = 95,
+    description = "Unique Binary Search Trees II",
     difficulty = TaskDifficulty.MEDIUM,
-    tags = {MATH, DYNAMIC_PROGRAMMING, TREE, BINARY_TREE, BINARY_SEARCH_TREE}
+    tags = {DYNAMIC_PROGRAMMING, BACKTRACKING, TREE, BINARY_TREE, BINARY_SEARCH_TREE}
 )
-public class UniqueBinarySearchTrees extends LeetCodeTask<Integer> {
-    public static final int LEN = 19;
+public class UniqueBinarySearchTreesII extends LeetCodeTask<List<TreeNode>> {
+    public static final int LEN = 8;
     private int number;
 
     public static final String INFORMATION = """
 
-        Given an integer n, return the number of structurally unique BST's (binary search trees)
-            which has exactly n nodes of unique values from 1 to n.
+        Given an integer n, return all the structurally unique BST's (binary search trees),
+            which has exactly n nodes of unique values from 1 to n. Return the answer in any order.
 
         Example:
             Input: n = 3
-            Output: 5""";
+            Output: [[1,null,2,null,3],[1,null,3,2],[2,1,3],[3,1,null,null,2],[3,2,null,1]]""";
 
-    public UniqueBinarySearchTrees(int id, String description, TaskRevision revision) {
+    public UniqueBinarySearchTreesII(int id, String description, TaskRevision revision) {
         super(id, description, revision);
         initialization();
     }
@@ -47,23 +49,23 @@ public class UniqueBinarySearchTrees extends LeetCodeTask<Integer> {
         return INFORMATION;
     }
 
-    // time = 457 ms
+    // time = 1158049 ms, time limit exceeded
     @Override
-    protected Integer original() {
+    protected List<TreeNode> original() {
         var original = new Original(number);
         return original.process();
     }
 
-    // time = 422 ms
+    // time = 2267 ms
     @Override
-    protected Integer practice() {
+    protected List<TreeNode> practice() {
         var practice = new Practice(number);
         return practice.process();
     }
 
-    // time = 419 ms
+    // time = 1033 ms
     @Override
-    protected Integer solution() {
+    protected List<TreeNode> solution() {
         var solution = new Solution(number);
         return solution.process();
     }
