@@ -1,7 +1,7 @@
-package com.witalis.praxis.leetcode.task.h3.p217;
+package com.witalis.praxis.leetcode.task.h3.p219;
 
 import com.witalis.praxis.leetcode.task.LeetCodeTask;
-import com.witalis.praxis.leetcode.task.h3.p217.option.*;
+import com.witalis.praxis.leetcode.task.h3.p219.option.*;
 import com.witalis.praxis.leetcode.utils.LeetCode;
 import com.witalis.praxis.leetcode.utils.TaskDifficulty;
 import com.witalis.praxis.leetcode.utils.TaskRevision;
@@ -13,46 +13,45 @@ import static com.witalis.praxis.leetcode.utils.TaskTag.*;
 
 @Slf4j
 @LeetCode(
-    id = 217,
-    description = "Contains Duplicate",
+    id = 219,
+    description = "Contains Duplicate II",
     difficulty = TaskDifficulty.EASY,
-    tags = {ARRAY, HASH_TABLE, SORTING}
+    tags = {ARRAY, HASH_TABLE, SLIDING_WINDOW}
 )
-public class ContainsDuplicate extends LeetCodeTask<Boolean> {
+public class ContainsDuplicateII extends LeetCodeTask<Boolean> {
     public static final int LEN = (int) Math.pow(10, 5);
     public static final int VALUE = (int) Math.pow(10, 9);
     private int[] numbers;
+    private int distance;
 
     public static final String INFORMATION = """
 
-        Given an integer array nums, return true
-            if any value appears at least twice in the array,
-            and return false if every element is distinct.
+        Given an integer array nums and an integer k,
+            return true if there are two distinct indices i and j
+            in the array such that nums[i] == nums[j] and abs(i - j) <= k.
 
         Example:
-            Input: nums = [1,2,3,1]
+            Input: nums = [1,2,3,1], k = 3
             Output: true""";
 
-    public ContainsDuplicate(int id, String description, TaskRevision revision) {
+    public ContainsDuplicateII(int id, String description, TaskRevision revision) {
         super(id, description, revision);
         initialization();
     }
 
     private void initialization() {
-        this.numbers = generate();
-
-        log.info("Numbers are {}", numbers);
-    }
-
-    private int[] generate() {
         var random = ThreadLocalRandom.current();
 
-        return random.ints(
+        this.numbers = random.ints(
                 random.nextInt(1, LEN + 1),
                 -VALUE,
                 VALUE + 1
             )
             .toArray();
+        this.distance = ThreadLocalRandom.current().nextInt(0, LEN + 1);
+
+        log.info("Numbers are {}", numbers);
+        log.info("Number K is {}", distance);
     }
 
     @Override
@@ -60,24 +59,24 @@ public class ContainsDuplicate extends LeetCodeTask<Boolean> {
         return INFORMATION;
     }
 
-    // time = 12303 ms
+    // time = 3847407 ms, time limit exceeded
     @Override
     protected Boolean original() {
-        var original = new Original(numbers.clone());
+        var original = new Original(numbers.clone(), distance);
         return original.process();
     }
 
-    // time = 7937 ms
+    // time = 7174 ms
     @Override
     protected Boolean practice() {
-        var practice = new Practice(numbers.clone());
+        var practice = new Practice(numbers.clone(), distance);
         return practice.process();
     }
 
-    // time = 5275 ms
+    // time = 6466 ms
     @Override
     protected Boolean solution() {
-        var solution = new Solution(numbers.clone());
+        var solution = new Solution(numbers.clone(), distance);
         return solution.process();
     }
 }
