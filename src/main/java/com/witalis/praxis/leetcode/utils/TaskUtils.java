@@ -5,7 +5,6 @@ import com.witalis.praxis.leetcode.task.LeetCodeTask;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 
 import org.springframework.beans.factory.annotation.Value;
@@ -48,8 +47,7 @@ public class TaskUtils {
      */
     public boolean invokeTask() {
         // step #1 - verify
-        var check = verification();
-        if (check) {
+        if (verification()) {
             // step #2 - resolve
             var task = resolve();
             // step #3 - invoke
@@ -68,7 +66,6 @@ public class TaskUtils {
         return true;
     }
 
-    @SneakyThrows
     private ITask resolve() {
         final var packageName = "com.witalis.praxis.leetcode.task.h*.p" + code;
         final var filter = new AnnotationTypeFilter(LeetCode.class);
@@ -94,7 +91,7 @@ public class TaskUtils {
                     }
                 }
             }
-        } catch (ClassNotFoundException e) {
+        } catch (Exception e) {
             log.error("Unable to resolve the task {}", type + '/' + code);
         }
         log.info("Task #{} has not been found. Maybe it's not implemented yet. Check code and try again.", code);

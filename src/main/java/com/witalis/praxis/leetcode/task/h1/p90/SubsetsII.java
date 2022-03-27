@@ -1,7 +1,7 @@
-package com.witalis.praxis.leetcode.task.h1.p78;
+package com.witalis.praxis.leetcode.task.h1.p90;
 
 import com.witalis.praxis.leetcode.task.LeetCodeTask;
-import com.witalis.praxis.leetcode.task.h1.p78.option.*;
+import com.witalis.praxis.leetcode.task.h1.p90.option.*;
 import com.witalis.praxis.leetcode.utils.LeetCode;
 import com.witalis.praxis.leetcode.utils.TaskDifficulty;
 import com.witalis.praxis.leetcode.utils.TaskRevision;
@@ -15,29 +15,29 @@ import static com.witalis.praxis.leetcode.utils.TaskTag.*;
 
 @Slf4j
 @LeetCode(
-    id = 78,
-    description = "Subsets",
+    id = 90,
+    description = "Subsets II",
     difficulty = TaskDifficulty.MEDIUM,
     tags = {ARRAY, BACKTRACKING, BIT_MANIPULATION}
 )
-public class Subsets extends LeetCodeTask<List<List<Integer>>> {
-    public static final int LEN = 10;
+public class SubsetsII extends LeetCodeTask<List<List<Integer>>> {
+    public static final int LEN = 20;
     public static final int VALUE = 10;
     private int[] numbers;
 
     public static final String INFORMATION = """
 
-        Given an integer array nums of unique elements,
+        Given an integer array nums that may contain duplicates,
             return all possible subsets (the power set).
 
         The solution set must not contain duplicate subsets.
             Return the solution in any order.
 
         Example:
-            Input: nums = [1,2,3]
-            Output: [[],[1],[2],[1,2],[3],[1,3],[2,3],[1,2,3]]""";
+            Input: nums = [1,2,2]
+            Output: [[],[1],[1,2],[1,2,2],[2],[2,2]]""";
 
-    public Subsets(int id, String description, TaskRevision revision) {
+    public SubsetsII(int id, String description, TaskRevision revision) {
         super(id, description, revision);
         initialization();
     }
@@ -47,7 +47,7 @@ public class Subsets extends LeetCodeTask<List<List<Integer>>> {
         this.numbers = random.ints(
             random.nextInt(1, LEN + 1),
             -VALUE, VALUE + 1
-        ).distinct().toArray();
+        ).toArray();
 
         log.info("Numbers are '{}'", Arrays.toString(numbers));
     }
@@ -57,21 +57,21 @@ public class Subsets extends LeetCodeTask<List<List<Integer>>> {
         return INFORMATION;
     }
 
-    // time = 3408 ms
+    // time = 2801 ms
     @Override
     protected List<List<Integer>> original() {
         var original = new Original(numbers.clone());
         return original.process();
     }
 
-    // time = 882 ms
+    // time = 1015 ms
     @Override
     protected List<List<Integer>> practice() {
         var practice = new Practice(numbers.clone());
         return practice.process();
     }
 
-    // time = 784 ms
+    // time = 459 ms
     @Override
     protected List<List<Integer>> solution() {
         var solution = new Solution(numbers.clone());
