@@ -30,10 +30,10 @@ public class Original {
         if (head == null || left <= 0 || right <= 0 || left > right || left == right) return head;
 
         int counter = 1;
-        ListNode squirrel = new ListNode();
-        squirrel.next = head;
+        ListNode sentinel = new ListNode();
+        sentinel.next = head;
 
-        ListNode previous = squirrel;
+        ListNode previous = sentinel;
         ListNode current = head;
         while (current.next != null && counter < right) {
             if (counter >= left) {
@@ -48,6 +48,6 @@ public class Original {
             counter++;
         }
 
-        return squirrel.next;
+        return sentinel.next;
     }
 }

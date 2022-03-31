@@ -31,8 +31,8 @@ public class Original {
         int size = getListNodeSize(head);
         int counter = 0;
 
-        ListNode squirrel = new ListNode(-1);
-        ListNode grouping = squirrel;
+        ListNode sentinel = new ListNode(-1);
+        ListNode grouping = sentinel;
         ListNode first = null;
 
         ListNode next;
@@ -59,7 +59,7 @@ public class Original {
             grouping.next = current;
         }
 
-        return squirrel.next;
+        return sentinel.next;
 
     }
 

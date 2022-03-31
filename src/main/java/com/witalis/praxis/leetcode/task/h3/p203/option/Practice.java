@@ -28,10 +28,10 @@ public class Practice {
     public ListNode removeElements(ListNode head, int val) {
         if (head == null || val < 0) return head;
 
-        ListNode squirrel = new ListNode();
-        squirrel.next = head;
+        ListNode sentinel = new ListNode();
+        sentinel.next = head;
 
-        ListNode previous = squirrel;
+        ListNode previous = sentinel;
         while (head != null) {
             if (head.val == val) {
                 previous.next = head.next;
@@ -41,6 +41,6 @@ public class Practice {
             head = head.next;
         }
 
-        return squirrel.next;
+        return sentinel.next;
     }
 }

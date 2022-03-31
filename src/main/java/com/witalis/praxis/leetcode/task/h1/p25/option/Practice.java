@@ -30,8 +30,8 @@ public class Practice {
 
         int counter = 0;
 
-        ListNode squirrel = new ListNode(-1);
-        ListNode grouping = squirrel;
+        ListNode sentinel = new ListNode(-1);
+        ListNode grouping = sentinel;
 
         ListNode previous = null;
         ListNode current = head;
@@ -48,7 +48,7 @@ public class Practice {
         }
         grouping.next = (counter % k == 0) ? reverseGroup(previous, k) : previous;
 
-        return squirrel.next;
+        return sentinel.next;
     }
 
     private ListNode reverseGroup(ListNode head, int k) {

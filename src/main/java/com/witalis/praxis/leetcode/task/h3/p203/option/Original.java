@@ -28,10 +28,10 @@ public class Original {
     public ListNode removeElements(ListNode head, int val) {
         if (head == null) return null;
 
-        ListNode squirrel = new ListNode(0);
-        squirrel.next = head;
+        ListNode sentinel = new ListNode(0);
+        sentinel.next = head;
 
-        ListNode previous = squirrel;
+        ListNode previous = sentinel;
         ListNode current = head;
         while (current != null) {
             if (current.val == val) {
@@ -42,6 +42,6 @@ public class Original {
             current = current.next;
         }
 
-        return squirrel.next;
+        return sentinel.next;
     }
 }
