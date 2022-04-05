@@ -37,7 +37,7 @@ public class Original {
         @Override
         public void push(int x) {
             queue.offer(x);
-            for(int i = 0; i < capacity; i++) {
+            for (int i = 0; i < capacity; i++) {
                 int element = queue.poll();
                 queue.offer(element);
             }
