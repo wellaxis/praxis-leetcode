@@ -25,6 +25,15 @@
   ],
   "hints": [
     {
+      "name": "task.type",
+      "values": [
+        {
+          "value": "leetcode",
+          "description": "Set of leetcode tasks."
+        }
+      ]
+    },
+    {
       "name": "task.mode",
       "values": [
         {
