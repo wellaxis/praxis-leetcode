@@ -10,7 +10,7 @@ import java.util.stream.IntStream;
 /**
  * ID: 233
  * Name: Number of Digit One
- * URL: https://leetcode.com/problems/number-of-digit-one/
+ * URL: <a href="https://leetcode.com/problems/number-of-digit-one/">Number of Digit One</a>
  * Note: try to find the better solution (without timing)
  */
 @Slf4j

@@ -10,7 +10,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 101
  * Name: Symmetric Tree
- * URL: https://leetcode.com/problems/symmetric-tree/
+ * URL: <a href="https://leetcode.com/problems/symmetric-tree/">Symmetric Tree</a>
  * Note: try to find the better solution (without timing)
  */
 @Slf4j

@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * ID: 15
  * Name: 3Sum
- * URL: https://leetcode.com/problems/3sum/
+ * URL: <a href="https://leetcode.com/problems/3sum/">3Sum</a>
  * Note: the best found solution (external programming)
  */
 @Slf4j

@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 292
  * Name: Nim Game
- * URL: https://leetcode.com/problems/nim-game/
+ * URL: <a href="https://leetcode.com/problems/nim-game/">Nim Game</a>
  * Note: try to find the better solution (without timing)
  */
 @Slf4j

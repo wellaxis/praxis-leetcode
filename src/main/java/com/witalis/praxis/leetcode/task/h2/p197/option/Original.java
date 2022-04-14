@@ -7,7 +7,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 197
  * Name: Rising Temperature
- * URL: https://leetcode.com/problems/rising-temperature/
+ * URL: <a href="https://leetcode.com/problems/rising-temperature/">Rising Temperature</a>
  * Note: the real test solution (code writing with timing)
  */
 @Slf4j

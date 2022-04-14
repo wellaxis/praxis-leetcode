@@ -10,7 +10,7 @@ import java.util.Arrays;
 /**
  * ID: 62
  * Name: Unique Paths
- * URL: https://leetcode.com/problems/unique-paths/
+ * URL: <a href="https://leetcode.com/problems/unique-paths/">Unique Paths</a>
  * Note: try to find the better solution (without timing)
  */
 @Slf4j

@@ -13,7 +13,7 @@ import java.util.*;
 /**
  * ID: 155
  * Name: Min Stack
- * URL: https://leetcode.com/problems/min-stack/
+ * URL: <a href="https://leetcode.com/problems/min-stack/">Min Stack</a>
  * Note: try to find the better solution (without timing)
  */
 @Slf4j

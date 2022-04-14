@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * ID: 93
  * Name: Restore IP Addresses
- * URL: https://leetcode.com/problems/restore-ip-addresses/
+ * URL: <a href="https://leetcode.com/problems/restore-ip-addresses/">Restore IP Addresses</a>
  * Note: the best found solution (external programming)
  */
 @Slf4j

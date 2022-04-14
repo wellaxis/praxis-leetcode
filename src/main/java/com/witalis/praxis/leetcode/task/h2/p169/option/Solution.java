@@ -10,7 +10,7 @@ import java.util.Arrays;
 /**
  * ID: 169
  * Name: Majority Element
- * URL: https://leetcode.com/problems/majority-element/
+ * URL: <a href="https://leetcode.com/problems/majority-element/">Majority Element</a>
  * Note: the best found solution (external programming)
  */
 @Slf4j

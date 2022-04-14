@@ -11,7 +11,7 @@ import java.util.Set;
 /**
  * ID: 202
  * Name: Happy Number
- * URL: https://leetcode.com/problems/happy-number/
+ * URL: <a href="https://leetcode.com/problems/happy-number/">Happy Number</a>
  * Note: the real test solution (code writing with timing)
  */
 @Slf4j

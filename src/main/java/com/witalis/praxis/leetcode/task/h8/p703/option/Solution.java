@@ -10,7 +10,7 @@ import java.util.*;
 /**
  * ID: 703
  * Name: Kth Largest Element in a Stream
- * URL: https://leetcode.com/problems/kth-largest-element-in-a-stream/
+ * URL: <a href="https://leetcode.com/problems/kth-largest-element-in-a-stream/">Kth Largest Element in a Stream</a>
  * Note: the best found solution (external programming)
  */
 @Slf4j

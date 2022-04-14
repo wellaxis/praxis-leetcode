@@ -13,7 +13,7 @@ import java.util.concurrent.Semaphore;
 /**
  * ID: 1114
  * Name: Print in Order
- * URL: https://leetcode.com/problems/print-in-order/
+ * URL: <a href="https://leetcode.com/problems/print-in-order/">Print in Order</a>
  * Note: the best found solution (external programming)
  */
 @Slf4j

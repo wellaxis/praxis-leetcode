@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 202
  * Name: Happy Number
- * URL: https://leetcode.com/problems/happy-number/
+ * URL: <a href="https://leetcode.com/problems/happy-number/">Happy Number</a>
  * Note: the best found solution (external programming)
  */
 @Slf4j

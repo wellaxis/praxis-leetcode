@@ -10,7 +10,7 @@ import java.util.*;
 /**
  * ID: 78
  * Name: Subsets
- * URL: https://leetcode.com/problems/subsets/
+ * URL: <a href="https://leetcode.com/problems/subsets/">Subsets</a>
  * Note: try to find the better solution (without timing)
  */
 @Slf4j

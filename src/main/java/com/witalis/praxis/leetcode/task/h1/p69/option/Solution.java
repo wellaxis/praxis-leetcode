@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 69
  * Name: Sqrt(x)
- * URL: https://leetcode.com/problems/sqrtx/
+ * URL: <a href="https://leetcode.com/problems/sqrtx/">Sqrt(x)</a>
  * Note: the best found solution (external programming)
  */
 @Slf4j

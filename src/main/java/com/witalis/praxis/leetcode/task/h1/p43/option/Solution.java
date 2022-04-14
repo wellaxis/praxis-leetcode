@@ -10,7 +10,7 @@ import java.util.ArrayList;
 /**
  * ID: 43
  * Name: Multiply Strings
- * URL: https://leetcode.com/problems/multiply-strings/
+ * URL: <a href="https://leetcode.com/problems/multiply-strings/">Multiply Strings</a>
  * Note: the best found solution (external programming)
  */
 @Slf4j

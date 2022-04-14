@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * ID: 43
  * Name: Multiply Strings
- * URL: https://leetcode.com/problems/multiply-strings/
+ * URL: <a href="https://leetcode.com/problems/multiply-strings/">Multiply Strings</a>
  * Note: the real test solution (code writing with timing)
  */
 @Slf4j

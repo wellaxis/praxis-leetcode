@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 96
  * Name: Unique Binary Search Trees
- * URL: https://leetcode.com/problems/unique-binary-search-trees/
+ * URL: <a href="https://leetcode.com/problems/unique-binary-search-trees/">Unique Binary Search Trees</a>
  * Note: try to find the better solution (without timing)
  */
 @Slf4j

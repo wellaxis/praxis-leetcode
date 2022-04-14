@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 44
  * Name: Wildcard Matching
- * URL: https://leetcode.com/problems/wildcard-matching/
+ * URL: <a href="https://leetcode.com/problems/wildcard-matching/">Wildcard Matching</a>
  * Note: the best found solution (external programming)
  */
 @Slf4j

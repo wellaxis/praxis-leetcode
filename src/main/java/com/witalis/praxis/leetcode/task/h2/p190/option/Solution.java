@@ -10,7 +10,7 @@ import static java.lang.Character.MIN_RADIX;
 /**
  * ID: 190
  * Name: Reverse Bits
- * URL: https://leetcode.com/problems/reverse-bits/
+ * URL: <a href="https://leetcode.com/problems/reverse-bits/">Reverse Bits</a>
  * Note: the best found solution (external programming)
  */
 @Slf4j

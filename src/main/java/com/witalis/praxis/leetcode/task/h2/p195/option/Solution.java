@@ -14,7 +14,7 @@ import java.util.stream.Stream;
 /**
  * ID: 195
  * Name: Tenth Line
- * URL: https://leetcode.com/problems/tenth-line/
+ * URL: <a href="https://leetcode.com/problems/tenth-line/">Tenth Line</a>
  * Note: the best found solution (external programming)
  */
 @Slf4j

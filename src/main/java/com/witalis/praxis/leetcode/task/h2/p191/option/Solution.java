@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 191
  * Name: Number of 1 Bits
- * URL: https://leetcode.com/problems/number-of-1-bits/
+ * URL: <a href="https://leetcode.com/problems/number-of-1-bits/">Number of 1 Bits</a>
  * Note: the best found solution (external programming)
  */
 @Slf4j

@@ -10,7 +10,7 @@ import static com.witalis.praxis.leetcode.task.h3.p278.content.VersionControl.is
 /**
  * ID: 278
  * Name: First Bad Version
- * URL: https://leetcode.com/problems/first-bad-version/
+ * URL: <a href="https://leetcode.com/problems/first-bad-version/">First Bad Version</a>
  * Note: the real test solution (code writing with timing)
  */
 @Slf4j

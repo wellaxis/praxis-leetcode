@@ -10,7 +10,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 25
  * Name: Reverse Nodes in k-Group
- * URL: https://leetcode.com/problems/reverse-nodes-in-k-group/
+ * URL: <a href="https://leetcode.com/problems/reverse-nodes-in-k-group/">Reverse Nodes in k-Group</a>
  * Note: the best found solution (external programming)
  */
 @Slf4j

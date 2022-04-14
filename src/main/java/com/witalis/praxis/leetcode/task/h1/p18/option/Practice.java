@@ -10,7 +10,7 @@ import java.util.*;
 /**
  * ID: 18
  * Name: 4Sum
- * URL: https://leetcode.com/problems/4sum/
+ * URL: <a href="https://leetcode.com/problems/4sum/">4Sum</a>
  * Note: try to find the better solution (without timing)
  */
 @Slf4j

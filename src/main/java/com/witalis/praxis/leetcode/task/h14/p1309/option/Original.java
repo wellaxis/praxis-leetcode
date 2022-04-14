@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 1309
  * Name: Decrypt String from Alphabet to Integer Mapping
- * URL: https://leetcode.com/problems/decrypt-string-from-alphabet-to-integer-mapping/
+ * URL: <a href="https://leetcode.com/problems/decrypt-string-from-alphabet-to-integer-mapping/">Decrypt String from Alphabet to Integer Mapping</a>
  * Note: the real test solution (code writing with timing)
  */
 @Slf4j

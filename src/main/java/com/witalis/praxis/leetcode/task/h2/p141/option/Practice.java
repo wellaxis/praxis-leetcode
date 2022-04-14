@@ -10,7 +10,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 141
  * Name: Linked List Cycle
- * URL: https://leetcode.com/problems/linked-list-cycle/
+ * URL: <a href="https://leetcode.com/problems/linked-list-cycle/">Linked List Cycle</a>
  * Note: try to find the better solution (without timing)
  */
 @Slf4j

@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 38
  * Name: Count and Say
- * URL: https://leetcode.com/problems/count-and-say/
+ * URL: <a href="https://leetcode.com/problems/count-and-say/">Count and Say</a>
  * Note: the real test solution (code writing with timing)
  */
 @Slf4j

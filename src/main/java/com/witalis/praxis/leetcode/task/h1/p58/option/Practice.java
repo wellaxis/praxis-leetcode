@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 58
  * Name: Length of Last Word
- * URL: https://leetcode.com/problems/length-of-last-word/
+ * URL: <a href="https://leetcode.com/problems/length-of-last-word/">Length of Last Word</a>
  * Note: try to find the better solution (without timing)
  */
 @Slf4j

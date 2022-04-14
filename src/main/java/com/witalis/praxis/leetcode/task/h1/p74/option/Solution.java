@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 74
  * Name: Search a 2D Matrix
- * URL: https://leetcode.com/problems/search-a-2d-matrix/
+ * URL: <a href="https://leetcode.com/problems/search-a-2d-matrix/">Search a 2D Matrix</a>
  * Note: the best found solution (external programming)
  */
 @Slf4j

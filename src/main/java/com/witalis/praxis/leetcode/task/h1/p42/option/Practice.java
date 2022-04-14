@@ -10,7 +10,7 @@ import java.util.*;
 /**
  * ID: 42
  * Name: Trapping Rain Water
- * URL: https://leetcode.com/problems/trapping-rain-water/
+ * URL: <a href="https://leetcode.com/problems/trapping-rain-water/">Trapping Rain Water</a>
  * Note: try to find the better solution (without timing)
  */
 @Slf4j

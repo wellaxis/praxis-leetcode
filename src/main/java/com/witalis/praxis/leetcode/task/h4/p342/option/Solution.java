@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 342
  * Name: Power of Four
- * URL: <a href="https://leetcode.com/problems/power-of-four/">https://leetcode.com/problems/power-of-four/</a>
+ * URL: <a href="https://leetcode.com/problems/power-of-four/">Power of Four</a>
  * Note: the best found solution (external programming)
  */
 @Slf4j

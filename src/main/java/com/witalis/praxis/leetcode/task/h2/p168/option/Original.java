@@ -11,7 +11,7 @@ import java.util.Map;
 /**
  * ID: 168
  * Name: Excel Sheet Column Title
- * URL: https://leetcode.com/problems/excel-sheet-column-title/
+ * URL: <a href="https://leetcode.com/problems/excel-sheet-column-title/">Excel Sheet Column Title</a>
  * Note: the real test solution (code writing with timing)
  */
 @Slf4j

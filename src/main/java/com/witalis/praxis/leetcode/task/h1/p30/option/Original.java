@@ -10,7 +10,7 @@ import java.util.*;
 /**
  * ID: 30
  * Name: Substring with Concatenation of All Words
- * URL: https://leetcode.com/problems/substring-with-concatenation-of-all-words/
+ * URL: <a href="https://leetcode.com/problems/substring-with-concatenation-of-all-words/">Substring with Concatenation of All Words</a>
  * Note: the real test solution (code writing with timing)
  */
 @Slf4j

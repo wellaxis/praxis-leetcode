@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * ID: 56
  * Name: Merge Intervals
- * URL: https://leetcode.com/problems/merge-intervals/
+ * URL: <a href="https://leetcode.com/problems/merge-intervals/">Merge Intervals</a>
  * Note: try to find the better solution (without timing)
  */
 @Slf4j

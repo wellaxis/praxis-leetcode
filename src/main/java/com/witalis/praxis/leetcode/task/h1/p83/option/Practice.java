@@ -10,7 +10,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 83
  * Name: Remove Duplicates from Sorted List
- * URL: https://leetcode.com/problems/remove-duplicates-from-sorted-list/
+ * URL: <a href="https://leetcode.com/problems/remove-duplicates-from-sorted-list/">Remove Duplicates from Sorted List</a>
  * Note: try to find the better solution (without timing)
  */
 @Slf4j

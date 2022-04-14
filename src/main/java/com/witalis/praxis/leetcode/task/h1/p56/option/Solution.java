@@ -11,7 +11,7 @@ import java.util.LinkedList;
 /**
  * ID: 56
  * Name: Merge Intervals
- * URL: https://leetcode.com/problems/merge-intervals/
+ * URL: <a href="https://leetcode.com/problems/merge-intervals/">Merge Intervals</a>
  * Note: the best found solution (external programming)
  */
 @Slf4j

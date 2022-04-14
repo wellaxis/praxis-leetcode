@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 91
  * Name: Decode Ways
- * URL: https://leetcode.com/problems/decode-ways/
+ * URL: <a href="https://leetcode.com/problems/decode-ways/">Decode Ways</a>
  * Note: try to find the better solution (without timing)
  */
 @Slf4j

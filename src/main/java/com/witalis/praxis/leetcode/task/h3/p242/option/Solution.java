@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 242
  * Name: Valid Anagram
- * URL: https://leetcode.com/problems/valid-anagram/
+ * URL: <a href="https://leetcode.com/problems/valid-anagram/">Valid Anagram</a>
  * Note: the best found solution (external programming)
  */
 @Slf4j

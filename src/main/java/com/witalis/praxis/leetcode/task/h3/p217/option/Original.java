@@ -10,7 +10,7 @@ import java.util.Arrays;
 /**
  * ID: 217
  * Name: Contains Duplicate
- * URL: https://leetcode.com/problems/contains-duplicate/
+ * URL: <a href="https://leetcode.com/problems/contains-duplicate/">Contains Duplicate</a>
  * Note: the real test solution (code writing with timing)
  */
 @Slf4j

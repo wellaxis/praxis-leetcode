@@ -11,7 +11,7 @@ import java.util.Set;
 /**
  * ID: 73
  * Name: Set Matrix Zeroes
- * URL: https://leetcode.com/problems/set-matrix-zeroes/
+ * URL: <a href="https://leetcode.com/problems/set-matrix-zeroes/">Set Matrix Zeroes</a>
  * Note: the real test solution (code writing with timing)
  */
 @Slf4j

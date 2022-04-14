@@ -10,7 +10,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 61
  * Name: Rotate List
- * URL: https://leetcode.com/problems/rotate-list/
+ * URL: <a href="https://leetcode.com/problems/rotate-list/">Rotate List</a>
  * Note: the real test solution (code writing with timing)
  */
 @Slf4j

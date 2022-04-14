@@ -10,7 +10,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 100
  * Name: Same Tree
- * URL: https://leetcode.com/problems/same-tree/
+ * URL: <a href="https://leetcode.com/problems/same-tree/">Same Tree</a>
  * Note: the best found solution (external programming)
  */
 @Slf4j

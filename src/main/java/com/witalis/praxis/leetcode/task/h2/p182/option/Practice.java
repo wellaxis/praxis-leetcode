@@ -7,7 +7,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 182
  * Name: Duplicate Emails
- * URL: https://leetcode.com/problems/duplicate-emails/
+ * URL: <a href="https://leetcode.com/problems/duplicate-emails/">Duplicate Emails</a>
  * Note: try to find the better solution (without timing)
  */
 @Slf4j

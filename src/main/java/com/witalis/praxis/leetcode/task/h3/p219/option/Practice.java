@@ -10,7 +10,7 @@ import java.util.HashMap;
 /**
  * ID: 219
  * Name: Contains Duplicate II
- * URL: https://leetcode.com/problems/contains-duplicate-ii/
+ * URL: <a href="https://leetcode.com/problems/contains-duplicate-ii/">Contains Duplicate II</a>
  * Note: try to find the better solution (without timing)
  */
 @Slf4j

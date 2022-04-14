@@ -10,7 +10,7 @@ import java.util.Arrays;
 /**
  * ID: 136
  * Name: Single Number
- * URL: https://leetcode.com/problems/single-number/
+ * URL: <a href="https://leetcode.com/problems/single-number/">Single Number</a>
  * Note: the real test solution (code writing with timing)
  */
 @Slf4j

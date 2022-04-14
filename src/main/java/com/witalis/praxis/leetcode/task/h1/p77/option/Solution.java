@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * ID: 77
  * Name: Combinations
- * URL: https://leetcode.com/problems/combinations/
+ * URL: <a href="https://leetcode.com/problems/combinations/">Combinations</a>
  * Note: the best found solution (external programming)
  */
 @Slf4j

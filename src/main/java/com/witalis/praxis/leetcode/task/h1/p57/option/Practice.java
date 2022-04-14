@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 57
  * Name: Insert Interval
- * URL: https://leetcode.com/problems/insert-interval/
+ * URL: <a href="https://leetcode.com/problems/insert-interval/">Insert Interval</a>
  * Note: try to find the better solution (without timing)
  */
 @Slf4j

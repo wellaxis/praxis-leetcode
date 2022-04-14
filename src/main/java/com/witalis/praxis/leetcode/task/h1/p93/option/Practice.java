@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * ID: 93
  * Name: Restore IP Addresses
- * URL: https://leetcode.com/problems/restore-ip-addresses/
+ * URL: <a href="https://leetcode.com/problems/restore-ip-addresses/">Restore IP Addresses</a>
  * Note: try to find the better solution (without timing)
  */
 @Slf4j

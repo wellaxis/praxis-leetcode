@@ -10,7 +10,7 @@ import java.util.Arrays;
 /**
  * ID: 16
  * Name: 3Sum Closest
- * URL: https://leetcode.com/problems/3sum-closest/
+ * URL: <a href="https://leetcode.com/problems/3sum-closest/">3Sum Closest</a>
  * Note: try to find the better solution (without timing)
  */
 @Slf4j

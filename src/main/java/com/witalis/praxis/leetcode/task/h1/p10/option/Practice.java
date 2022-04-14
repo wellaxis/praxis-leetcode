@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 10
  * Name: Regular Expression Matching
- * URL: https://leetcode.com/problems/regular-expression-matching/
+ * URL: <a href="https://leetcode.com/problems/regular-expression-matching/">Regular Expression Matching</a>
  * Note: try to find the better solution (without timing)
  */
 @Slf4j

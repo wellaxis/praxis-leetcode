@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * ID: 22
  * Name: Generate Parentheses
- * URL: https://leetcode.com/problems/generate-parentheses/
+ * URL: <a href="https://leetcode.com/problems/generate-parentheses/">Generate Parentheses</a>
  * Note: try to find the better solution (without timing)
  */
 @Slf4j

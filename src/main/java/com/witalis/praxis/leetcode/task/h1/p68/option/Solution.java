@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * ID: 68
  * Name: Text Justification
- * URL: https://leetcode.com/problems/text-justification/
+ * URL: <a href="https://leetcode.com/problems/text-justification/">Text Justification</a>
  * Note: the best found solution (external programming)
  */
 @Slf4j

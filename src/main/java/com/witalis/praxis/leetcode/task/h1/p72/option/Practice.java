@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 72
  * Name: Edit Distance
- * URL: https://leetcode.com/problems/edit-distance/
+ * URL: <a href="https://leetcode.com/problems/edit-distance/">Edit Distance</a>
  * Note: try to find the better solution (without timing)
  */
 @Slf4j

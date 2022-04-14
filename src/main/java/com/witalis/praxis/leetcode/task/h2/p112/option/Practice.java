@@ -10,7 +10,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 112
  * Name: Path Sum
- * URL: https://leetcode.com/problems/path-sum/
+ * URL: <a href="https://leetcode.com/problems/path-sum/">Path Sum</a>
  * Note: try to find the better solution (without timing)
  */
 @Slf4j

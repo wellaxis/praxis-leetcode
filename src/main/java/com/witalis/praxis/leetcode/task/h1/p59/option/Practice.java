@@ -12,7 +12,7 @@ import java.util.Queue;
 /**
  * ID: 59
  * Name: Spiral Matrix II
- * URL: https://leetcode.com/problems/spiral-matrix-ii/
+ * URL: <a href="https://leetcode.com/problems/spiral-matrix-ii/">Spiral Matrix II</a>
  * Note: try to find the better solution (without timing)
  */
 @Slf4j

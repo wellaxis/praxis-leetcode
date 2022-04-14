@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 81
  * Name: Search in Rotated Sorted Array II
- * URL: https://leetcode.com/problems/search-in-rotated-sorted-array-ii/
+ * URL: <a href="https://leetcode.com/problems/search-in-rotated-sorted-array-ii/">Search in Rotated Sorted Array II</a>
  * Note: the best found solution (external programming)
  */
 @Slf4j

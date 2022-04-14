@@ -7,7 +7,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 181
  * Name: Employees Earning More Than Their Managers
- * URL: https://leetcode.com/problems/employees-earning-more-than-their-managers/
+ * URL: <a href="https://leetcode.com/problems/employees-earning-more-than-their-managers/">Employees Earning More Than Their Managers</a>
  * Note: try to find the better solution (without timing)
  */
 @Slf4j

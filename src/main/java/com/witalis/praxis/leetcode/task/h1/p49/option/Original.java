@@ -10,7 +10,7 @@ import java.util.*;
 /**
  * ID: 49
  * Name: Group Anagrams
- * URL: https://leetcode.com/problems/powx-n/
+ * URL: <a href="https://leetcode.com/problems/powx-n/">Group Anagrams</a>
  * Note: the real test solution (code writing with timing)
  */
 @Slf4j

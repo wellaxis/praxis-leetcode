@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 27
  * Name: Remove Element
- * URL: https://leetcode.com/problems/remove-element/
+ * URL: <a href="https://leetcode.com/problems/remove-element/">Remove Element</a>
  * Note: try to find the better solution (without timing)
  */
 @Slf4j

@@ -13,7 +13,7 @@ import java.util.Deque;
 /**
  * ID: 1379
  * Name: Find a Corresponding Node of a Binary Tree in a Clone of That Tree
- * URL: https://leetcode.com/problems/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree/
+ * URL: <a href="https://leetcode.com/problems/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree/">Find a Corresponding Node of a Binary Tree in a Clone of That Tree</a>
  * Note: the best found solution (external programming)
  */
 @Slf4j

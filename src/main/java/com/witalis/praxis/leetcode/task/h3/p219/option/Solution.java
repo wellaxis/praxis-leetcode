@@ -10,7 +10,7 @@ import java.util.HashSet;
 /**
  * ID: 219
  * Name: Contains Duplicate II
- * URL: https://leetcode.com/problems/contains-duplicate-ii/
+ * URL: <a href="https://leetcode.com/problems/contains-duplicate-ii/">Contains Duplicate II</a>
  * Note: the best found solution (external programming)
  */
 @Slf4j

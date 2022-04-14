@@ -11,7 +11,7 @@ import java.util.Map;
 /**
  * ID: 290
  * Name: Word Pattern
- * URL: https://leetcode.com/problems/word-pattern/
+ * URL: <a href="https://leetcode.com/problems/word-pattern/">Word Pattern</a>
  * Note: the best found solution (external programming)
  */
 @Slf4j

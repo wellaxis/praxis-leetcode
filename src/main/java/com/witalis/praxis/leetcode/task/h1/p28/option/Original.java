@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 28
  * Name: Implement strStr()
- * URL: https://leetcode.com/problems/implement-strstr/
+ * URL: <a href="https://leetcode.com/problems/implement-strstr/">Implement strStr()</a>
  * Note: the real test solution (code writing with timing)
  */
 @Slf4j

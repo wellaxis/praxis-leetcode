@@ -11,7 +11,7 @@ import java.util.Deque;
 /**
  * ID: 71
  * Name: Simplify Path
- * URL: https://leetcode.com/problems/simplify-path/
+ * URL: <a href="https://leetcode.com/problems/simplify-path/">Simplify Path</a>
  * Note: try to find the better solution (without timing)
  */
 @Slf4j

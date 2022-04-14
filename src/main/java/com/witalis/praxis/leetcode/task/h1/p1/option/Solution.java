@@ -11,7 +11,7 @@ import java.util.Map;
 /**
  * ID: 1
  * Name: Two Sum
- * URL: https://leetcode.com/problems/two-sum/
+ * URL: <a href="https://leetcode.com/problems/two-sum/">Two Sum</a>
  * Note: the best found solution (external programming)
  */
 @Slf4j

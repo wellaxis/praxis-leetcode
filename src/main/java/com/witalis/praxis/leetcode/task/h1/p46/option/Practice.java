@@ -10,7 +10,7 @@ import java.util.*;
 /**
  * ID: 46
  * Name: Permutations
- * URL: https://leetcode.com/problems/permutations/
+ * URL: <a href="https://leetcode.com/problems/permutations/">Permutations</a>
  * Note: try to find the better solution (without timing)
  */
 @Slf4j

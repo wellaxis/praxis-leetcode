@@ -11,7 +11,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 1114
  * Name: Print in Order
- * URL: https://leetcode.com/problems/print-in-order/
+ * URL: <a href="https://leetcode.com/problems/print-in-order/">Print in Order</a>
  * Note: try to find the better solution (without timing)
  */
 @Slf4j

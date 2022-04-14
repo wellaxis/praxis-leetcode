@@ -10,7 +10,7 @@ import java.util.stream.Collector;
 /**
  * ID: 125
  * Name: Valid Palindrome
- * URL: https://leetcode.com/problems/valid-palindrome/
+ * URL: <a href="https://leetcode.com/problems/valid-palindrome/">Valid Palindrome</a>
  * Note: the real test solution (code writing with timing)
  */
 @Slf4j

@@ -10,7 +10,7 @@ import java.util.*;
 /**
  * ID: 17
  * Name: Letter Combinations of a Phone Number
- * URL: https://leetcode.com/problems/letter-combinations-of-a-phone-number/
+ * URL: <a href="https://leetcode.com/problems/letter-combinations-of-a-phone-number/">Letter Combinations of a Phone Number</a>
  * Note: the real test solution (code writing with timing)
  */
 @Slf4j

@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 60
  * Name: Permutation Sequence
- * URL: https://leetcode.com/problems/permutation-sequence/
+ * URL: <a href="https://leetcode.com/problems/permutation-sequence/">Permutation Sequence</a>
  * Note: the best found solution (external programming)
  */
 @Slf4j

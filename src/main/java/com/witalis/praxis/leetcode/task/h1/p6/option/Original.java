@@ -12,7 +12,7 @@ import java.util.TreeMap;
 /**
  * ID: 6
  * Name: Zigzag Conversion
- * URL: https://leetcode.com/problems/zigzag-conversion/
+ * URL: <a href="https://leetcode.com/problems/zigzag-conversion/">Zigzag Conversion</a>
  * Note: the real test solution (code writing with timing)
  */
 @Slf4j

@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 34
  * Name: Find First and Last Position of Element in Sorted Array
- * URL: https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
+ * URL: <a href="https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/">Find First and Last Position of Element in Sorted Array</a>
  * Note: the real test solution (code writing with timing)
  */
 @Slf4j

@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 26
  * Name: Remove Duplicates from Sorted Array
- * URL: https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+ * URL: <a href="https://leetcode.com/problems/remove-duplicates-from-sorted-array/">Remove Duplicates from Sorted Array</a>
  * Note: try to find the better solution (without timing)
  */
 @Slf4j

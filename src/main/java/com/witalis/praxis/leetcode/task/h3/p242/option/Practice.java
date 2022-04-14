@@ -10,7 +10,7 @@ import java.util.Arrays;
 /**
  * ID: 242
  * Name: Valid Anagram
- * URL: https://leetcode.com/problems/valid-anagram/
+ * URL: <a href="https://leetcode.com/problems/valid-anagram/">Valid Anagram</a>
  * Note: try to find the better solution (without timing)
  */
 @Slf4j

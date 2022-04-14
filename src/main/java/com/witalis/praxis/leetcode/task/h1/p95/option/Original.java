@@ -13,7 +13,7 @@ import java.util.stream.IntStream;
 /**
  * ID: 95
  * Name: Unique Binary Search Trees II
- * URL: https://leetcode.com/problems/unique-binary-search-trees-ii/
+ * URL: <a href="https://leetcode.com/problems/unique-binary-search-trees-ii/">Unique Binary Search Trees II</a>
  * Note: the real test solution (code writing with timing)
  */
 @Slf4j

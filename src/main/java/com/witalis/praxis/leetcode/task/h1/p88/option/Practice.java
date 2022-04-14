@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 88
  * Name: Merge Sorted Array
- * URL: https://leetcode.com/problems/merge-sorted-array/
+ * URL: <a href="https://leetcode.com/problems/merge-sorted-array/">Merge Sorted Array</a>
  * Note: try to find the better solution (without timing)
  */
 @Slf4j

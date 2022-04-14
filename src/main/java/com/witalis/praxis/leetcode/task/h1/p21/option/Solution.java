@@ -10,7 +10,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 21
  * Name: Merge Two Sorted Lists
- * URL: https://leetcode.com/problems/merge-two-sorted-lists/
+ * URL: <a href="https://leetcode.com/problems/merge-two-sorted-lists/">Merge Two Sorted Lists</a>
  * Note: the best found solution (external programming)
  */
 @Slf4j

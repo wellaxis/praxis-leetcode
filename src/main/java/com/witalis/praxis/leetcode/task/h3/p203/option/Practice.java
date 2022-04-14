@@ -10,7 +10,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 203
  * Name: Remove Linked List Elements
- * URL: https://leetcode.com/problems/remove-linked-list-elements/
+ * URL: <a href="https://leetcode.com/problems/remove-linked-list-elements/">Remove Linked List Elements</a>
  * Note: try to find the better solution (without timing)
  */
 @Slf4j

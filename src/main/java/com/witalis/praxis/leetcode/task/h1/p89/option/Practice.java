@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * ID: 89
  * Name: Gray Code
- * URL: https://leetcode.com/problems/gray-code/
+ * URL: <a href="https://leetcode.com/problems/gray-code/">Gray Code</a>
  * Note: try to find the better solution (without timing)
  */
 @Slf4j

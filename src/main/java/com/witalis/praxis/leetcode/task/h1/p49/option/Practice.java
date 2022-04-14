@@ -12,7 +12,7 @@ import static java.util.stream.Collectors.*;
 /**
  * ID: 49
  * Name: Group Anagrams
- * URL: https://leetcode.com/problems/powx-n/
+ * URL: <a href="https://leetcode.com/problems/powx-n/">Group Anagrams</a>
  * Note: try to find the better solution (without timing)
  */
 @Slf4j

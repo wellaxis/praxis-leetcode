@@ -10,7 +10,7 @@ import java.util.Stack;
 /**
  * ID: 71
  * Name: Simplify Path
- * URL: https://leetcode.com/problems/simplify-path/
+ * URL: <a href="https://leetcode.com/problems/simplify-path/">Simplify Path</a>
  * Note: the best found solution (external programming)
  */
 @Slf4j

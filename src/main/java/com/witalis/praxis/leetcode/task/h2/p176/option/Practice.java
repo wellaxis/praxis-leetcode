@@ -7,7 +7,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 176
  * Name: Second Highest Salary
- * URL: https://leetcode.com/problems/second-highest-salary/
+ * URL: <a href="https://leetcode.com/problems/second-highest-salary/">Second Highest Salary</a>
  * Note: try to find the better solution (without timing)
  */
 @Slf4j

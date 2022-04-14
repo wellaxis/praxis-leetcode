@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 70
  * Name: Climbing Stairs
- * URL: https://leetcode.com/problems/climbing-stairs/
+ * URL: <a href="https://leetcode.com/problems/climbing-stairs/">Climbing Stairs</a>
  * Note: the best found solution (external programming)
  */
 @Slf4j

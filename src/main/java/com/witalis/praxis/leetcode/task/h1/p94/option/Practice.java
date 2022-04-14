@@ -12,7 +12,7 @@ import java.util.*;
 /**
  * ID: 94
  * Name: Binary Tree Inorder Traversal
- * URL: https://leetcode.com/problems/binary-tree-inorder-traversal/
+ * URL: <a href="https://leetcode.com/problems/binary-tree-inorder-traversal/">Binary Tree Inorder Traversal</a>
  * Note: try to find the better solution (without timing)
  */
 @Slf4j

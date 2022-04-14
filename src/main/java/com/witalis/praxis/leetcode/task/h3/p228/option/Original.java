@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * ID: 228
  * Name: Summary Ranges
- * URL: https://leetcode.com/problems/summary-ranges/
+ * URL: <a href="https://leetcode.com/problems/summary-ranges/">Summary Ranges</a>
  * Note: the real test solution (code writing with timing)
  */
 @Slf4j

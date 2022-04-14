@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 121
  * Name: Best Time to Buy and Sell Stock
- * URL: https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+ * URL: <a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock/">Best Time to Buy and Sell Stock</a>
  * Note: the best found solution (external programming)
  */
 @Slf4j

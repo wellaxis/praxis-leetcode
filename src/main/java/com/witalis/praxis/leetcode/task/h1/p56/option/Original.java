@@ -14,7 +14,7 @@ import java.util.List;
 /**
  * ID: 56
  * Name: Merge Intervals
- * URL: https://leetcode.com/problems/merge-intervals/
+ * URL: <a href="https://leetcode.com/problems/merge-intervals/">Merge Intervals</a>
  * Note: the real test solution (code writing with timing)
  */
 @Slf4j

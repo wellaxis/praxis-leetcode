@@ -10,7 +10,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 24
  * Name: Swap Nodes in Pairs
- * URL: https://leetcode.com/problems/swap-nodes-in-pairs/
+ * URL: <a href="https://leetcode.com/problems/swap-nodes-in-pairs/">Swap Nodes in Pairs</a>
  * Note: the real test solution (code writing with timing)
  */
 @Slf4j

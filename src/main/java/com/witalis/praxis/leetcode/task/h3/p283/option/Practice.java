@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 283
  * Name: Move Zeroes
- * URL: https://leetcode.com/problems/move-zeroes/
+ * URL: <a href="https://leetcode.com/problems/move-zeroes/">Move Zeroes</a>
  * Note: try to find the better solution (without timing)
  */
 @Slf4j

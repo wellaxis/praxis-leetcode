@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 73
  * Name: Set Matrix Zeroes
- * URL: https://leetcode.com/problems/set-matrix-zeroes/
+ * URL: <a href="https://leetcode.com/problems/set-matrix-zeroes/">Set Matrix Zeroes</a>
  * Note: the best found solution (external programming)
  */
 @Slf4j

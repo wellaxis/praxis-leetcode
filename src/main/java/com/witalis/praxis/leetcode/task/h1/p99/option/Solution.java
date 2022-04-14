@@ -10,7 +10,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 99
  * Name: Recover Binary Search Tree
- * URL: https://leetcode.com/problems/recover-binary-search-tree/
+ * URL: <a href="https://leetcode.com/problems/recover-binary-search-tree/">Recover Binary Search Tree</a>
  * Note: the best found solution (external programming)
  */
 @Slf4j

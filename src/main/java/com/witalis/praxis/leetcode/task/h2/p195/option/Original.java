@@ -11,7 +11,7 @@ import java.nio.charset.Charset;
 /**
  * ID: 195
  * Name: Tenth Line
- * URL: https://leetcode.com/problems/tenth-line/
+ * URL: <a href="https://leetcode.com/problems/tenth-line/">Tenth Line</a>
  * Note: the real test solution (code writing with timing)
  */
 @Slf4j

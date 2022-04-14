@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * ID: 6
  * Name: Zigzag Conversion
- * URL: https://leetcode.com/problems/zigzag-conversion/
+ * URL: <a href="https://leetcode.com/problems/zigzag-conversion/">Zigzag Conversion</a>
  * Note: try to find the better solution (without timing)
  */
 @Slf4j

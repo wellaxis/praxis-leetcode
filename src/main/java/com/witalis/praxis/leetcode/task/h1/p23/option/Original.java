@@ -10,7 +10,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 23
  * Name: Merge k Sorted Lists
- * URL: https://leetcode.com/problems/merge-k-sorted-lists/
+ * URL: <a href="https://leetcode.com/problems/merge-k-sorted-lists/">Merge k Sorted Lists</a>
  * Note: the real test solution (code writing with timing)
  */
 @Slf4j

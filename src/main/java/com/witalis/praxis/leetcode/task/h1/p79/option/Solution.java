@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 79
  * Name: Word Search
- * URL: https://leetcode.com/problems/word-search/
+ * URL: <a href="https://leetcode.com/problems/word-search/">Word Search</a>
  * Note: the best found solution (external programming)
  */
 @Slf4j

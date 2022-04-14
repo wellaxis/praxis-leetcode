@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * ID: 119
  * Name: Pascal's Triangle II
- * URL: https://leetcode.com/problems/pascals-triangle-ii/
+ * URL: <a href="https://leetcode.com/problems/pascals-triangle-ii/">Pascal's Triangle II</a>
  * Note: the best found solution (external programming)
  */
 @Slf4j

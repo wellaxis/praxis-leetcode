@@ -11,7 +11,7 @@ import java.util.*;
 /**
  * ID: 36
  * Name: Valid Sudoku
- * URL: https://leetcode.com/problems/valid-sudoku/
+ * URL: <a href="https://leetcode.com/problems/valid-sudoku/">Valid Sudoku</a>
  * Note: the real test solution (code writing with timing)
  */
 @Slf4j

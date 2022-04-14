@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * ID: 77
  * Name: Combinations
- * URL: https://leetcode.com/problems/combinations/
+ * URL: <a href="https://leetcode.com/problems/combinations/">Combinations</a>
  * Note: try to find the better solution (without timing)
  */
 @Slf4j

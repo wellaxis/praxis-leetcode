@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 258
  * Name: Add Digits
- * URL: https://leetcode.com/problems/add-digits/
+ * URL: <a href="https://leetcode.com/problems/add-digits/">Add Digits</a>
  * Note: the best found solution (external programming)
  */
 @Slf4j

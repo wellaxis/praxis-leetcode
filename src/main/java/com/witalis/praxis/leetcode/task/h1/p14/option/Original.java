@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 14
  * Name: Longest Common Prefix
- * URL: https://leetcode.com/problems/longest-common-prefix/
+ * URL: <a href="https://leetcode.com/problems/longest-common-prefix/">Longest Common Prefix</a>
  * Note: the real test solution (code writing with timing)
  */
 @Slf4j

@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 48
  * Name: Rotate Image
- * URL: https://leetcode.com/problems/rotate-image/
+ * URL: <a href="https://leetcode.com/problems/rotate-image/">Rotate Image</a>
  * Note: the real test solution (code writing with timing)
  */
 @Slf4j

@@ -10,7 +10,7 @@ import java.util.ArrayDeque;
 /**
  * ID: 71
  * Name: Simplify Path
- * URL: https://leetcode.com/problems/simplify-path/
+ * URL: <a href="https://leetcode.com/problems/simplify-path/">Simplify Path</a>
  * Note: the real test solution (code writing with timing)
  */
 @Slf4j

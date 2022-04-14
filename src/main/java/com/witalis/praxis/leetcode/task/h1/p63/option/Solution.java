@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 63
  * Name: Unique Paths II
- * URL: https://leetcode.com/problems/unique-paths-ii/
+ * URL: <a href="https://leetcode.com/problems/unique-paths-ii/">Unique Paths II</a>
  * Note: the best found solution (external programming)
  */
 @Slf4j

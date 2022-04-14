@@ -13,7 +13,7 @@ import java.util.*;
 /**
  * ID: 232
  * Name: Implement Queue using Stacks
- * URL: https://leetcode.com/problems/implement-queue-using-stacks/
+ * URL: <a href="https://leetcode.com/problems/implement-queue-using-stacks/">Implement Queue using Stacks</a>
  * Note: try to find the better solution (without timing)
  */
 @Slf4j

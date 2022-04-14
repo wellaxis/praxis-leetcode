@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 35
  * Name: Search Insert Position
- * URL: https://leetcode.com/problems/search-insert-position/
+ * URL: <a href="https://leetcode.com/problems/search-insert-position/">Search Insert Position</a>
  * Note: try to find the better solution (without timing)
  */
 @Slf4j

@@ -10,7 +10,7 @@ import java.util.ArrayDeque;
 /**
  * ID: 20
  * Name: Valid Parentheses
- * URL: https://leetcode.com/problems/valid-parentheses/
+ * URL: <a href="https://leetcode.com/problems/valid-parentheses/">Valid Parentheses</a>
  * Note: try to find the better solution (without timing)
  */
 @Slf4j

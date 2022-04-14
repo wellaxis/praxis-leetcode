@@ -10,7 +10,7 @@ import java.util.Arrays;
 /**
  * ID: 27
  * Name: Remove Element
- * URL: https://leetcode.com/problems/remove-element/
+ * URL: <a href="https://leetcode.com/problems/remove-element/">Remove Element</a>
  * Note: the real test solution (code writing with timing)
  */
 @Slf4j

@@ -10,7 +10,7 @@ import java.util.Stack;
 /**
  * ID: 20
  * Name: Valid Parentheses
- * URL: https://leetcode.com/problems/valid-parentheses/
+ * URL: <a href="https://leetcode.com/problems/valid-parentheses/">Valid Parentheses</a>
  * Note: the best found solution (external programming)
  */
 @Slf4j

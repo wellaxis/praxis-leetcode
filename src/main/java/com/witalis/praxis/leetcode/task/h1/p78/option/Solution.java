@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * ID: 78
  * Name: Subsets
- * URL: https://leetcode.com/problems/subsets/
+ * URL: <a href="https://leetcode.com/problems/subsets/">Subsets</a>
  * Note: the best found solution (external programming)
  */
 @Slf4j

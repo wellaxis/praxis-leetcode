@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 50
  * Name: Pow(x, n)
- * URL: https://leetcode.com/problems/powx-n/
+ * URL: <a href="https://leetcode.com/problems/powx-n/">Pow(x, n)</a>
  * Note: try to find the better solution (without timing)
  */
 @Slf4j

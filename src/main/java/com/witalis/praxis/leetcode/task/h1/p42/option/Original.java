@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 42
  * Name: Trapping Rain Water
- * URL: https://leetcode.com/problems/trapping-rain-water/
+ * URL: <a href="https://leetcode.com/problems/trapping-rain-water/">Trapping Rain Water</a>
  * Note: the real test solution (code writing with timing)
  */
 @Slf4j

@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 233
  * Name: Number of Digit One
- * URL: https://leetcode.com/problems/number-of-digit-one/
+ * URL: <a href="https://leetcode.com/problems/number-of-digit-one/">Number of Digit One</a>
  * Note: the best found solution (external programming)
  */
 @Slf4j

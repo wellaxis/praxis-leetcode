@@ -13,7 +13,7 @@ import java.util.stream.IntStream;
 /**
  * ID: 60
  * Name: Permutation Sequence
- * URL: https://leetcode.com/problems/permutation-sequence/
+ * URL: <a href="https://leetcode.com/problems/permutation-sequence/">Permutation Sequence</a>
  * Note: the real test solution (code writing with timing)
  */
 @Slf4j

@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
 /**
  * ID: 57
  * Name: Insert Interval
- * URL: https://leetcode.com/problems/insert-interval/
+ * URL: <a href="https://leetcode.com/problems/insert-interval/">Insert Interval</a>
  * Note: the best found solution (external programming)
  */
 @Slf4j

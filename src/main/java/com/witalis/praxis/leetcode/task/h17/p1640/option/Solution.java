@@ -11,7 +11,7 @@ import java.util.Map;
 /**
  * ID: 1640
  * Name: Check Array Formation Through Concatenation
- * URL: https://leetcode.com/problems/check-array-formation-through-concatenation/
+ * URL: <a href="https://leetcode.com/problems/check-array-formation-through-concatenation/">Check Array Formation Through Concatenation</a>
  * Note: the best found solution (external programming)
  */
 @Slf4j

@@ -10,7 +10,7 @@ import java.util.HashMap;
 /**
  * ID: 1640
  * Name: Check Array Formation Through Concatenation
- * URL: https://leetcode.com/problems/check-array-formation-through-concatenation/
+ * URL: <a href="https://leetcode.com/problems/check-array-formation-through-concatenation/">Check Array Formation Through Concatenation</a>
  * Note: try to find the better solution (without timing)
  */
 @Slf4j

@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 6
  * Name: Zigzag Conversion
- * URL: https://leetcode.com/problems/zigzag-conversion/
+ * URL: <a href="https://leetcode.com/problems/zigzag-conversion/">Zigzag Conversion</a>
  * Note: the best found solution (external programming)
  */
 @Slf4j

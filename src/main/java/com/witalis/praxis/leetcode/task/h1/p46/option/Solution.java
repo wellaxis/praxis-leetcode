@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * ID: 46
  * Name: Permutations
- * URL: https://leetcode.com/problems/permutations/
+ * URL: <a href="https://leetcode.com/problems/permutations/">Permutations</a>
  * Note: the best found solution (external programming)
  */
 @Slf4j

@@ -10,7 +10,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 2
  * Name: Add Two Numbers
- * URL: https://leetcode.com/problems/add-two-numbers/
+ * URL: <a href="https://leetcode.com/problems/add-two-numbers/">Add Two Numbers</a>
  * Note: try to find the better solution (without timing)
  */
 @Slf4j

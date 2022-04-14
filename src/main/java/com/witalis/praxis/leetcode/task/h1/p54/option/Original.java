@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * ID: 54
  * Name: Spiral Matrix
- * URL: https://leetcode.com/problems/spiral-matrix/
+ * URL: <a href="https://leetcode.com/problems/spiral-matrix/">Spiral Matrix</a>
  * Note: the real test solution (code writing with timing)
  */
 @Slf4j

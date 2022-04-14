@@ -10,7 +10,7 @@ import java.util.Arrays;
 /**
  * ID: 88
  * Name: Merge Sorted Array
- * URL: https://leetcode.com/problems/merge-sorted-array/
+ * URL: <a href="https://leetcode.com/problems/merge-sorted-array/">Merge Sorted Array</a>
  * Note: the real test solution (code writing with timing)
  */
 @Slf4j

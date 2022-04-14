@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * ID: 120
  * Name: Triangle
- * URL: https://leetcode.com/problems/triangle/
+ * URL: <a href="https://leetcode.com/problems/triangle/">Triangle</a>
  * Note: the best found solution (external programming)
  */
 @Slf4j

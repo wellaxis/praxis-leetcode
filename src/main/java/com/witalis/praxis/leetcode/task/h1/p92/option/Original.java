@@ -10,7 +10,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 92
  * Name: Reverse Linked List II
- * URL: https://leetcode.com/problems/reverse-linked-list-ii/
+ * URL: <a href="https://leetcode.com/problems/reverse-linked-list-ii/">Reverse Linked List II</a>
  * Note: the real test solution (code writing with timing)
  */
 @Slf4j

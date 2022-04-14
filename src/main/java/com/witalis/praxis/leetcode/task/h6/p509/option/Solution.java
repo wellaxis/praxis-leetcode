@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 509
  * Name: Fibonacci Number
- * URL: https://leetcode.com/problems/fibonacci-number/
+ * URL: <a href="https://leetcode.com/problems/fibonacci-number/">Fibonacci Number</a>
  * Note: the best found solution (external programming)
  */
 @Slf4j

@@ -10,7 +10,7 @@ import java.util.Arrays;
 /**
  * ID: 205
  * Name: Isomorphic Strings
- * URL: https://leetcode.com/problems/isomorphic-strings/
+ * URL: <a href="https://leetcode.com/problems/isomorphic-strings/">Isomorphic Strings</a>
  * Note: the best found solution (external programming)
  */
 @Slf4j

@@ -10,7 +10,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 111
  * Name: Minimum Depth of Binary Tree
- * URL: https://leetcode.com/problems/minimum-depth-of-binary-tree/
+ * URL: <a href="https://leetcode.com/problems/minimum-depth-of-binary-tree/">Minimum Depth of Binary Tree</a>
  * Note: the best found solution (external programming)
  */
 @Slf4j

@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * ID: 95
  * Name: Unique Binary Search Trees II
- * URL: https://leetcode.com/problems/unique-binary-search-trees-ii/
+ * URL: <a href="https://leetcode.com/problems/unique-binary-search-trees-ii/">Unique Binary Search Trees II</a>
  * Note: the best found solution (external programming)
  */
 @Slf4j

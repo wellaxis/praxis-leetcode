@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 526
  * Name: Beautiful Arrangement
- * URL: https://leetcode.com/problems/beautiful-arrangement/
+ * URL: <a href="https://leetcode.com/problems/beautiful-arrangement/">Beautiful Arrangement</a>
  * Note: the best found solution (external programming)
  */
 @Slf4j

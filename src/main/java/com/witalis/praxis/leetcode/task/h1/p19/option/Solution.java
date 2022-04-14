@@ -10,7 +10,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 19
  * Name: Remove Nth Node From End of List
- * URL: https://leetcode.com/problems/remove-nth-node-from-end-of-list/
+ * URL: <a href="https://leetcode.com/problems/remove-nth-node-from-end-of-list/">Remove Nth Node From End of List</a>
  * Note: the best found solution (external programming)
  */
 @Slf4j

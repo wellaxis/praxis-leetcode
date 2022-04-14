@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * ID: 118
  * Name: Pascal's Triangle
- * URL: https://leetcode.com/problems/pascals-triangle/
+ * URL: <a href="https://leetcode.com/problems/pascals-triangle/">Pascal's Triangle</a>
  * Note: the real test solution (code writing with timing)
  */
 @Slf4j

@@ -13,7 +13,7 @@ import static java.util.stream.Collectors.*;
 /**
  * ID: 169
  * Name: Majority Element
- * URL: https://leetcode.com/problems/majority-element/
+ * URL: <a href="https://leetcode.com/problems/majority-element/">Majority Element</a>
  * Note: the real test solution (code writing with timing)
  */
 @Slf4j

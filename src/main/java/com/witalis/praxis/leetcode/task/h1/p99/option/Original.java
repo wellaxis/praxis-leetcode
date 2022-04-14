@@ -13,7 +13,7 @@ import java.util.Deque;
 /**
  * ID: 99
  * Name: Recover Binary Search Tree
- * URL: https://leetcode.com/problems/recover-binary-search-tree/
+ * URL: <a href="https://leetcode.com/problems/recover-binary-search-tree/">Recover Binary Search Tree</a>
  * Note: the real test solution (code writing with timing)
  */
 @Slf4j

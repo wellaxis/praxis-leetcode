@@ -11,7 +11,7 @@ import java.util.Map;
 /**
  * ID: 205
  * Name: Isomorphic Strings
- * URL: https://leetcode.com/problems/isomorphic-strings/
+ * URL: <a href="https://leetcode.com/problems/isomorphic-strings/">Isomorphic Strings</a>
  * Note: the real test solution (code writing with timing)
  */
 @Slf4j

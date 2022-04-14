@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 53
  * Name: Maximum Subarray
- * URL: https://leetcode.com/problems/maximum-subarray/
+ * URL: <a href="https://leetcode.com/problems/maximum-subarray/">Maximum Subarray</a>
  * Note: try to find the better solution (without timing)
  */
 @Slf4j

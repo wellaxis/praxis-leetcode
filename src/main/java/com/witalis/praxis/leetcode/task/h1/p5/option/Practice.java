@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 5
  * Name: Longest Palindromic Substring
- * URL: https://leetcode.com/problems/longest-palindromic-substring/
+ * URL: <a href="https://leetcode.com/problems/longest-palindromic-substring/">Longest Palindromic Substring</a>
  * Note: try to find the better solution (without timing)
  */
 @Slf4j

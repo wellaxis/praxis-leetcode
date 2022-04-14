@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 66
  * Name: Plus One
- * URL: https://leetcode.com/problems/plus-one/
+ * URL: <a href="https://leetcode.com/problems/plus-one/">Plus One</a>
  * Note: try to find the better solution (without timing)
  */
 @Slf4j

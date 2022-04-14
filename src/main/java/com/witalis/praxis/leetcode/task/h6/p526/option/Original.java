@@ -10,7 +10,7 @@ import java.util.stream.IntStream;
 /**
  * ID: 526
  * Name: Beautiful Arrangement
- * URL: https://leetcode.com/problems/beautiful-arrangement/
+ * URL: <a href="https://leetcode.com/problems/beautiful-arrangement/">Beautiful Arrangement</a>
  * Note: the real test solution (code writing with timing)
  */
 @Slf4j

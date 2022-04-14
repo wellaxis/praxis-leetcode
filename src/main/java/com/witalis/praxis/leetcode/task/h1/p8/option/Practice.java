@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 8
  * Name: String to Integer (atoi)
- * URL: https://leetcode.com/problems/string-to-integer-atoi/
+ * URL: <a href="https://leetcode.com/problems/string-to-integer-atoi/">String to Integer (atoi)</a>
  * Note: try to find the better solution (without timing)
  */
 @Slf4j

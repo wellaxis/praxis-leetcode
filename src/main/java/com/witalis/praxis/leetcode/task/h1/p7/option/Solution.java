@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 9
  * Name: Palindrome Number
- * URL: https://leetcode.com/problems/palindrome-number/
+ * URL: <a href="https://leetcode.com/problems/palindrome-number/">Reverse Integer</a>
  * Note: the best found solution (external programming)
  */
 @Slf4j

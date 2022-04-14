@@ -10,7 +10,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 86
  * Name: Partition List
- * URL: https://leetcode.com/problems/partition-list/
+ * URL: <a href="https://leetcode.com/problems/partition-list/">Partition List</a>
  * Note: the best found solution (external programming)
  */
 @Slf4j

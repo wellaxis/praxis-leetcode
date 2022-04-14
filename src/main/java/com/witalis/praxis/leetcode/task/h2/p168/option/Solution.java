@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 168
  * Name: Excel Sheet Column Title
- * URL: https://leetcode.com/problems/excel-sheet-column-title/
+ * URL: <a href="https://leetcode.com/problems/excel-sheet-column-title/">Excel Sheet Column Title</a>
  * Note: the best found solution (external programming)
  */
 @Slf4j

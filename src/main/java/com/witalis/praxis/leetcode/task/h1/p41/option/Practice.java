@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 41
  * Name: First Missing Positive
- * URL: https://leetcode.com/problems/first-missing-positive/
+ * URL: <a href="https://leetcode.com/problems/first-missing-positive/">First Missing Positive</a>
  * Note: try to find the better solution (without timing)
  */
 @Slf4j

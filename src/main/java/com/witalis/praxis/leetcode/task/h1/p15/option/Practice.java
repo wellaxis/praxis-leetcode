@@ -10,7 +10,7 @@ import java.util.*;
 /**
  * ID: 15
  * Name: 3Sum
- * URL: https://leetcode.com/problems/3sum/
+ * URL: <a href="https://leetcode.com/problems/3sum/">3Sum</a>
  * Note: try to find the better solution (without timing)
  */
 @Slf4j

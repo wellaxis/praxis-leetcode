@@ -10,7 +10,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 110
  * Name: Balanced Binary Tree
- * URL: https://leetcode.com/problems/balanced-binary-tree/
+ * URL: <a href="https://leetcode.com/problems/balanced-binary-tree/">Balanced Binary Tree</a>
  * Note: the real test solution (code writing with timing)
  */
 @Slf4j

@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 67
  * Name: Add Binary
- * URL: https://leetcode.com/problems/add-binary/
+ * URL: <a href="https://leetcode.com/problems/add-binary/">Add Binary</a>
  * Note: the real test solution (code writing with timing)
  */
 @Slf4j

@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * ID: 257
  * Name: Binary Tree Paths
- * URL: https://leetcode.com/problems/binary-tree-paths/
+ * URL: <a href="https://leetcode.com/problems/binary-tree-paths/">Binary Tree Paths</a>
  * Note: the best found solution (external programming)
  */
 @Slf4j

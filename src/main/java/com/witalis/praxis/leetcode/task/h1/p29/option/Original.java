@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 29
  * Name: Divide Two Integers
- * URL: https://leetcode.com/problems/divide-two-integers/
+ * URL: <a href="https://leetcode.com/problems/divide-two-integers/">Divide Two Integers</a>
  * Note: the real test solution (code writing with timing)
  */
 @Slf4j

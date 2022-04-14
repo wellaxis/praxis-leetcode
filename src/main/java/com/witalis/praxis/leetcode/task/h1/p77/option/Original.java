@@ -13,7 +13,7 @@ import java.util.stream.IntStream;
 /**
  * ID: 77
  * Name: Combinations
- * URL: https://leetcode.com/problems/combinations/
+ * URL: <a href="https://leetcode.com/problems/combinations/">Combinations</a>
  * Note: the real test solution (code writing with timing)
  */
 @Slf4j

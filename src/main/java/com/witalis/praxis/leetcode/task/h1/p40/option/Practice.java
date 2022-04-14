@@ -10,7 +10,7 @@ import java.util.*;
 /**
  * ID: 40
  * Name: Combination Sum II
- * URL: https://leetcode.com/problems/combination-sum-ii/
+ * URL: <a href="https://leetcode.com/problems/combination-sum-ii/">Combination Sum II</a>
  * Note: try to find the better solution (without timing)
  */
 @Slf4j

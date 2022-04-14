@@ -12,7 +12,7 @@ import static java.util.stream.Collectors.groupingBy;
 /**
  * ID: 242
  * Name: Valid Anagram
- * URL: https://leetcode.com/problems/valid-anagram/
+ * URL: <a href="https://leetcode.com/problems/valid-anagram/">Valid Anagram</a>
  * Note: the real test solution (code writing with timing)
  */
 @Slf4j

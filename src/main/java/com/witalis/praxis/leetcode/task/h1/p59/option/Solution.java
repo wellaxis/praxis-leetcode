@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 59
  * Name: Spiral Matrix II
- * URL: https://leetcode.com/problems/spiral-matrix-ii/
+ * URL: <a href="https://leetcode.com/problems/spiral-matrix-ii/">Spiral Matrix II</a>
  * Note: the best found solution (external programming)
  */
 @Slf4j

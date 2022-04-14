@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 504
  * Name: Base 7
- * URL: https://leetcode.com/problems/base-7/
+ * URL: <a href="https://leetcode.com/problems/base-7/">Base 7</a>
  * Note: try to find the better solution (without timing)
  */
 @Slf4j

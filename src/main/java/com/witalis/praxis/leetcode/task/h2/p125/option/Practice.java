@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 125
  * Name: Valid Palindrome
- * URL: https://leetcode.com/problems/valid-palindrome/
+ * URL: <a href="https://leetcode.com/problems/valid-palindrome/">Valid Palindrome</a>
  * Note: try to find the better solution (without timing)
  */
 @Slf4j

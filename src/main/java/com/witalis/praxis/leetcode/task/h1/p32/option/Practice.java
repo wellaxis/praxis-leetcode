@@ -11,7 +11,7 @@ import java.util.Deque;
 /**
  * ID: 32
  * Name: Longest Valid Parentheses
- * URL: https://leetcode.com/problems/longest-valid-parentheses/
+ * URL: <a href="https://leetcode.com/problems/longest-valid-parentheses/">Longest Valid Parentheses</a>
  * Note: try to find the better solution (without timing)
  */
 @Slf4j

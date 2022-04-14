@@ -7,7 +7,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 183
  * Name: Customers Who Never Order
- * URL: https://leetcode.com/problems/customers-who-never-order/
+ * URL: <a href="https://leetcode.com/problems/customers-who-never-order/">Customers Who Never Order</a>
  * Note: try to find the better solution (without timing)
  */
 @Slf4j

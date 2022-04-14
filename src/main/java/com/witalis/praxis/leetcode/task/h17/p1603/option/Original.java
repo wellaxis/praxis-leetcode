@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 1603
  * Name: Design Parking System
- * URL: https://leetcode.com/problems/design-parking-system/
+ * URL: <a href="https://leetcode.com/problems/design-parking-system/">Design Parking System</a>
  * Note: the real test solution (code writing with timing)
  */
 @Slf4j

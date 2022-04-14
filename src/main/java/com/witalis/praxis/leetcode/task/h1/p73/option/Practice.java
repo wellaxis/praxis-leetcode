@@ -10,7 +10,7 @@ import java.util.BitSet;
 /**
  * ID: 73
  * Name: Set Matrix Zeroes
- * URL: https://leetcode.com/problems/set-matrix-zeroes/
+ * URL: <a href="https://leetcode.com/problems/set-matrix-zeroes/">Set Matrix Zeroes</a>
  * Note: try to find the better solution (without timing)
  */
 @Slf4j

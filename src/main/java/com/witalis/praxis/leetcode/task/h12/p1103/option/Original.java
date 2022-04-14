@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 1103
  * Name: Distribute Candies to People
- * URL: https://leetcode.com/problems/distribute-candies-to-people/
+ * URL: <a href="https://leetcode.com/problems/distribute-candies-to-people/">Distribute Candies to People</a>
  * Note: the real test solution (code writing with timing)
  */
 @Slf4j

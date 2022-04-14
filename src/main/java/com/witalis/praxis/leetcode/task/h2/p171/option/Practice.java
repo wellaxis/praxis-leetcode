@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * ID: 171
  * Name: Excel Sheet Column Number
- * URL: https://leetcode.com/problems/excel-sheet-column-number/
+ * URL: <a href="https://leetcode.com/problems/excel-sheet-column-number/">Excel Sheet Column Number</a>
  * Note: try to find the better solution (without timing)
  */
 @Slf4j
