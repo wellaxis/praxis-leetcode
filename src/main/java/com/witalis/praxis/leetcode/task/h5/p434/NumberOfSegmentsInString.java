@@ -63,21 +63,21 @@ public class NumberOfSegmentsInString extends LeetCodeTask<Integer> {
         return INFORMATION;
     }
 
-    // time = 2658 ms
+    // time = 571 ms
     @Override
     protected Integer original() {
         var original = new Original(string);
         return original.process();
     }
 
-    // time = 2647 ms
+    // time = 423 ms
     @Override
     protected Integer practice() {
         var practice = new Practice(string);
         return practice.process();
     }
 
-    // time = 2633 ms
+    // time = 414 ms
     @Override
     protected Integer solution() {
         var solution = new Solution(string);
