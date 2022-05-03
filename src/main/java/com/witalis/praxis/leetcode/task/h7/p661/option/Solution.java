@@ -28,7 +28,7 @@ public class Solution {
 
         int[][] ans = new int[m][n];
 
-        for (int i = 0; i < m; ++i) {
+        for (int i = 0; i < m; ++i)
             for (int j = 0; j < n; ++j) {
                 int ones = 0;
                 int count = 0;
@@ -39,7 +39,6 @@ public class Solution {
                     }
                 ans[i][j] = ones / count;
             }
-        }
 
         return ans;
     }

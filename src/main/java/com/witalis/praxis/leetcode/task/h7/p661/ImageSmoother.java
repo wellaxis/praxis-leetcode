@@ -88,7 +88,7 @@ public class ImageSmoother extends LeetCodeTask<int[][]> {
             log.info(builder.toString());
             log.info("-".repeat(6 * image[0].length + 1));
         }
-        log.info("Matrix [{}][{}] has been generated successfully.", image.length, image[0].length);
+        log.info("Image [{}][{}] has been generated successfully.", image.length, image[0].length);
     }
 
     private static int[][] cloneImage(int[][] image) {
