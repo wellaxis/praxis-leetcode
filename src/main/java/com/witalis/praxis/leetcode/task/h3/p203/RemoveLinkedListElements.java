@@ -19,7 +19,7 @@ import static com.witalis.praxis.leetcode.utils.TaskTag.*;
     difficulty = TaskDifficulty.EASY,
     tags = {LINKED_LIST, RECURSION}
 )
-public class ReverseLinkedList extends LeetCodeTask<ListNode> {
+public class RemoveLinkedListElements extends LeetCodeTask<ListNode> {
     public static final int LEN = 10_000;
     public static final int VALUE = 50;
 
@@ -36,7 +36,7 @@ public class ReverseLinkedList extends LeetCodeTask<ListNode> {
             Input: head = [1,2,6,3,4,5,6], val = 6
             Output: [1,2,3,4,5]""";
 
-    public ReverseLinkedList(int id, String description, TaskRevision revision) {
+    public RemoveLinkedListElements(int id, String description, TaskRevision revision) {
         super(id, description, revision);
         initialization();
     }
