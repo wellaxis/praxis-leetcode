@@ -32,6 +32,7 @@ public class Solution {
 
     private List<Integer>[] graph;
 
+    @SuppressWarnings("unchecked")
     public int[] loudAndRich(int[][] richer, int[] quiet) {
         final int N = quiet.length;
 
