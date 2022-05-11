@@ -27,5 +27,5 @@ Solution
 
 
 [leetcode]: <http://leetcode.com/>
-[task]: <https://leetcode.com/problems/single-number/>
+[task]: <https://leetcode.com/problems/single-number-ii/>
 [solution]: <https://github.com/wellaxis/witalis-jkit/blob/main/module/tasks/src/main/java/com/witalis/jkit/tasks/core/task/leetcode/h2/p137/option/Practice.java>
