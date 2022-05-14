@@ -97,21 +97,21 @@ public class ImplementTrie extends LeetCodeTask<List<Boolean>> {
         return INFORMATION;
     }
 
-    // dfs, time = 10312 ms
+    // time = 10312 ms
     @Override
     protected List<Boolean> original() {
         var original = new Original(operations);
         return original.process();
     }
 
-    // dfs, time = 11104 ms
+    // time = 11104 ms
     @Override
     protected List<Boolean> practice() {
         var practice = new Practice(operations);
         return practice.process();
     }
 
-    // bfs, time = 9739 ms
+    // time = 9739 ms
     @Override
     protected List<Boolean> solution() {
         var solution = new Solution(operations);
