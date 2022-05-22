@@ -1,0 +1,46 @@
+# [LeetCode][leetcode] task # 211: [Design Add and Search Words Data Structure][task]
+
+Description
+-----------
+
+> Design a data structure that supports adding new words and finding
+> if a string matches any previously added string.
+> 
+> Implement the `WordDictionary` class:
+> * `WordDictionary()` Initializes the object.
+> * `void addWord(word)` Adds `word` to the data structure, it can be matched later.
+> * `bool search(word)` Returns `true` if there is any string in the data structure
+> that matches `word` or `false` otherwise.
+> `word` may contain dots `'.'` where dots can be matched with any letter.
+
+Example
+-------
+
+```sh
+Input:
+    ["WordDictionary","addWord","addWord","addWord","search","search","search","search"]
+    [[],["bad"],["dad"],["mad"],["pad"],["bad"],[".ad"],["b.."]]
+Output:
+    [null,null,null,null,false,true,true,true]
+Explanation:
+    WordDictionary wordDictionary = new WordDictionary();
+    wordDictionary.addWord("bad");
+    wordDictionary.addWord("dad");
+    wordDictionary.addWord("mad");
+    wordDictionary.search("pad"); // return false
+    wordDictionary.search("bad"); // return true
+    wordDictionary.search(".ad"); // return true
+    wordDictionary.search("b.."); // return true
+```
+
+Solution
+--------
+
+| Task | Solution                                               |
+|:----:|:-------------------------------------------------------|
+| 211  | [Design Add and Search Words Data Structure][solution] |
+
+
+[leetcode]: <http://leetcode.com/>
+[task]: <https://leetcode.com/problems/design-add-and-search-words-data-structure/>
+[solution]: <https://github.com/wellaxis/witalis-jkit/blob/main/module/tasks/src/main/java/com/witalis/jkit/tasks/core/task/leetcode/h3/p211/option/Practice.java>
