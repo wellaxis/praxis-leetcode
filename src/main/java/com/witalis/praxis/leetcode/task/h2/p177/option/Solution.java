@@ -35,6 +35,7 @@ public class Solution {
                     WHERE  r.rank = N
                 );
             END
+
             """;
     }
 }
