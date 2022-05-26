@@ -1,4 +1,4 @@
-package com.witalis.praxis.leetcode.task.h2.p105.content;
+package com.witalis.praxis.leetcode.task.h2.p106.content;
 
 import java.util.ArrayList;
 import java.util.List;

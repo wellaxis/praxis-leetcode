@@ -59,8 +59,7 @@ public class Solution {
                 // step 1
                 current = current.right;
             } else {
-                // step 2
-                // find the postorder predecessor of current node
+                // step 2 - find the postorder predecessor of current node
                 predecessor = current.left;
                 while (predecessor.right != null && predecessor.right != current) {
                     predecessor = predecessor.right;

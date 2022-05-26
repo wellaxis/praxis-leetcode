@@ -52,21 +52,21 @@ public class CountLargestGroup extends LeetCodeTask<Integer> {
         return INFORMATION;
     }
 
-    // time = 814 ms
+    // time = 3304 ms
     @Override
     protected Integer original() {
         var original = new Original(number);
         return original.process();
     }
 
-    // time = 639 ms
+    // time = 932 ms
     @Override
     protected Integer practice() {
         var practice = new Practice(number);
         return practice.process();
     }
 
-    // time = 631 ms
+    // time = 966 ms
     @Override
     protected Integer solution() {
         var solution = new Solution(number);
