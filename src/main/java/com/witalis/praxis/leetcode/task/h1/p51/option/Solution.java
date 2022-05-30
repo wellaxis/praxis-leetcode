@@ -20,54 +20,41 @@ import java.util.*;
 public class Solution {
     private int number;
 
+    public Solution(int number) {
+        this.number = number;
+    }
+
     public List<List<String>> process() {
         return solveNQueens(number);
     }
 
-    public List<List<String>> solveNQueens(int n) {
-        List<List<String>> solutions = new ArrayList<>();
-        solve(
-            0,
-            n,
-            new ArrayList<>(),
-            new boolean[n],
-            new boolean[2 * n],
-            new boolean[2 * n],
-            solutions
-        );
+    private List<List<String>> ans;
+    private char[][] board;
 
-        return solutions;
+    public List<List<String>> solveNQueens(int N) {
+        ans = new ArrayList<>();
+        board = new char[N][N];
+        for (char[] row : board) Arrays.fill(row, '.');
+        place(0, 0, 0, 0);
+        return ans;
     }
 
-    private void solve(
-        int row,
-        int n,
-        List<String> tmp,
-        boolean[] cl,
-        boolean[] dg1,
-        boolean[] dg2,
-        List<List<String>> res
-    ) {
-        if (row == n) {
-            res.add(new ArrayList<>(tmp));
+    private void place(int i, int vert, int ldiag, int rdiag) {
+        int N = board.length;
+        if (i == N) {
+            List<String> res = new ArrayList<>();
+            for (char[] row : board) res.add(new String(row));
+            ans.add(res);
+            return;
         }
-        for (int i = 0; i < n; i++) {
-            int id1 = i - row + n;
-            int id2 = i + row;
-            if (!cl[i] && !dg1[id1] && !dg2[id2]) {
-                char[] r = new char[n];
-                Arrays.fill(r, '.');
-                r[i] = 'Q';
-                tmp.add(new String(r));
-                cl[i] = true;
-                dg1[id1] = true;
-                dg2[id2] = true;
-                solve(row + 1, n, tmp, cl, dg1, dg2, res);
-                cl[i] = false;
-                dg1[id1] = false;
-                dg2[id2] = false;
-                tmp.remove(tmp.size() - 1);
-            }
+        for (int j = 0; j < N; j++) {
+            int vmask = 1 << j;
+            int lmask = 1 << (i + j);
+            int rmask = 1 << (N - i - 1 + j);
+            if ((vert & vmask) + (ldiag & lmask) + (rdiag & rmask) > 0) continue;
+            board[i][j] = 'Q';
+            place(i + 1, vert | vmask, ldiag | lmask, rdiag | rmask);
+            board[i][j] = '.';
         }
     }
 }
