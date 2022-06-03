@@ -41,5 +41,5 @@ Solution
 
 
 [leetcode]: <http://leetcode.com/>
-[task]: <https://leetcode.com/problems/path-sum-ii/>
+[task]: <https://leetcode.com/problems/populating-next-right-pointers-in-each-node/>
 [solution]: <https://github.com/wellaxis/witalis-jkit/blob/main/module/tasks/src/main/java/com/witalis/jkit/tasks/core/task/leetcode/h2/p116/option/Practice.java>
