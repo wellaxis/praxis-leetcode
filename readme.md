@@ -279,7 +279,7 @@ Framework
 ---------
 
 Application uses a number of open source frameworks:
-* [`slf4j`, `log4j`] - for application logging
+* [`slf4j`, `log4j`] - to application logging
 * [`lombok`] - to generate class environment
 * etc
 ***
