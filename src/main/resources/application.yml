@@ -15,5 +15,5 @@ logging:
 # task
 task:
   type: leetcode
-  code: 404
+  code: 405
   mode: B
