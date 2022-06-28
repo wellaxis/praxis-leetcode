@@ -15,7 +15,7 @@ import java.util.Map;
  * ID: 133
  * Name: Clone Graph
  * URL: <a href="https://leetcode.com/problems/clone-graph/">Clone Graph</a>
- * Note: the real test solution (code writing with timing)
+ * Note: try to find the better solution (without timing)
  */
 @Slf4j
 @Data

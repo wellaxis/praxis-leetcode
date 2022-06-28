@@ -15,7 +15,7 @@ import java.util.Map;
  * ID: 133
  * Name: Clone Graph
  * URL: <a href="https://leetcode.com/problems/clone-graph/">Clone Graph</a>
- * Note: the real test solution (code writing with timing)
+ * Note: the best found solution (external programming)
  */
 @Slf4j
 @Data
@@ -43,7 +43,7 @@ public class Solution {
             return visited.get(node);
         }
 
-        Node cloneNode = new Node(node.val, new ArrayList());
+        Node cloneNode = new Node(node.val, new ArrayList<>());
         visited.put(node, cloneNode);
 
         for (Node neighbor: node.neighbors) {
