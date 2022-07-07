@@ -81,24 +81,24 @@ public class IslandPerimeter extends LeetCodeTask<Integer> {
         return INFORMATION;
     }
 
-    // time = 572 ms
+    // time = 679 ms
     @Override
     protected Integer original() {
-        var original = new Original(cloneMatrix(grid));
+        var original = new Original(grid);
         return original.process();
     }
 
-    // time = 379 ms
+    // time = 528 ms
     @Override
     protected Integer practice() {
-        var practice = new Practice(cloneMatrix(grid));
+        var practice = new Practice(grid);
         return practice.process();
     }
 
-    // time = 375 ms
+    // time = 472 ms
     @Override
     protected Integer solution() {
-        var solution = new Solution(cloneMatrix(grid));
+        var solution = new Solution(grid);
         return solution.process();
     }
 }
