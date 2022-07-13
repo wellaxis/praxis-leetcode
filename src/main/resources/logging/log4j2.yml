@@ -1,6 +1,7 @@
 configuration:
   name: 'PraxisLeetcodeLogConfig'
   status: warn
+  shutdownHook: disable
   monitorInterval: 300
   properties:
     property:

@@ -37,6 +37,6 @@ public class PraxisLeetcodeApplication {
     @Bean
     public CommandLineRunner invoke(ApplicationContext context) {
         var taskUtils = context.getBean(TaskUtils.class);
-        return (args) -> ((TaskUtils) taskUtils).invokeTask();
+        return args -> taskUtils.invokeTask();
     }
 }
