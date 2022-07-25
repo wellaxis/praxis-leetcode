@@ -84,21 +84,21 @@ public class NextGreaterElementI extends LeetCodeTask<int[]> {
         return INFORMATION;
     }
 
-    // time = 1877 ms
+    // time = 985 ms
     @Override
     protected int[] original() {
         var original = new Original(numbers1.clone(), numbers2.clone());
         return original.process();
     }
 
-    // time = 1824 ms
+    // time = 966 ms
     @Override
     protected int[] practice() {
         var practice = new Practice(numbers1.clone(), numbers2.clone());
         return practice.process();
     }
 
-    // time = 1737 ms
+    // time = 1077 ms
     @Override
     protected int[] solution() {
         var solution = new Solution(numbers1.clone(), numbers2.clone());
