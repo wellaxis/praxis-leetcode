@@ -15,5 +15,5 @@ logging:
 # task
 task:
   type: leetcode
-  code: 172
+  code: 173
   mode: B
