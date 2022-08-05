@@ -23,18 +23,18 @@ public class Original {
         return
             """
 
-                SELECT s.score AS score,
-                       us.rank AS rank
-                FROM   scores s,
-                       (SELECT ROWNUM AS rank,
-                               us.score
-                        FROM   (SELECT DISTINCT s.score
-                                FROM   scores s
-                                ORDER BY s.score DESC
-                               ) us
-                       ) us
-                WHERE  s.score = us.score
+            SELECT s.score AS score,
+                   us.rank AS rank
+            FROM   scores s,
+                   (SELECT ROWNUM AS rank,
+                           us.score
+                    FROM   (SELECT DISTINCT s.score
+                            FROM   scores s
+                            ORDER BY s.score DESC
+                           ) us
+                   ) us
+            WHERE  s.score = us.score
 
-                """;
+            """;
     }
 }
