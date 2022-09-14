@@ -1,6 +1,6 @@
-package com.witalis.praxis.leetcode.task.h6.p589.option;
+package com.witalis.praxis.leetcode.task.h6.p590.option;
 
-import com.witalis.praxis.leetcode.task.h6.p589.content.Node;
+import com.witalis.praxis.leetcode.task.h6.p590.content.Node;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -11,9 +11,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * ID: 589
- * Name: N-ary Tree Preorder Traversal
- * URL: <a href="https://leetcode.com/problems/n-ary-tree-preorder-traversal/">N-ary Tree Preorder Traversal</a>
+ * ID: 590
+ * Name: N-ary Tree Postorder Traversal
+ * URL: <a href="https://leetcode.com/problems/n-ary-tree-postorder-traversal/">N-ary Tree Postorder Traversal</a>
  * Note: the best found solution (external programming)
  */
 @Slf4j
@@ -28,16 +28,16 @@ public class Solution {
     }
 
     public List<Integer> process() {
-        return preorder(root);
+        return postorder(root);
     }
 
     private List<Integer> output = new ArrayList<>();
 
-    public List<Integer> preorder(Node root) {
+    public List<Integer> postorder(Node root) {
         if (root == null) return output;
 
+        for (Node node : root.children) postorder(node);
         output.add(root.val);
-        for (Node node : root.children) preorder(node);
 
         return output;
     }
