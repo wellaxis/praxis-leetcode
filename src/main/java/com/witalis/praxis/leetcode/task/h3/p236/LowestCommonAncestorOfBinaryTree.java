@@ -1,26 +1,25 @@
-package com.witalis.praxis.leetcode.task.h3.p235;
+package com.witalis.praxis.leetcode.task.h3.p236;
 
 import com.witalis.praxis.leetcode.task.LeetCodeTask;
-import com.witalis.praxis.leetcode.task.h3.p235.content.*;
-import com.witalis.praxis.leetcode.task.h3.p235.option.*;
+import com.witalis.praxis.leetcode.task.h3.p236.content.*;
+import com.witalis.praxis.leetcode.task.h3.p236.option.*;
 import com.witalis.praxis.leetcode.utils.LeetCode;
 import com.witalis.praxis.leetcode.utils.TaskDifficulty;
 import com.witalis.praxis.leetcode.utils.TaskRevision;
 
 import lombok.extern.slf4j.Slf4j;
-import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
 
 import static com.witalis.praxis.leetcode.utils.TaskTag.*;
 
 @Slf4j
 @LeetCode(
-    id = 235,
-    description = "Lowest Common Ancestor of a Binary Search Tree",
-    difficulty = TaskDifficulty.EASY,
-    tags = {TREE, BINARY_TREE, BINARY_SEARCH_TREE, DEPTH_FIRST_SEARCH}
+    id = 236,
+    description = "Lowest Common Ancestor of a Binary Tree",
+    difficulty = TaskDifficulty.MEDIUM,
+    tags = {TREE, BINARY_TREE, DEPTH_FIRST_SEARCH}
 )
-public class LowestCommonAncestorOfBinarySearchTree extends LeetCodeTask<TreeNode> {
+public class LowestCommonAncestorOfBinaryTree extends LeetCodeTask<TreeNode> {
     public static final int LEN = 100_000;
     public static final int VALUE = (int) Math.pow(10, 9);
     private TreeNode root;
@@ -42,7 +41,7 @@ public class LowestCommonAncestorOfBinarySearchTree extends LeetCodeTask<TreeNod
             Output: 6
             Explanation: The LCA of nodes 2 and 8 is 6.""";
 
-    public LowestCommonAncestorOfBinarySearchTree(int id, String description, TaskRevision revision) {
+    public LowestCommonAncestorOfBinaryTree(int id, String description, TaskRevision revision) {
         super(id, description, revision);
         initialization();
     }
@@ -53,7 +52,6 @@ public class LowestCommonAncestorOfBinarySearchTree extends LeetCodeTask<TreeNod
         int len = random.nextInt(2, LEN + 1);
         var tree = random.ints(len, -VALUE, VALUE)
             .distinct()
-            .sorted()
             .boxed()
             .mapToInt(Integer::intValue)
             .toArray();
@@ -74,21 +72,21 @@ public class LowestCommonAncestorOfBinarySearchTree extends LeetCodeTask<TreeNod
         return INFORMATION;
     }
 
-    // time = 11764 ms
+    // time = 1080 ms
     @Override
     protected TreeNode original() {
         var original = new Original(root, node1, node2);
         return original.process();
     }
 
-    // time = 1047 ms
+    // time = 704 ms
     @Override
     protected TreeNode practice() {
         var practice = new Practice(root, node1, node2);
         return practice.process();
     }
 
-    // time = 1150 ms
+    // time = 569 ms
     @Override
     protected TreeNode solution() {
         var solution = new Solution(root, node1, node2);

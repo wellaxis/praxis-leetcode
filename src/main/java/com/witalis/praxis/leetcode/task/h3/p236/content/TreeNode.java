@@ -1,4 +1,6 @@
-package com.witalis.praxis.leetcode.task.h3.p235.content;
+package com.witalis.praxis.leetcode.task.h3.p236.content;
+
+import java.util.Arrays;
 
 /**
  * Definition for a binary tree node.
@@ -21,20 +23,19 @@ public class TreeNode {
         this.right = right;
     }
 
-    public static TreeNode initTree(int[] array) {
-        if (array.length == 0) return new TreeNode();
-
-        return initBSTTree(array, 0, array.length - 1);
+    public static TreeNode initTree(int[] arr) {
+        return initTree(Arrays.stream(arr).boxed().toArray(Integer[]::new), new TreeNode(), 0);
     }
 
-    public static TreeNode initBSTTree(int[] array, int start, int end) {
-        if (start > end) return null;
+    private static TreeNode initTree(Integer[] arr, TreeNode root, int i) {
+        if (i < arr.length && arr[i] != null) {
+            root = new TreeNode(arr[i]);
 
-        int mid = (start + end) / 2;
-        TreeNode root = new TreeNode(array[mid]);
-        root.left = initBSTTree(array, start, mid - 1);
-        root.right = initBSTTree(array, mid + 1, end);
-
+            // insert left child
+            root.left = initTree(arr, root.left, 2 * i + 1);
+            // insert right child
+            root.right = initTree(arr, root.right, 2 * i + 2);
+        }
         return root;
     }
 
@@ -64,6 +65,6 @@ public class TreeNode {
     }
 
     public String showNode(TreeNode node) {
-        return (node == null) ? "" : node.val + " -> ...";
+        return (node == null) ? "" : node.val + " -> " + showNode(node.left) + showNode(node.right);
     }
 }
