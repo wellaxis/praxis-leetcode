@@ -42,7 +42,7 @@ public class Practice {
                        LEAD(people, 1) OVER (ORDER BY s.id) AS next1,
                        LEAD(people, 2) OVER (ORDER BY s.id) AS next2
                 FROM   sn s
-            )s
+            ) s
             WHERE coef * (NVL(prev1 + prev2, 0) + NVL(next1 + next2, 0) + NVL(prev1 + next1, 0)) >= 1
 
             """;
