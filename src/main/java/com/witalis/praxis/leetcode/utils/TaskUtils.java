@@ -92,9 +92,14 @@ public class TaskUtils {
                 }
             }
         } catch (Exception e) {
-            log.error("Unable to resolve the task {}", type + '/' + code);
+            var message = e.getLocalizedMessage();
+            if (ObjectUtils.isEmpty(message)) {
+                Throwable cause = e.getCause();
+                if (!ObjectUtils.isEmpty(cause)) message = cause.getMessage();
+            }
+            log.error("Unable to resolve the task {}: {}", type + '/' + code, message);
         }
-        log.info("Task #{} has not been found. Maybe it's not implemented yet. Check code and try again.", code);
+        log.warn("Warning: task #{} may not been found. Maybe it's not implemented yet. Check code and try again.", code);
         return null;
     }
 }
