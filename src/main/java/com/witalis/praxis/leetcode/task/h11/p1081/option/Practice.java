@@ -1,4 +1,4 @@
-package com.witalis.praxis.leetcode.task.h4.p316.option;
+package com.witalis.praxis.leetcode.task.h11.p1081.option;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -9,9 +9,9 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 
 /**
- * ID: 316
- * Name: Remove Duplicate Letters
- * URL: <a href="https://leetcode.com/problems/remove-duplicate-letters/">Remove Duplicate Letters</a>
+ * ID: 1081
+ * Name: Smallest Subsequence of Distinct Characters
+ * URL: <a href="https://leetcode.com/problems/smallest-subsequence-of-distinct-characters/">Smallest Subsequence of Distinct Characters</a>
  * Note: try to find the better solution (without timing)
  */
 @Slf4j
