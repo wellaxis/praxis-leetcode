@@ -7,4 +7,4 @@ Description
 > It's possible to check all resolved tasks [here][module].
 
 [leetcode]: <http://leetcode.com/>
-[module]: <https://github.com/wellaxis/witalis-jkit/tree/main/module/tasks/src/main/java/com/witalis/jkit/tasks/core/task/leetcode>
+[module]: <https://github.com/wellaxis/praxis-leetcode/blob/main/src/main/java/com/witalis/praxis/leetcode/task>

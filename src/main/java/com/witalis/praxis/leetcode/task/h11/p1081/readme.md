@@ -24,4 +24,4 @@ Solution
 
 [leetcode]: <http://leetcode.com/>
 [task]: <https://leetcode.com/problems/smallest-subsequence-of-distinct-characters/>
-[solution]: <https://github.com/wellaxis/witalis-jkit/blob/main/module/tasks/src/main/java/com/witalis/jkit/tasks/core/task/leetcode/h11/p1081/option/Practice.java>
+[solution]: <https://github.com/wellaxis/praxis-leetcode/blob/main/src/main/java/com/witalis/praxis/leetcode/task/h11/p1081/option/Practice.java>

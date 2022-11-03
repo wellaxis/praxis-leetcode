@@ -28,4 +28,4 @@ Solution
 
 [leetcode]: <http://leetcode.com/>
 [task]: <https://leetcode.com/problems/maximum-depth-of-binary-tree/>
-[solution]: <https://github.com/wellaxis/witalis-jkit/blob/main/module/tasks/src/main/java/com/witalis/jkit/tasks/core/task/leetcode/h2/p104/option/Practice.java>
+[solution]: <https://github.com/wellaxis/praxis-leetcode/blob/main/src/main/java/com/witalis/praxis/leetcode/task/h2/p104/option/Practice.java>

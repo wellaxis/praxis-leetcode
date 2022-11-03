@@ -27,4 +27,4 @@ Solution
 
 [leetcode]: <http://leetcode.com/>
 [task]: <https://leetcode.com/problems/remove-linked-list-elements/>
-[solution]: <https://github.com/wellaxis/witalis-jkit/blob/main/module/tasks/src/main/java/com/witalis/jkit/tasks/core/task/leetcode/h3/p203/option/Practice.java>
+[solution]: <https://github.com/wellaxis/praxis-leetcode/blob/main/src/main/java/com/witalis/praxis/leetcode/task/h3/p203/option/Practice.java>

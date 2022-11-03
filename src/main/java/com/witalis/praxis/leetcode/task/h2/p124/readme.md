@@ -32,4 +32,4 @@ Solution
 
 [leetcode]: <http://leetcode.com/>
 [task]: <https://leetcode.com/problems/binary-tree-maximum-path-sum/>
-[solution]: <https://github.com/wellaxis/witalis-jkit/blob/main/module/tasks/src/main/java/com/witalis/jkit/tasks/core/task/leetcode/h2/p124/option/Practice.java>
+[solution]: <https://github.com/wellaxis/praxis-leetcode/blob/main/src/main/java/com/witalis/praxis/leetcode/task/h2/p124/option/Practice.java>

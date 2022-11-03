@@ -28,4 +28,4 @@ Solution
 
 [leetcode]: <http://leetcode.com/>
 [task]: <https://leetcode.com/problems/search-in-a-binary-search-tree/>
-[solution]: <https://github.com/wellaxis/witalis-jkit/blob/main/module/tasks/src/main/java/com/witalis/jkit/tasks/core/task/leetcode/h8/p700/option/Practice.java>
+[solution]: <https://github.com/wellaxis/praxis-leetcode/blob/main/src/main/java/com/witalis/praxis/leetcode/task/h8/p700/option/Practice.java>
