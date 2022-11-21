@@ -38,5 +38,5 @@ Solution
 
 
 [leetcode]: <http://leetcode.com/>
-[task]: <https://leetcode.com/problems/number-of-1-bits/>
+[task]: <https://leetcode.com/problems/house-robber/>
 [solution]: <https://github.com/wellaxis/praxis-leetcode/blob/main/src/main/java/com/witalis/praxis/leetcode/task/h2/p198/option/Practice.java>
