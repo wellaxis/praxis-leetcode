@@ -3,7 +3,7 @@ plugins {
     id 'java'
     id 'application'
     id 'distribution'
-    id 'org.springframework.boot' version '2.7.5'
+    id 'org.springframework.boot' version '3.0.0'
     id 'io.spring.dependency-management' version '1.1.0'
     id 'net.nemerosa.versioning' version '3.0.0'
     id 'org.sonarqube' version '3.5.0.2730'
@@ -15,8 +15,8 @@ version = "1.0.0"
 mainClassName = "com.witalis.praxis.leetcode.PraxisLeetcodeApplication"
 
 // compatibility
-sourceCompatibility = JavaVersion.VERSION_18
-targetCompatibility = JavaVersion.VERSION_18
+sourceCompatibility = JavaVersion.VERSION_19
+targetCompatibility = JavaVersion.VERSION_19
 
 // extension
 ext {
