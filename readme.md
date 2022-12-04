@@ -418,6 +418,7 @@ In this case we run LeetCode's task #25 in `B` mode.
 | 1603 | [Design Parking System](https://leetcode.com/problems/design-parking-system/)                                                                                           |  Easy  | [Java](/src/main/java/com/witalis/praxis/leetcode/task/h17/p1603/option/Practice.java) | [Java](/src/main/java/com/witalis/praxis/leetcode/task/h17/p1603/option/Solution.java) |
 | 1640 | [Check Array Formation Through Concatenation](https://leetcode.com/problems/check-array-formation-through-concatenation/)                                               |  Easy  | [Java](/src/main/java/com/witalis/praxis/leetcode/task/h17/p1640/option/Practice.java) | [Java](/src/main/java/com/witalis/praxis/leetcode/task/h17/p1640/option/Solution.java) |
 | 1704 | [Determine if String Halves Are Alike](https://leetcode.com/problems/determine-if-string-halves-are-alike/)                                                             |  Easy  | [Java](/src/main/java/com/witalis/praxis/leetcode/task/h18/p1704/option/Practice.java) | [Java](/src/main/java/com/witalis/praxis/leetcode/task/h18/p1704/option/Solution.java) |
+| 2256 | [Minimum Average Difference](https://leetcode.com/problems/minimum-average-difference/)                                                                                 |  Easy  | [Java](/src/main/java/com/witalis/praxis/leetcode/task/h23/p2256/option/Practice.java) | [Java](/src/main/java/com/witalis/praxis/leetcode/task/h23/p2256/option/Solution.java) |
 ***
 
 Structure
