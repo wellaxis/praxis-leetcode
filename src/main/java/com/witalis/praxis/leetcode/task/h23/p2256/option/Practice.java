@@ -5,6 +5,9 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
+import java.util.Arrays;
+import java.util.IntSummaryStatistics;
+
 /**
  * ID: 2256
  * Name: Minimum Average Difference
@@ -23,6 +26,26 @@ public class Practice {
     }
 
     public int minimumAverageDifference(int[] nums) {
-        return -1;
+        if (nums == null || nums.length == 0) return -1;
+
+        int index = -1;
+
+        int len = nums.length;
+        long sum = 0;
+        for (int num : nums) sum += num;
+
+        long currentSum = 0;
+        long minDifference = Long.MAX_VALUE;
+        for (int i = 0; i < len - 1; i++) {
+            currentSum += nums[i];
+            int difference = (int) Math.abs(currentSum / (i + 1) - (sum - currentSum) / (len - i - 1));
+            if (difference < minDifference) {
+                minDifference = difference;
+                index = i;
+            }
+        }
+        if (minDifference > sum / len) index = len - 1;
+
+        return index;
     }
 }

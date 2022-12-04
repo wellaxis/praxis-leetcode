@@ -73,21 +73,21 @@ public class MinimumAverageDifference extends LeetCodeTask<Integer> {
         return INFORMATION;
     }
 
-    // time = 2626 ms
+    // time = 6750 ms
     @Override
     protected Integer original() {
         var original = new Original(numbers);
         return original.process();
     }
 
-    // time = 2125 ms
+    // time = 3993 ms
     @Override
     protected Integer practice() {
         var practice = new Practice(numbers);
         return practice.process();
     }
 
-    // time = 961 ms
+    // time = 4580 ms
     @Override
     protected Integer solution() {
         var solution = new Solution(numbers);

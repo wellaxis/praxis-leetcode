@@ -16,4 +16,4 @@ logging:
 task:
   type: leetcode
   code: 2256
-  mode: O
+  mode: B
