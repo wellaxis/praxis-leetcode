@@ -1,5 +1,6 @@
 package com.witalis.praxis.leetcode.task.h9.p841.option;
 
+import com.witalis.praxis.leetcode.task.h9.p802.option.Solution;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -24,17 +25,28 @@ public class Original {
         return canVisitAllRooms(rooms);
     }
 
+    enum State { INIT, VISITING, VISITED }
+
     public boolean canVisitAllRooms(List<List<Integer>> rooms) {
         if (rooms == null || rooms.isEmpty()) return false;
 
-        int[] visit = new int[rooms.size()];
-        for (int i = 0; i < rooms.size(); i++) {
-            if (visit[i] == 0) {
-                List<Integer> keys = rooms.get(i);
-                // recursive visiting...
-            }
+        State[] visit = new State[rooms.size()];
+        Arrays.fill(visit, State.INIT);
+        recursiveVisit(rooms, visit, 0);
+
+        return Arrays.stream(visit).allMatch(i -> i == State.VISITED);
+    }
+
+    public void recursiveVisit(List<List<Integer>> rooms, State[] visit, int index) {
+        if (visit[index] != State.INIT) return;
+
+        visit[index] = State.VISITING;
+
+        final List<Integer> keys = rooms.get(index);
+        for (final int key : keys) {
+            recursiveVisit(rooms, visit, key);
         }
 
-        return Arrays.stream(visit).allMatch(i -> i == 1);
+        visit[index] = State.VISITED;
     }
 }

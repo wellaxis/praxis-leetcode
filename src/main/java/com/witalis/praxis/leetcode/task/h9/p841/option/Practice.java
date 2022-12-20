@@ -24,7 +24,23 @@ public class Practice {
         return canVisitAllRooms(rooms);
     }
 
+    enum State { INIT, VISITING, VISITED }
+
     public boolean canVisitAllRooms(List<List<Integer>> rooms) {
-        return false;
+        if (rooms == null || rooms.isEmpty()) return false;
+
+        State[] visit = new State[rooms.size()];
+        Arrays.fill(visit, State.INIT);
+        recursiveVisit(rooms, visit, 0);
+
+        return Arrays.stream(visit).allMatch(i -> i == State.VISITED);
+    }
+
+    public void recursiveVisit(List<List<Integer>> rooms, State[] visit, int index) {
+        if (visit[index] != State.INIT) return;
+
+        visit[index] = State.VISITING;
+        rooms.get(index).forEach(key -> recursiveVisit(rooms, visit, key));
+        visit[index] = State.VISITED;
     }
 }
