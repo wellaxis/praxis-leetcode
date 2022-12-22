@@ -55,9 +55,9 @@ public class PossibleBipartition extends LeetCodeTask<Boolean> {
 
         int size = random.nextInt(0, SIZE + 1);
         List<int[]> dislikeList = new ArrayList<>();
-        for (int i = 0; i < size; i++) {
+        for (int i = 1; i <= number; i++) {
             int[] candidates = random.ints(
-                random.nextInt(0, size / number),
+                random.nextInt(0, (size / number) + 1),
                 1, number + 1
             ).distinct().toArray();
             for (int candidate : candidates) {
@@ -76,21 +76,21 @@ public class PossibleBipartition extends LeetCodeTask<Boolean> {
         return INFORMATION;
     }
 
-    // time = 2626 ms
+    // time = 4263 ms
     @Override
     protected Boolean original() {
         var original = new Original(number, dislikes);
         return original.process();
     }
 
-    // time = 2125 ms
+    // time = 4088 ms
     @Override
     protected Boolean practice() {
         var practice = new Practice(number, dislikes);
         return practice.process();
     }
 
-    // time = 961 ms
+    // time = 2544 ms
     @Override
     protected Boolean solution() {
         var solution = new Solution(number, dislikes);
