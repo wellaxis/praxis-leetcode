@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
@@ -21,11 +22,34 @@ import java.util.List;
 public class Practice {
     private int[][] graph;
 
+    public Practice(int[][] graph) {
+        this.graph = graph;
+    }
+
     public List<List<Integer>> process() {
         return allPathsSourceTarget(graph);
     }
 
+    private List<List<Integer>> paths = new ArrayList<>();
+
     public List<List<Integer>> allPathsSourceTarget(int[][] graph) {
-        return Collections.emptyList();
+        if (graph == null || graph.length == 0) return Collections.emptyList();
+
+        recursiveTraverse(graph, new ArrayList<>(List.of(0)), 0);
+
+        return paths;
+    }
+
+    private void recursiveTraverse(int[][] graph, List<Integer> path, int index) {
+        if (index == graph.length - 1) {
+            paths.add(new ArrayList<>(path));
+        } else {
+            final int[] nodes = graph[index];
+            for (final int node : nodes) {
+                path.add(node);
+                recursiveTraverse(graph, path, node);
+                path.remove(path.size() - 1);
+            }
+        }
     }
 }

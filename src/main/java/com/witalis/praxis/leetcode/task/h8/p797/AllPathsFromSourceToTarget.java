@@ -53,10 +53,11 @@ public class AllPathsFromSourceToTarget extends LeetCodeTask<List<List<Integer>>
         List<Integer> nodes;
         for (int i = 0; i < len; i++) {
             nodes = new ArrayList<>();
-            int count = random.nextInt(0, len + 1);
+            nodes.add((i == len - 1) ? 0 : i + 1);
+            int count = random.nextInt(0, len / 2);
             while (count > 0) {
-                int node = random.nextInt(0, len + 1);
-                if (node == i) continue;
+                int node = random.nextInt(0, len);
+                if (node == i || nodes.contains(node)) continue;
 
                 nodes.add(node);
                 count--;
@@ -72,21 +73,21 @@ public class AllPathsFromSourceToTarget extends LeetCodeTask<List<List<Integer>>
         return INFORMATION;
     }
 
-    // time = 26660 ms
+    // time = 1772 ms
     @Override
     protected List<List<Integer>> original() {
         var original = new Original(graph);
         return original.process();
     }
 
-    // time = 25036 ms
+    // time = 1565 ms
     @Override
     protected List<List<Integer>> practice() {
         var practice = new Practice(graph);
         return practice.process();
     }
 
-    // time = 37758 ms
+    // time = 1643 ms
     @Override
     protected List<List<Integer>> solution() {
         var solution = new Solution(graph);
