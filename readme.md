@@ -456,6 +456,7 @@ In this case we run LeetCode's task #25 in `B` mode.
 | 2279 | [Maximum Bags With Full Capacity of Rocks](https://leetcode.com/problems/maximum-bags-with-full-capacity-of-rocks/)                                                     | Medium | [Java](/src/main/java/com/witalis/praxis/leetcode/task/h23/p2279/option/Practice.java) | [Java](/src/main/java/com/witalis/praxis/leetcode/task/h23/p2279/option/Solution.java) |
 | 2303 | [Calculate Amount Paid in Taxes](https://leetcode.com/problems/calculate-amount-paid-in-taxes/)                                                                         |  Easy  | [Java](/src/main/java/com/witalis/praxis/leetcode/task/h24/p2303/option/Practice.java) | [Java](/src/main/java/com/witalis/praxis/leetcode/task/h24/p2303/option/Solution.java) |
 | 2389 | [Longest Subsequence With Limited Sum](https://leetcode.com/problems/longest-subsequence-with-limited-sum/)                                                             |  Easy  | [Java](/src/main/java/com/witalis/praxis/leetcode/task/h24/p2389/option/Practice.java) | [Java](/src/main/java/com/witalis/praxis/leetcode/task/h24/p2389/option/Solution.java) |
+| 2421 | [Number of Good Paths](https://leetcode.com/problems/number-of-good-paths/)                                                                                             |  Hard  | [Java](/src/main/java/com/witalis/praxis/leetcode/task/h25/p2421/option/Practice.java) | [Java](/src/main/java/com/witalis/praxis/leetcode/task/h25/p2421/option/Solution.java) |
 ***
 
 Structure
