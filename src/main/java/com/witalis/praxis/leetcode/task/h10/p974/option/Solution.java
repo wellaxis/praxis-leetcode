@@ -24,6 +24,21 @@ public class Solution {
     }
 
     public int subarraysDivByK(int[] nums, int k) {
-        return 0;
+        int result = 0;
+
+        // there are k mod groups 0...k-1.
+        int[] modGroups = new int[k];
+        modGroups[0] = 1;
+
+        int prefixMod = 0;
+        for (int num : nums) {
+            // take modulo twice to avoid negative remainders
+            prefixMod = (prefixMod + num % k + k) % k;
+            // add the count of sub-arrays that have the same remainder as the current one to cancel out the remainders
+            result += modGroups[prefixMod];
+            modGroups[prefixMod]++;
+        }
+
+        return result;
     }
 }

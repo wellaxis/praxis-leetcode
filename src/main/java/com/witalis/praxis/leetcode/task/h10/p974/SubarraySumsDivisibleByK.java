@@ -62,21 +62,21 @@ public class SubarraySumsDivisibleByK extends LeetCodeTask<Integer> {
         return INFORMATION;
     }
 
-    // time = 26376 ms
+    // time = 352626 ms, time limit exceeded
     @Override
     protected Integer original() {
         var original = new Original(numbers, denominator);
         return original.process();
     }
 
-    // time = 22729 ms
+    // time = 2386 ms
     @Override
     protected Integer practice() {
         var practice = new Practice(numbers, denominator);
         return practice.process();
     }
 
-    // time = 18720 ms
+    // time = 2024 ms
     @Override
     protected Integer solution() {
         var solution = new Solution(numbers, denominator);

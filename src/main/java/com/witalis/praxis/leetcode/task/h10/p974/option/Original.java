@@ -24,6 +24,23 @@ public class Original {
     }
 
     public int subarraysDivByK(int[] nums, int k) {
-        return 0;
+        if (nums == null || nums.length == 0) return 0;
+
+        int len = nums.length;
+        int[] prefixes = new int[len];
+        prefixes[0] = nums[0];
+        for (int i = 1; i < len; i++) {
+            prefixes[i] = nums[i] + prefixes[i - 1];
+        }
+
+        int count = 0;
+        for (int i = 0; i < len; i++) {
+            for (int j = i; j < len; j++) {
+                int sum = prefixes[j] - ((i == 0) ? 0 : prefixes[i - 1]);
+                if (sum % k == 0) count++;
+            }
+        }
+
+        return count;
     }
 }
