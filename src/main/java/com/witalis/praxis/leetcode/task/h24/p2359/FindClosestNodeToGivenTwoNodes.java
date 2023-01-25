@@ -7,8 +7,13 @@ import com.witalis.praxis.leetcode.utils.TaskDifficulty;
 import com.witalis.praxis.leetcode.utils.TaskRevision;
 
 import lombok.extern.slf4j.Slf4j;
+
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
+import java.util.stream.IntStream;
 
 import static com.witalis.praxis.leetcode.utils.TaskTag.*;
 
@@ -60,13 +65,16 @@ public class FindClosestNodeToGivenTwoNodes extends LeetCodeTask<Integer> {
         final var random = ThreadLocalRandom.current();
 
         int len = random.nextInt(2, LEN + 1);
-        this.edges = random.ints(len, 0, LEN).toArray();
-        for (int i = 0; i < len / 10; i++) {
-            edges[random.nextInt(0, LEN)] = -1;
+        this.edges = new int[len];
+        List<Integer> nodes = new ArrayList<>(IntStream.range(0, len).boxed().toList());
+        Collections.shuffle(nodes);
+        for (int i = 0; i < len; i++) {
+            edges[i] = nodes.get(i);
+            if (random.nextInt(0, len) == 0) edges[i] = -1;
         }
 
-        this.node1 = random.nextInt(0, LEN);
-        this.node2 = random.nextInt(0, LEN);
+        this.node1 = random.nextInt(0, len);
+        this.node2 = random.nextInt(0, len);
 
         log.info("Edges: {}", Arrays.toString(edges));
         log.info("Node N1: {}", node1);
@@ -78,21 +86,21 @@ public class FindClosestNodeToGivenTwoNodes extends LeetCodeTask<Integer> {
         return INFORMATION;
     }
 
-    // time = 5986 ms
+    // time = 932 ms
     @Override
     protected Integer original() {
         var original = new Original(edges, node1, node2);
         return original.process();
     }
 
-    // time = 4577 ms
+    // time = 534 ms
     @Override
     protected Integer practice() {
         var practice = new Practice(edges, node1, node2);
         return practice.process();
     }
 
-    // time = 2900 ms
+    // time = 1325 ms
     @Override
     protected Integer solution() {
         var solution = new Solution(edges, node1, node2);
