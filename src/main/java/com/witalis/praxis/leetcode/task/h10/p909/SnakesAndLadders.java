@@ -125,21 +125,21 @@ public class SnakesAndLadders extends LeetCodeTask<Integer> {
         return INFORMATION;
     }
 
-    // time = 2273 ms
+    // time = 1571 ms
     @Override
     protected Integer original() {
         var original = new Original(board);
         return original.process();
     }
 
-    // time = 1098 ms
+    // time = 1522 ms
     @Override
     protected Integer practice() {
         var practice = new Practice(board);
         return practice.process();
     }
 
-    // time = 823 ms
+    // time = 679 ms
     @Override
     protected Integer solution() {
         var solution = new Solution(board);
