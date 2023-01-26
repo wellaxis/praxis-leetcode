@@ -96,21 +96,21 @@ public class CheapestFlightsWithinKStops extends LeetCodeTask<Integer> {
         return INFORMATION;
     }
 
-    // time = 1772 ms
+    // time = 11023067 ms, time limit exceeded
     @Override
     protected Integer original() {
         var original = new Original(number, flights, source, destination, transplants);
         return original.process();
     }
 
-    // time = 1565 ms
+    // time = 9523221 ms, time limit exceeded
     @Override
     protected Integer practice() {
         var practice = new Practice(number, flights, source, destination, transplants);
         return practice.process();
     }
 
-    // time = 1643 ms
+    // time = 2316 ms
     @Override
     protected Integer solution() {
         var solution = new Solution(number, flights, source, destination, transplants);

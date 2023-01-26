@@ -16,4 +16,4 @@ logging:
 task:
   type: leetcode
   code: 787
-  mode: O
+  mode: B
