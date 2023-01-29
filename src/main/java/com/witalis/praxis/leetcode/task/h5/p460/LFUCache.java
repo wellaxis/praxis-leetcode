@@ -104,21 +104,21 @@ public class LFUCache extends LeetCodeTask<List<Integer>> {
         return INFORMATION;
     }
 
-    // time = 6487 ms
+    // time = 91175 ms
     @Override
     protected List<Integer> original() {
         var original = new Original(operations);
         return original.process();
     }
 
-    // time = 5248 ms
+    // time = 82573 ms
     @Override
     protected List<Integer> practice() {
         var practice = new Practice(operations);
         return practice.process();
     }
 
-    // time = 5190 ms
+    // time = 53578 ms
     @Override
     protected List<Integer> solution() {
         var solution = new Solution(operations);

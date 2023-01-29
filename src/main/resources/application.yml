@@ -16,4 +16,4 @@ logging:
 task:
   type: leetcode
   code: 460
-  mode: O
+  mode: B
