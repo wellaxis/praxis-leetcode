@@ -5,6 +5,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
+import java.util.*;
+
 /**
  * ID: 1626
  * Name: Best Team With No Conflicts
@@ -23,7 +25,31 @@ public class Practice {
         return bestTeamScore(scores, ages);
     }
 
+    record Player(int age, int score) {}
+
     public int bestTeamScore(int[] scores, int[] ages) {
-        return 0;
+        if (scores == null || ages == null || scores.length != ages.length) return 0;
+
+        final int n = scores.length;
+        final int[] dp = new int[n];
+
+        final Player[] players = new Player[n];
+        for (int i = 0; i < n; i++) {
+            players[i] = new Player(ages[i], scores[i]);
+        }
+        Arrays.sort(players, Comparator.comparing(Player::score).thenComparing(Player::age));
+
+        int maxScore = 0;
+        for (int i = 0; i < n; i++) {
+            dp[i] = players[i].score();
+            for (int j = 0; j < i; j++) {
+                if (players[j].age() <= players[i].age()) {
+                    dp[i] = Math.max(dp[i], players[i].score() + dp[j]);
+                }
+            }
+            maxScore = Math.max(maxScore, dp[i]);
+        }
+
+        return maxScore;
     }
 }

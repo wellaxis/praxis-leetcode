@@ -70,21 +70,21 @@ public class BestTeamWithNoConflicts extends LeetCodeTask<Integer> {
         return INFORMATION;
     }
 
-    // time = 1158 ms
+    // time = 24824 ms
     @Override
     protected Integer original() {
         var original = new Original(scores, ages);
         return original.process();
     }
 
-    // time = 1016 ms
+    // time = 19305 ms
     @Override
     protected Integer practice() {
         var practice = new Practice(scores, ages);
         return practice.process();
     }
 
-    // time = 1036 ms
+    // time = 4451 ms
     @Override
     protected Integer solution() {
         var solution = new Solution(scores, ages);
