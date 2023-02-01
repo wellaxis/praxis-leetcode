@@ -24,6 +24,20 @@ public class Practice {
     }
 
     public String gcdOfStrings(String str1, String str2) {
+        if (str1 == null || str2 == null) return "";
+
+        final int len1 = str1.length();
+        final int len2 = str2.length();
+
+        if (len2 > len1) return gcdOfStrings(str2, str1);
+        if (!str1.startsWith(str2)) return "";
+
+        String divisor;
+        for (int i = len2; i > 0; i--) {
+            divisor = str2.substring(0, i);
+            if (len1 % i == 0 && len2 % i == 0 && str1.equals(divisor.repeat(len1 / i)) && str2.equals(divisor.repeat(len2 / i))) return divisor;
+        }
+
         return "";
     }
 }

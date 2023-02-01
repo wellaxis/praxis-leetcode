@@ -64,11 +64,11 @@ public class GreatestCommonDivisorOfStrings extends LeetCodeTask<String> {
             while (builder1.length() < len || builder2.length() < len) {
                 if (builder1.length() < len) {
                     count = random.nextInt(1, 5);
-                    while (count > 0) builder1.append(divisor);
+                    while (count-- > 0) builder1.append(divisor);
                 }
                 if (builder2.length() < len) {
                     count = random.nextInt(1, 5);
-                    while (count > 0) builder2.append(divisor);
+                    while (count-- > 0) builder2.append(divisor);
                 }
             }
         }
@@ -84,21 +84,21 @@ public class GreatestCommonDivisorOfStrings extends LeetCodeTask<String> {
         return INFORMATION;
     }
 
-    // time = 2209 ms
+    // time = 739 ms
     @Override
     protected String original() {
         var original = new Original(string1, string2);
         return original.process();
     }
 
-    // time = 2154 ms
+    // time = 709 ms
     @Override
     protected String practice() {
         var practice = new Practice(string1, string2);
         return practice.process();
     }
 
-    // time = 2064 ms
+    // time = 574 ms
     @Override
     protected String solution() {
         var solution = new Solution(string1, string2);
