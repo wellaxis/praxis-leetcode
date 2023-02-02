@@ -80,21 +80,21 @@ public class VerifyingAlienDictionary extends LeetCodeTask<Boolean> {
         return INFORMATION;
     }
 
-    // time = 618 ms
+    // time = 1298 ms
     @Override
     protected Boolean original() {
         var original = new Original(words, order);
         return original.process();
     }
 
-    // time = 607 ms
+    // time = 628 ms
     @Override
     protected Boolean practice() {
         var practice = new Practice(words, order);
         return practice.process();
     }
 
-    // time = 606 ms
+    // time = 482 ms
     @Override
     protected Boolean solution() {
         var solution = new Solution(words, order);
