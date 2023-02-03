@@ -475,6 +475,7 @@ In this case we run LeetCode's task #25 in `B` mode.
 | 2389 | [Longest Subsequence With Limited Sum](https://leetcode.com/problems/longest-subsequence-with-limited-sum/)                                                             |  Easy  | [Java](/src/main/java/com/witalis/praxis/leetcode/task/h24/p2389/option/Practice.java) | [Java](/src/main/java/com/witalis/praxis/leetcode/task/h24/p2389/option/Solution.java) |
 | 2401 | [Longest Nice Subarray](https://leetcode.com/problems/longest-nice-subarray/)                                                                                           | Medium | [Java](/src/main/java/com/witalis/praxis/leetcode/task/h25/p2401/option/Practice.java) | [Java](/src/main/java/com/witalis/praxis/leetcode/task/h25/p2401/option/Solution.java) |
 | 2421 | [Number of Good Paths](https://leetcode.com/problems/number-of-good-paths/)                                                                                             |  Hard  | [Java](/src/main/java/com/witalis/praxis/leetcode/task/h25/p2421/option/Practice.java) | [Java](/src/main/java/com/witalis/praxis/leetcode/task/h25/p2421/option/Solution.java) |
+| 2549 | [Count Distinct Numbers on Board](https://leetcode.com/problems/count-distinct-numbers-on-board/)                                                                       |  Easy  | [Java](/src/main/java/com/witalis/praxis/leetcode/task/h26/p2549/option/Practice.java) | [Java](/src/main/java/com/witalis/praxis/leetcode/task/h26/p2549/option/Solution.java) |
 ***
 
 Structure
