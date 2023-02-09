@@ -85,21 +85,21 @@ public class NamingCompany extends LeetCodeTask<Long> {
         return INFORMATION;
     }
 
-    // time = 1590 ms
+    // time = 704220 ms, time limit exceeded
     @Override
     protected Long original() {
         var original = new Original(ideas);
         return original.process();
     }
 
-    // time = 1504 ms
+    // time = 7747 ms
     @Override
     protected Long practice() {
         var practice = new Practice(ideas);
         return practice.process();
     }
 
-    // time = 1469 ms
+    // time = 3469 ms
     @Override
     protected Long solution() {
         var solution = new Solution(ideas);
