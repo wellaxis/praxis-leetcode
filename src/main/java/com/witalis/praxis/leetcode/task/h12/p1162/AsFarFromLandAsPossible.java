@@ -52,7 +52,7 @@ public class AsFarFromLandAsPossible extends LeetCodeTask<Integer> {
         this.grid = new int[n][n];
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
-                grid[i][j] = random.nextBoolean() ? 1 : 0;
+                grid[i][j] = random.nextInt(0, 4) == 0 ? 1 : 0;
             }
         }
 
@@ -77,21 +77,21 @@ public class AsFarFromLandAsPossible extends LeetCodeTask<Integer> {
         return INFORMATION;
     }
 
-    // time = 3239 ms
+    // time = 12165 ms
     @Override
     protected Integer original() {
         var original = new Original(cloneMatrix(grid));
         return original.process();
     }
 
-    // time = 1639 ms
+    // time = 8986 ms
     @Override
     protected Integer practice() {
         var practice = new Practice(cloneMatrix(grid));
         return practice.process();
     }
 
-    // time = 1697 ms
+    // time = 4325 ms
     @Override
     protected Integer solution() {
         var solution = new Solution(cloneMatrix(grid));
