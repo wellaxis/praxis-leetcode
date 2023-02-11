@@ -87,21 +87,21 @@ public class ShortestPathWithAlternatingColors extends LeetCodeTask<int[]> {
         return INFORMATION;
     }
 
-    // time = 12165 ms
+    // time = 3222 ms
     @Override
     protected int[] original() {
         var original = new Original(number, redEdges, blueEdges);
         return original.process();
     }
 
-    // time = 8986 ms
+    // time = 1321 ms
     @Override
     protected int[] practice() {
         var practice = new Practice(number, redEdges, blueEdges);
         return practice.process();
     }
 
-    // time = 4325 ms
+    // time = 643 ms
     @Override
     protected int[] solution() {
         var solution = new Solution(number, redEdges, blueEdges);
