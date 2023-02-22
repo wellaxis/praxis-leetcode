@@ -19,7 +19,6 @@ public class Original {
     private String string;
 
     public Boolean process() {
-        string = "abcabcababcc";
         return isValid(string);
     }
 
