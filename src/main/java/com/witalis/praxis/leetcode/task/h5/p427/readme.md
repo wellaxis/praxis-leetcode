@@ -35,7 +35,7 @@ Description
 
 ![tree.png](image/tree.png)
 
-> If you want to know more about the Quad-Tree, you can refer to the [wiki][https://en.wikipedia.org/wiki/Quadtree].
+> If you want to know more about the Quad-Tree, you can refer to the [wiki](https://en.wikipedia.org/wiki/Quadtree).
 > 
 > **Quad-Tree format**:
 > 
