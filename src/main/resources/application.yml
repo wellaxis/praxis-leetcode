@@ -16,4 +16,4 @@ logging:
 task:
   type: leetcode
   code: 443
-  mode: O
+  mode: P
