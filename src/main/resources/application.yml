@@ -15,5 +15,5 @@ logging:
 # task
 task:
   type: leetcode
-  code: 443
-  mode: P
+  code: 748
+  mode: B
