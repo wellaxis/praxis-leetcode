@@ -15,5 +15,5 @@ logging:
 # task
 task:
   type: leetcode
-  code: 2316
+  code: 2360
   mode: B
