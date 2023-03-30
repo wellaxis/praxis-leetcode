@@ -19,6 +19,7 @@ import java.util.stream.IntStream;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@SuppressWarnings("unchecked")
 public class Practice {
     private int[][] roads;
     private int seats;

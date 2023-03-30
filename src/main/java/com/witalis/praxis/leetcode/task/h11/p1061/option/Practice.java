@@ -17,6 +17,7 @@ import java.util.*;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@SuppressWarnings("unchecked")
 public class Practice {
     private String string1;
     private String string2;

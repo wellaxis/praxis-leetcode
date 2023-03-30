@@ -17,6 +17,7 @@ import java.util.*;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@SuppressWarnings("unchecked")
 public class Solution {
     private int number;
     private int[][] redEdges;
