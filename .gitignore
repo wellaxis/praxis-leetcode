@@ -42,4 +42,5 @@ hs_err_pid*
 /output
 /lib
 /log
+/out
 /res
