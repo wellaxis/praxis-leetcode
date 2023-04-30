@@ -96,14 +96,14 @@ public class CheckingExistenceOfEdgeLengthLimitedPaths extends LeetCodeTask<bool
     // time = 8606 ms
     @Override
     protected boolean[] practice() {
-        var practice = new Practice(nodes, edges, queries);
+        var practice = new Practice(nodes, edges.clone(), queries.clone());
         return practice.process();
     }
 
     // time = 4307 ms
     @Override
     protected boolean[] solution() {
-        var solution = new Solution(nodes, edges, queries);
+        var solution = new Solution(nodes, edges.clone(), queries.clone());
         return solution.process();
     }
 }
