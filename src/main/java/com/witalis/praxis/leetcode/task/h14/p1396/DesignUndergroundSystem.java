@@ -22,7 +22,7 @@ import static com.witalis.praxis.leetcode.utils.TaskTag.*;
     difficulty = TaskDifficulty.MEDIUM,
     tags = {HASH_TABLE, STRING, DESIGN}
 )
-public class DesignUndergroundSystem extends LeetCodeTask<List<Double>> {
+public class DesignUndergroundSystem extends LeetCodeTask<List<String>> {
     public static final int LEN = 10;
     public static final int CALLS = 20_000;
     public static final int VALUE = 1_000_000;
@@ -121,23 +121,23 @@ public class DesignUndergroundSystem extends LeetCodeTask<List<Double>> {
         return INFORMATION;
     }
 
-    // time = 3482 ms
+    // time = 36289 ms
     @Override
-    protected List<Double> original() {
+    protected List<String> original() {
         var original = new Original(operations);
         return original.process();
     }
 
-    // time = 3184 ms
+    // time = 30858 ms
     @Override
-    protected List<Double> practice() {
+    protected List<String> practice() {
         var practice = new Practice(operations);
         return practice.process();
     }
 
-    // time = 1683 ms
+    // time = 14489 ms
     @Override
-    protected List<Double> solution() {
+    protected List<String> solution() {
         var solution = new Solution(operations);
         return solution.process();
     }

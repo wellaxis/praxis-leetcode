@@ -64,7 +64,7 @@ public class Original {
         }
     }
 
-    public List<Double> process() {
+    public List<String> process() {
         return UndergroundSystemHandler.process(operations, new UndergroundSystem());
     }
 }

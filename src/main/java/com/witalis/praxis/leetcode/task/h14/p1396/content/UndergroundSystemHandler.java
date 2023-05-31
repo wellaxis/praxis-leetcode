@@ -18,27 +18,28 @@ public final class UndergroundSystemHandler {
         super();
     }
 
-    public static List<Double> process(
+    public static List<String> process(
         List<AbstractMap.SimpleEntry<String, Object[]>> operations,
         IUndergroundSystem undergroundSystem
     ) {
-        List<Double> results = new ArrayList<>();
+        List<String> results = new ArrayList<>();
 
         for (AbstractMap.SimpleEntry<String, Object[]> operation: operations) {
             var name = operation.getKey();
             var values = operation.getValue();
             switch (name) {
+                case "UndergroundSystem" -> results.add("");
                 case "checkIn" -> {
                     undergroundSystem.checkIn((Integer) values[0], (String) values[1], (Integer) values[2]);
-                    results.add(null);
+                    results.add("");
                 }
                 case "checkOut" -> {
                     undergroundSystem.checkOut((Integer) values[0], (String) values[1], (Integer) values[2]);
-                    results.add(null);
+                    results.add("");
                 }
                 case "getAverageTime" -> {
                     double time = undergroundSystem.getAverageTime((String) values[0], (String) values[1]);
-                    results.add(time);
+                    results.add(String.valueOf(time));
                 }
                 default -> throw new UnsupportedOperationException(
                     "Unrecognisable operation has been detected: " + operation
