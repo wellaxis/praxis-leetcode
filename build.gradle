@@ -6,12 +6,12 @@ plugins {
     id 'org.springframework.boot' version '3.1.0'
     id 'io.spring.dependency-management' version '1.1.0'
     id 'net.nemerosa.versioning' version '3.0.0'
-    id 'org.sonarqube' version '4.1.0.3113'
+    id 'org.sonarqube' version '4.2.0.3129'
 }
 
 // application
 group = "com.witalis.praxis"
-version = "1.0.3"
+version = "1.0.4"
 mainClassName = "com.witalis.praxis.leetcode.PraxisLeetcodeApplication"
 
 // compatibility
