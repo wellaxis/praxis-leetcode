@@ -5,6 +5,9 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
+import java.util.HashSet;
+import java.util.Set;
+
 /**
  * ID: 888
  * Name: Fair Candy Swap
@@ -24,6 +27,20 @@ public class Solution {
     }
 
     public int[] fairCandySwap(int[] aliceSizes, int[] bobSizes) {
+        int sa = 0;
+        int sb = 0;
+
+        for (int x: aliceSizes) sa += x;
+        for (int x: bobSizes) sb += x;
+
+        int delta = (sb - sa) / 2;
+        Set<Integer> setB = new HashSet<>();
+        for (int x: bobSizes) setB.add(x);
+
+        for (int x: aliceSizes)
+            if (setB.contains(x + delta))
+                return new int[] {x, x + delta};
+
         return new int[0];
     }
 }

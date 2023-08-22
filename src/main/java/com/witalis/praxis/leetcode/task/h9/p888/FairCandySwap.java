@@ -73,21 +73,21 @@ public class FairCandySwap extends LeetCodeTask<int[]> {
         return INFORMATION;
     }
 
-    // time = 3560 ms
+    // time = 1781 ms
     @Override
     protected int[] original() {
         var original = new Original(aliceSizes.clone(), bobSizes.clone());
         return original.process();
     }
 
-    // time = 3144 ms
+    // time = 929 ms
     @Override
     protected int[] practice() {
         var practice = new Practice(aliceSizes.clone(), bobSizes.clone());
         return practice.process();
     }
 
-    // time = 3058 ms
+    // time = 1649 ms
     @Override
     protected int[] solution() {
         var solution = new Solution(aliceSizes.clone(), bobSizes.clone());
