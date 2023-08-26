@@ -27,6 +27,7 @@ import static com.witalis.praxis.leetcode.utils.TaskTag.*;
 public class SetMismatch extends LeetCodeTask<int[]> {
     public static final int LEN = 10_000;
     public static final int VALUE = 10_000;
+
     private int[] numbers;
 
     public static final String INFORMATION = """
