@@ -1,4 +1,4 @@
-# [LeetCode][leetcode] task # 2652: [Check if There is a Valid Partition For The Array][task]
+# [LeetCode][leetcode] task # 2369: [Check if There is a Valid Partition For The Array][task]
 
 Description
 -----------
@@ -30,7 +30,7 @@ Solution
 
 | Task | Solution                                                      |
 |:----:|:--------------------------------------------------------------|
-| 2652 | [Check if There is a Valid Partition For The Array][solution] |
+| 2369 | [Check if There is a Valid Partition For The Array][solution] |
 
 
 [leetcode]: <http://leetcode.com/>
