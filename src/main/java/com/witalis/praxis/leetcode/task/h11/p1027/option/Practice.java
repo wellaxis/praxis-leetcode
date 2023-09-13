@@ -18,6 +18,7 @@ import java.util.Map;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@SuppressWarnings("unchecked")
 public class Practice {
     private int[] numbers;
 

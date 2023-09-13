@@ -18,6 +18,7 @@ import java.util.Set;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@SuppressWarnings("unchecked")
 public class Solution {
     private String string;
 

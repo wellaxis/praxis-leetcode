@@ -17,6 +17,7 @@ import java.util.*;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@SuppressWarnings("unchecked")
 public class Practice {
     private int nodes;
     private int[][] edges;

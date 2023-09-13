@@ -20,6 +20,7 @@ import java.util.Queue;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@SuppressWarnings("unchecked")
 public class Practice {
     private int items;
     private int groups;
