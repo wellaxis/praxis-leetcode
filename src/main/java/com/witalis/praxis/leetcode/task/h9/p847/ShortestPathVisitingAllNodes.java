@@ -1,13 +1,12 @@
-package com.witalis.praxis.leetcode.task.h8.p785;
+package com.witalis.praxis.leetcode.task.h9.p847;
 
 import com.witalis.praxis.leetcode.task.LeetCodeTask;
-import com.witalis.praxis.leetcode.task.h8.p785.option.*;
+import com.witalis.praxis.leetcode.task.h9.p847.option.*;
 import com.witalis.praxis.leetcode.utils.LeetCode;
 import com.witalis.praxis.leetcode.utils.TaskDifficulty;
 import com.witalis.praxis.leetcode.utils.TaskRevision;
 
 import lombok.extern.slf4j.Slf4j;
-
 import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
 
@@ -15,41 +14,31 @@ import static com.witalis.praxis.leetcode.utils.TaskTag.*;
 
 @Slf4j
 @LeetCode(
-    id = 785,
-    description = "Is Graph Bipartite?",
-    difficulty = TaskDifficulty.MEDIUM,
-    tags = {GRAPH, DEPTH_FIRST_SEARCH, BREADTH_FIRST_SEARCH, UNION_FIND}
+    id = 847,
+    description = "Shortest Path Visiting All Nodes",
+    difficulty = TaskDifficulty.HARD,
+    tags = {DYNAMIC_PROGRAMMING, BIT_MANIPULATION, BREADTH_FIRST_SEARCH, GRAPH, BITMASK}
 )
-public class IsGraphBipartite extends LeetCodeTask<Boolean> {
-    public static final int LEN = 100;
+public class ShortestPathVisitingAllNodes extends LeetCodeTask<Integer> {
+    public static final int LEN = 12;
 
     private int[][] graph;
 
     public static final String INFORMATION = """
 
         Description:
-            There is an undirected graph with n nodes, where each node is numbered between 0 and n - 1.
-                You are given a 2D array graph, where graph[u] is an array of nodes that node u is adjacent to.
-                More formally, for each v in graph[u], there is an undirected edge between node u and node v.
+            You have an undirected, connected graph of n nodes labeled from 0 to n - 1.
+                You are given an array graph where graph[i] is a list of all the nodes connected with node i by an edge.
 
-            The graph has the following properties:
-                * There are no self-edges (graph[u] does not contain u).
-                * There are no parallel edges (graph[u] does not contain duplicate values).
-                * If v is in graph[u], then u is in graph[v] (the graph is undirected).
-                * The graph may not be connected, meaning there may be two nodes u and v such that there is no path between them.
-
-            A graph is bipartite if the nodes can be partitioned into two independent sets A and B such that
-                every edge in the graph connects a node in set A and a node in set B.
-
-            Return true if and only if it is bipartite.
+            Return the length of the shortest path that visits every node.
+                You may start and stop at any node, you may revisit nodes multiple times, and you may reuse edges.
 
         Example:
-            Input: graph = [[1,2,3],[0,2],[0,1,3],[0,2]]
-            Output: false
-            Explanation: There is no way to partition the nodes into two independent sets such that
-                every edge connects a node in one and a node in the other.""";
+            Input: graph = [[1,2,3],[0],[0],[0]]
+            Output: 4
+            Explanation: One possible path is [1,0,2,0,3]""";
 
-    public IsGraphBipartite(int id, String description, TaskRevision revision) {
+    public ShortestPathVisitingAllNodes(int id, String description, TaskRevision revision) {
         super(id, description, revision);
         initialization();
     }
@@ -123,23 +112,23 @@ public class IsGraphBipartite extends LeetCodeTask<Boolean> {
         return INFORMATION;
     }
 
-    // time = 725 ms
+    // time = 9262 ms
     @Override
-    protected Boolean original() {
+    protected Integer original() {
         var original = new Original(graph);
         return original.process();
     }
 
-    // time = 678 ms
+    // time = 9152 ms
     @Override
-    protected Boolean practice() {
+    protected Integer practice() {
         var practice = new Practice(graph);
         return practice.process();
     }
 
-    // time = 967 ms
+    // time = 3922 ms
     @Override
-    protected Boolean solution() {
+    protected Integer solution() {
         var solution = new Solution(graph);
         return solution.process();
     }
