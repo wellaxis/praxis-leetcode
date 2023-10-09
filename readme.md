@@ -720,6 +720,7 @@ In this case we run LeetCode's task #25 in `B` mode.
 | 2710 | [Remove Trailing Zeros From a String](https://leetcode.com/problems/remove-trailing-zeros-from-a-string/)                                                               |  Easy  | [Java](/src/main/java/com/witalis/praxis/leetcode/task/h28/p2710/option/Practice.java) | [Java](/src/main/java/com/witalis/praxis/leetcode/task/h28/p2710/option/Solution.java) |
 | 2810 | [Max Pair Sum in an Array](https://leetcode.com/problems/max-pair-sum-in-an-array/)                                                                                     |  Easy  | [Java](/src/main/java/com/witalis/praxis/leetcode/task/h29/p2810/option/Practice.java) | [Java](/src/main/java/com/witalis/praxis/leetcode/task/h29/p2810/option/Solution.java) |
 | 2815 | [Faulty Keyboard](https://leetcode.com/problems/faulty-keyboard/)                                                                                                       |  Easy  | [Java](/src/main/java/com/witalis/praxis/leetcode/task/h29/p2815/option/Practice.java) | [Java](/src/main/java/com/witalis/praxis/leetcode/task/h29/p2815/option/Solution.java) |
+| 2843 | [Count Symmetric Integers](https://leetcode.com/problems/count-symmetric-integers/)                                                                                     |  Easy  | [Java](/src/main/java/com/witalis/praxis/leetcode/task/h29/p2843/option/Practice.java) | [Java](/src/main/java/com/witalis/praxis/leetcode/task/h29/p2843/option/Solution.java) |
 ***
 
 Structure
