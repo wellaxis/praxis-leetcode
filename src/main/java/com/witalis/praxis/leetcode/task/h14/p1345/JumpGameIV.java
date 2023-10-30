@@ -3,6 +3,7 @@ package com.witalis.praxis.leetcode.task.h14.p1345;
 import com.witalis.praxis.leetcode.task.LeetCodeTask;
 import com.witalis.praxis.leetcode.task.h14.p1345.option.*;
 import com.witalis.praxis.leetcode.utils.LeetCode;
+import com.witalis.praxis.leetcode.utils.TaskDifficulty;
 import com.witalis.praxis.leetcode.utils.TaskRevision;
 
 import lombok.extern.slf4j.Slf4j;
@@ -15,6 +16,7 @@ import static com.witalis.praxis.leetcode.utils.TaskTag.*;
 @LeetCode(
     id = 1345,
     description = "Jump Game IV",
+    difficulty = TaskDifficulty.HARD,
     tags = {ARRAY, HASH_TABLE, BREADTH_FIRST_SEARCH}
 )
 public class JumpGameIV extends LeetCodeTask<Integer> {

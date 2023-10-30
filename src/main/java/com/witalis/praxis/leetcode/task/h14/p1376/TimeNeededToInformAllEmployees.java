@@ -3,6 +3,7 @@ package com.witalis.praxis.leetcode.task.h14.p1376;
 import com.witalis.praxis.leetcode.task.LeetCodeTask;
 import com.witalis.praxis.leetcode.task.h14.p1376.option.*;
 import com.witalis.praxis.leetcode.utils.LeetCode;
+import com.witalis.praxis.leetcode.utils.TaskDifficulty;
 import com.witalis.praxis.leetcode.utils.TaskRevision;
 
 import lombok.extern.slf4j.Slf4j;
@@ -16,6 +17,7 @@ import static com.witalis.praxis.leetcode.utils.TaskTag.*;
 @LeetCode(
     id = 1376,
     description = "Time Needed to Inform All Employees",
+    difficulty = TaskDifficulty.MEDIUM,
     tags = {TREE, DEPTH_FIRST_SEARCH, BREADTH_FIRST_SEARCH}
 )
 public class TimeNeededToInformAllEmployees extends LeetCodeTask<Integer> {

@@ -3,6 +3,7 @@ package com.witalis.praxis.leetcode.task.h14.p1361;
 import com.witalis.praxis.leetcode.task.LeetCodeTask;
 import com.witalis.praxis.leetcode.task.h14.p1361.option.*;
 import com.witalis.praxis.leetcode.utils.LeetCode;
+import com.witalis.praxis.leetcode.utils.TaskDifficulty;
 import com.witalis.praxis.leetcode.utils.TaskRevision;
 
 import lombok.extern.slf4j.Slf4j;
@@ -15,6 +16,7 @@ import static com.witalis.praxis.leetcode.utils.TaskTag.*;
 @LeetCode(
     id = 1361,
     description = "Validate Binary Tree Nodes",
+    difficulty = TaskDifficulty.MEDIUM,
     tags = {TREE, BINARY_TREE, DEPTH_FIRST_SEARCH, BREADTH_FIRST_SEARCH, UNION_FIND, GRAPH}
 )
 public class ValidateBinaryTreeNodes extends LeetCodeTask<Boolean> {
