@@ -1,7 +1,7 @@
-package com.witalis.praxis.leetcode.task.h2.p139;
+package com.witalis.praxis.leetcode.task.h2.p140;
 
 import com.witalis.praxis.leetcode.task.LeetCodeTask;
-import com.witalis.praxis.leetcode.task.h2.p139.option.*;
+import com.witalis.praxis.leetcode.task.h2.p140.option.*;
 import com.witalis.praxis.leetcode.utils.LeetCode;
 import com.witalis.praxis.leetcode.utils.TaskDifficulty;
 import com.witalis.praxis.leetcode.utils.TaskRevision;
@@ -15,14 +15,14 @@ import static com.witalis.praxis.leetcode.utils.TaskTag.*;
 
 @Slf4j
 @LeetCode(
-    id = 139,
-    description = "Word Break",
-    difficulty = TaskDifficulty.MEDIUM,
-    tags = {HASH_TABLE, STRING, DYNAMIC_PROGRAMMING, TRIE, MEMOIZATION}
+    id = 140,
+    description = "Word Break II",
+    difficulty = TaskDifficulty.HARD,
+    tags = {ARRAY, HASH_TABLE, STRING, DYNAMIC_PROGRAMMING, BACKTRACKING, TRIE, MEMOIZATION}
 )
-public class WordBreak extends LeetCodeTask<Boolean> {
-    public static final int LEN = 300;
-    public static final int DICT_LEN = 20;
+public class WordBreakII extends LeetCodeTask<List<String>> {
+    public static final int LEN = 20;
+    public static final int DICT_LEN = 10;
     public static final int DICT_SIZE = 1_000;
 
     private String string;
@@ -31,18 +31,17 @@ public class WordBreak extends LeetCodeTask<Boolean> {
     public static final String INFORMATION = """
 
         Description:
-            Given a string s and a dictionary of strings wordDict,
-                return true if s can be segmented into a space-separated sequence of one or more dictionary words.
+            Given a string s and a dictionary of strings wordDict, add spaces in s to construct a sentence
+                where each word is a valid dictionary word. Return all such possible sentences in any order.
 
             Note that the same word in the dictionary may be reused multiple times in the segmentation.
 
         Example:
-            Input: s = "applepenapple", wordDict = ["apple","pen"]
-            Output: true
-            Explanation: Return true because "applepenapple" can be segmented as "apple pen apple".
-                Note that you are allowed to reuse a dictionary word.""";
+            Input: s = "pineapplepenapple", wordDict = ["apple","pen","applepen","pine","pineapple"]
+            Output: ["pine apple pen apple","pineapple pen apple","pine applepen apple"]
+            Explanation: Note that you are allowed to reuse a dictionary word.""";
 
-    public WordBreak(int id, String description, TaskRevision revision) {
+    public WordBreakII(int id, String description, TaskRevision revision) {
         super(id, description, revision);
         initialization();
     }
@@ -60,8 +59,8 @@ public class WordBreak extends LeetCodeTask<Boolean> {
             wordDict.add(i, generate(len));
         }
 
-        log.info("String is {}", string);
-        log.info("Dictionary is {}", wordDict);
+        log.info("String 's': {}", string);
+        log.info("Dictionary: {}", wordDict);
     }
 
     private static String generate(int length) {
@@ -80,23 +79,23 @@ public class WordBreak extends LeetCodeTask<Boolean> {
         return INFORMATION;
     }
 
-    // time = 803 ms
+    // time = 2990 ms
     @Override
-    protected Boolean original() {
+    protected List<String> original() {
         var original = new Original(string, wordDict);
         return original.process();
     }
 
-    // time = 539 ms
+    // time = 2837 ms
     @Override
-    protected Boolean practice() {
+    protected List<String> practice() {
         var practice = new Practice(string, wordDict);
         return practice.process();
     }
 
-    // time = 523 ms
+    // time = 1631 ms
     @Override
-    protected Boolean solution() {
+    protected List<String> solution() {
         var solution = new Solution(string, wordDict);
         return solution.process();
     }
