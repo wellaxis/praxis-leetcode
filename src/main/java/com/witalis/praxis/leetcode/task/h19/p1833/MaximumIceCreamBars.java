@@ -22,6 +22,7 @@ import static com.witalis.praxis.leetcode.utils.TaskTag.*;
 public class MaximumIceCreamBars extends LeetCodeTask<Integer> {
     public static final int LEN = 100_000;
     public static final int VALUE = (int) Math.pow(10, 8);
+
     private int[] costs;
     private int coins;
 
