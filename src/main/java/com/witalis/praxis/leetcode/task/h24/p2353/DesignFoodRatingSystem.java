@@ -120,21 +120,21 @@ public class DesignFoodRatingSystem extends LeetCodeTask<List<String>> {
         return INFORMATION;
     }
 
-    // time = 5512 ms
+    // time = 14435 ms, time limit exceeded
     @Override
     protected List<String> original() {
         var original = new Original(operations);
         return original.process();
     }
 
-    // time = 4508 ms
+    // time = 5841 ms
     @Override
     protected List<String> practice() {
         var practice = new Practice(operations);
         return practice.process();
     }
 
-    // time = 6692 ms
+    // time = 4434 ms
     @Override
     protected List<String> solution() {
         var solution = new Solution(operations);

@@ -8,8 +8,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
-import java.util.AbstractMap;
-import java.util.List;
+import java.util.*;
 
 /**
  * ID: 2353
@@ -24,23 +23,61 @@ import java.util.List;
 public class Practice {
     private List<AbstractMap.SimpleEntry<String, Object[]>> operations;
 
-    public class FoodRatingSystem implements IFoodRatingSystem {
+    record Food(String name, String cuisine, int rating) {}
 
-        public FoodRatingSystem(String[] foods, String[] cuisines, int[] ratings) {
+    public class FoodRatings implements IFoodRatingSystem {
+        private static final Comparator<Food> byRatingAndName = Comparator.comparing(Food::rating).reversed().thenComparing(Food::name);
+
+        private final Map<String, String> cuisineMap;
+        private final Map<String, Integer> ratingMap;
+        private final Map<String, Queue<Food>> menu;
+
+        public FoodRatings(String[] foods, String[] cuisines, int[] ratings) {
+            this.cuisineMap = new HashMap<>();
+            this.ratingMap = new HashMap<>();
+            this.menu = new HashMap<>();
+
+            initialize(foods, cuisines, ratings);
+        }
+
+        private void initialize(String[] foods, String[] cuisines, int[] ratings) {
+            final int n = foods.length;
+
+            for (int i = 0; i < n; ++i) {
+                final Food food = new Food(foods[i], cuisines[i], ratings[i]);
+
+                cuisineMap.put(foods[i], cuisines[i]);
+                ratingMap.put(foods[i], ratings[i]);
+                menu.computeIfAbsent(cuisines[i], k -> new PriorityQueue<>(byRatingAndName)).add(food);
+            }
         }
 
         @Override
         public void changeRating(String food, int newRating) {
+            ratingMap.put(food, newRating);
+            String cuisine = cuisineMap.get(food);
+            menu.get(cuisine).add(new Food(food, cuisine, newRating));
         }
 
         @Override
         public String highestRated(String cuisine) {
-            return "";
+            var heap = menu.get(cuisine);
+            if (heap == null) return "";
+
+            Food food = heap.peek();
+            if (food == null) return "";
+
+            while (ratingMap.get(food.name()) != food.rating()) {
+                menu.get(cuisine).poll();
+                food = menu.get(cuisine).peek();
+            }
+
+            return food.name();
         }
     }
 
     public List<String> process() {
         Object[] data = operations.get(0).getValue();
-        return FoodRatingSystemHandler.process(operations, new FoodRatingSystem((String[]) data[0], (String[]) data[1], (int[]) data[2]));
+        return FoodRatingSystemHandler.process(operations, new FoodRatings((String[]) data[0], (String[]) data[1], (int[]) data[2]));
     }
 }
