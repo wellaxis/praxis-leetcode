@@ -1,7 +1,7 @@
 package com.witalis.praxis.leetcode.task.h13.p1211;
 
 import com.witalis.praxis.leetcode.task.LeetCodeTask;
-import com.witalis.praxis.leetcode.task.h12.p1179.option.*;
+import com.witalis.praxis.leetcode.task.h13.p1211.option.*;
 import com.witalis.praxis.leetcode.utils.LeetCode;
 import com.witalis.praxis.leetcode.utils.TaskDifficulty;
 import com.witalis.praxis.leetcode.utils.TaskRevision;
