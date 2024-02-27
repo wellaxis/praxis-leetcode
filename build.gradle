@@ -3,7 +3,7 @@ plugins {
     id 'java'
     id 'application'
     id 'distribution'
-    id 'org.springframework.boot' version '3.1.5'
+    id 'org.springframework.boot' version '3.2.3'
     id 'io.spring.dependency-management' version '1.1.4'
     id 'org.springdoc.openapi-gradle-plugin' version '1.8.0'
     id 'net.nemerosa.versioning' version '3.0.0'
@@ -12,12 +12,12 @@ plugins {
 
 // application
 group = "com.witalis.praxis"
-version = "1.0.7"
+version = "1.0.8"
 mainClassName = "com.witalis.praxis.leetcode.PraxisLeetcodeApplication"
 
 // compatibility
-sourceCompatibility = JavaVersion.VERSION_20
-targetCompatibility = JavaVersion.VERSION_20
+sourceCompatibility = JavaVersion.VERSION_21
+targetCompatibility = JavaVersion.VERSION_21
 
 // extension
 ext {
